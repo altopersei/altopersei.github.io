@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="outline-container-org81e7434" class="outline-2">
+<h2 id="org81e7434"><span class="section-number-2">1</span> Rust核心概念:所有权,引用和借用</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-org02e223a" class="outline-3">
+<h3 id="org02e223a"><span class="section-number-3">1.1</span> 为什么需要所有权(Ownership)</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Rust的核心概念之一即为所有权的概念,所有权的概念帮助编译器
+在编译时(Compiler time)确立规则保证资源的管理，从而不会在
+运行时(runtime)造成类似于垃圾回收的产生的性能开销.
+</p>
+</div>
+</div>
+<div id="outline-container-org05a7182" class="outline-3">
+<h3 id="org05a7182"><span class="section-number-3">1.2</span> 所有权规则(Ownership rule)</h3>
+<div class="outline-text-3" id="text-1-2">
+<ol class="org-ol">
+<li>在Rust中的每个值附属于一个'所有者'的变量</li>
+<li>任何时候每个值只能拥有一个'所有者'</li>
+<li>当'所有者'离开作用域(scope),值将会被销毁</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org6771364" class="outline-3">
+<h3 id="org6771364"><span class="section-number-3">1.3</span> 以String为例</h3>
+<div class="outline-text-3" id="text-1-3">
+<div class="org-src-container">
+<pre class="src src-rust">{
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s</span> = <span style="color: #2aa198;">"Hello world"</span>;                <span style="color: #af875f;">/// s refs to string literal(s -&gt; &amp;str), which was hard coded into binary by compiler</span>
+                                          <span style="color: #af875f;">/// and was immutable</span>
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #268bd2; font-weight: bold;">mut</span> <span style="color: #8787d7;">s1</span> = <span style="color: #df005f; font-weight: bold;">String</span>::(<span style="color: #2aa198;">"hello"</span>)        <span style="color: #af875f;">/// s1 was a mutable string and owns heap-allocated object. </span>
+}
+</pre>
+</div>
+<p>
+一个<code class="src src-rust"><span style="color: #df005f; font-weight: bold;">String</span></code>对象由3部分组成,从 <a href="#org037c08a">fig-1</a>可知,第一部分是一个指针，这个指针指向的堆内存保存着
+字符串的内容，另外两个部分是字符串的长度(length)和容量(capacity)。并且这三个部分都是组合存在于栈上的。
+</p>
+
+
+<div id="org037c08a" class="figure">
+<p><object type="image/svg+xml" data="http:doc.rust-lang.org/book/2018-edition/img/trpl04-01.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+<p><span class="figure-number">Figure 1: </span>s1的内存布局</p>
+</div>
+
+<p>
+考虑下面的代码
+</p>
+<div class="org-src-container">
+<pre class="src src-rust">{
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s1</span> = <span style="color: #df005f; font-weight: bold;">String</span>::(<span style="color: #2aa198;">"world"</span>);
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s2</span> = s1
+}
+</pre>
+</div>
+<p>
+当 <code>s2=s1</code> 操作完成之后,Rust为了保证资源的安全, <code>s1</code> 不再是一个合法的引用,资源的所有权将会被转移到 <code>s2</code> 上,之后任何对
+ <code>s1</code> 的操作将会被编译器视为非法从而无法通过编译。如果我们想要拷贝堆上的字符串资源要该怎么样操作呢？显然Rust为我们提供
+了类似于C++中深拷贝的方法： <code>clone</code>
+</p>
+<div class="org-src-container">
+<pre class="src src-rust">{
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s1</span> = <span style="color: #df005f; font-weight: bold;">String</span>::(<span style="color: #2aa198;">"world"</span>);
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s2</span> = s1.clone();
+}
+</pre>
+</div>
+<p>
+<code>clone</code> 方法的使用实际上是在堆上面新建了一个对象并且拷贝了原来对象的值到新建的对象之上,因此当你看见 <code>clone</code> 被调用时，
+你应该提醒自己这里执行了代价昂贵的操作。
+</p>
+</div>
+</div>
+<div id="outline-container-orgd7f739b" class="outline-3">
+<h3 id="orgd7f739b"><span class="section-number-3">1.4</span> 函数和所有权</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+向函数传递参数类似于用值给变量赋值,同样会发生所有权的转移。反过来,函数的返回值同样也会发生所有权的转移。
+</p>
+<div class="org-src-container">
+<pre class="src src-rust"><span style="color: #268bd2; font-weight: bold;">fn</span> <span style="color: #d75fd7; font-weight: bold;">main</span>(){
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s1</span> = get_ownership();                          <span style="color: #af875f;">///s1&#20174;&#36820;&#22238;&#20540;&#20013;&#33719;&#24471;&#20102;&#25152;&#26377;&#26435;</span>
+
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s2</span> = <span style="color: #df005f; font-weight: bold;">String</span>::from(<span style="color: #2aa198;">"rose"</span>);                    
+
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s3</span> = takes_and_gives_back(s2);                 <span style="color: #af875f;">///s3&#20174;&#36820;&#22238;&#20540;&#20013;&#33719;&#24471;&#20102;&#25152;&#26377;&#26435;</span>
+}
+
+<span style="color: #268bd2; font-weight: bold;">fn</span> <span style="color: #d75fd7; font-weight: bold;">get_ownership</span>() -&gt; <span style="color: #df005f; font-weight: bold;">String</span>{
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">some_string</span> = <span style="color: #df005f; font-weight: bold;">String</span>::from(<span style="color: #2aa198;">"jack"</span>);           
+    some_string
+}
+
+<span style="color: #268bd2; font-weight: bold;">fn</span> <span style="color: #d75fd7; font-weight: bold;">takes_and_gives_back</span>(<span style="color: #8787d7;">a_string</span>: <span style="color: #df005f; font-weight: bold;">String</span>) -&gt; <span style="color: #df005f; font-weight: bold;">String</span>{  <span style="color: #af875f;">///s2 move &#21040;&#20102;&#26032;&#21464;&#37327;&#65292;&#22833;&#21435;&#20102;&#20102;&#25152;&#26377;&#26435;</span>
+    a_string
+}
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org975ee56" class="outline-3">
+<h3 id="org975ee56"><span class="section-number-3">1.5</span> 什么是引用</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+rust官方文档中对引用没有严格的定义,其实可以理解为在变量或对象面前加上C语言的取地址符<code class="src src-rust">&amp;</code>,我们即可代表
+这是一个对原变量/对象的引用。引用允许你获取某些值但你对这些值并不持有所有权，因为引用不持有所有权，因此当引用离开作用域的时
+候，它引用的值或对象不会被drop或者析构。
+</p>
+<div class="org-src-container">
+<pre class="src src-rust"><span style="color: #268bd2; font-weight: bold;">fn</span> <span style="color: #d75fd7; font-weight: bold;">main</span>(){
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">s</span> = <span style="color: #df005f; font-weight: bold;">String</span>::from(<span style="color: #2aa198;">"Hello"</span>);
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">len</span> = calculate_length(&amp;s1);
+}
+
+<span style="color: #268bd2; font-weight: bold;">fn</span> <span style="color: #d75fd7; font-weight: bold;">calculate_length</span>(<span style="color: #8787d7;">s</span>: &amp;<span style="color: #df005f; font-weight: bold;">String</span>) -&gt; <span style="color: #df005f; font-weight: bold;">usize</span>{ <span style="color: #af875f;">/// s&#26159;&#19968;&#20010;&#23545;String &#23545;&#35937;&#30340;&#24341;&#29992;</span>
+    s.len()
+}<span style="color: #af875f;">/// &#22240;&#20026;s&#26159;&#19968;&#20010;&#24341;&#29992;&#65292;&#21363;&#20351;s&#31163;&#24320;&#20102;&#20316;&#29992;&#22495;,&#20063;&#19981;&#20250;&#24341;&#36215;&#20219;&#20309;&#20854;&#24341;&#29992;&#23545;&#35937;&#30340;&#26512;&#26500;&#65292;&#36825;&#37324;&#38500;&#20102;&#36820;&#22238;&#25351;&#23450;&#20540;</span>
+ <span style="color: #af875f;">/// &#19981;&#20250;&#26377;&#20219;&#20309;&#20107;&#24773;&#21457;&#29983;</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org004eb78" class="outline-3">
+<h3 id="org004eb78"><span class="section-number-3">1.6</span> 什么是借用</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+有了引用概念的铺陈,借用的概念就更简单了。我们称将引用作为函数参数的行为叫做借用。通常情况下类似
+于现实生活中如果一个人拥有某样物品，你可以向他借用这件物品，当你使用完毕，你也必须返给拥有者。
+</p>
+</div>
+<div id="outline-container-org9647db4" class="outline-4">
+<h4 id="org9647db4"><span class="section-number-4">1.6.1</span> 可变引用和可变借用</h4>
+<div class="outline-text-4" id="text-1-6-1">
+<div class="org-src-container">
+<pre class="src src-rust"><span style="color: #268bd2; font-weight: bold;">struct</span> <span style="color: #df005f; font-weight: bold;">Point</span> {<span style="color: #8787d7;">x</span>: <span style="color: #df005f; font-weight: bold;">i32</span>, <span style="color: #8787d7;">y</span>: <span style="color: #df005f; font-weight: bold;">i32</span>, <span style="color: #8787d7;">z</span>: <span style="color: #df005f; font-weight: bold;">i32</span>} 
+{
+    <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #268bd2; font-weight: bold;">mut</span> <span style="color: #8787d7;">point</span> = <span style="color: #df005f; font-weight: bold;">Point</span>{<span style="color: #8787d7;">x</span>: 0, <span style="color: #8787d7;">y</span>: 0, <span style="color: #8787d7;">z</span>: 0};
+    {
+        <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">borrowed_point</span> = &amp;point;          <span style="color: #af875f;">/// &#19981;&#21487;&#21464;&#24341;&#29992;</span>
+        <span style="color: #268bd2; font-weight: bold;">let</span> <span style="color: #8787d7;">mutable_borrow</span> = &amp;<span style="color: #268bd2; font-weight: bold;">mut</span> point;      <span style="color: #af875f;">/// &#21487;&#21464;&#24341;&#29992;</span>
+        ...
+    }
+}
+</pre>
+</div>
+<p>
+可变引用可以利用引用来修改引用对象的值，不可变引用则不可以，但是试着想象一下，如果一个对象存在可变
+引用，却被多个函数同时借用，那么这样的行为是不安全的。因此Rust对此作出了约定，如果某个资源被可变的
+借用了，那么如果还需要发生借用行为，那么必须等到当前借用离开作用域之后才可以发生。
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

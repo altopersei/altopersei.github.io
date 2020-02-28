@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="outline-container-org5ae7e4f" class="outline-2">
+<h2 id="org5ae7e4f">导言</h2>
+<div class="outline-text-2" id="text-org5ae7e4f">
+</div><div id="outline-container-orgbd4bea5" class="outline-3">
+<h3 id="orgbd4bea5">本书的目的在于指导读者避免陷入严重的错误，并建立一套令其感到安全放心的投资策略</h3>
+</div>
+<div id="outline-container-org079e377" class="outline-3">
+<h3 id="org079e377">投资者最大的问题甚至是最可怕的敌人很可能就是他们自己</h3>
+</div>
+<div id="outline-container-orgdf9131e" class="outline-3">
+<h3 id="orgdf9131e">只买那些价格不高于其 <span class="underline">有形资产</span> 太多的股票</h3>
+</div>
+<div id="outline-container-orgf614e08" class="outline-3">
+<h3 id="orgf614e08">深思熟虑的投资方法是稳固建立在安全边际原则基础之上的</h3>
+</div>
+</div>
+
+<div id="outline-container-org1636919" class="outline-2">
+<h2 id="org1636919">第一章： 投资与投机</h2>
+<div class="outline-text-2" id="text-org1636919">
+<ul class="org-ul">
+<li>投资操作是以深入分析为基础，确保本金安全，并获得适当的回报；不满足这些要求的操作就是投机</li>
+<li>不要把投机操作和投资操作放在一个账户中进行，也不能在思想上将二者混为一谈</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5c4e83f" class="outline-2">
+<h2 id="org5c4e83f">第二章 投资者与通货膨胀</h2>
+<div class="outline-text-2" id="text-org5c4e83f">
+<ul class="org-ul">
+<li>阐述通货膨胀与股票市盈率公司利润之间的关系(没有绝对的关系）</li>
+<li>理性购买适当比例的股票在某种程度上能够抵消通货膨胀的影响</li>
+<li>两种投资者普遍采用的通货膨胀保值工具</li>
+<li>对投资者的忠告：在介入之前，首先要确定自己是熟悉这一领域的</li>
+<li>永远不要问官僚机构：为什么？</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgabc563e" class="outline-2">
+<h2 id="orgabc563e">第三章 点评</h2>
+<div class="outline-text-2" id="text-orgabc563e">
+<ul class="org-ul">
+<li>股票的走势主要考虑三个要素</li>
+<li>对于未来股票回报的预测来说：唯一确定之事，就是你可能会得出错误的结论</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6b0ea49" class="outline-2">
+<h2 id="org6b0ea49">第四章</h2>
+</div>
+
+<div id="outline-container-orgb7f11b6" class="outline-2">
+<h2 id="orgb7f11b6">第五章 防御型投资者和普通股</h2>
+<div class="outline-text-2" id="text-orgb7f11b6">
+</div><div id="outline-container-org0c1461e" class="outline-3">
+<h3 id="org0c1461e">探讨股息这个概念</h3>
+</div>
+<div id="outline-container-org587ae34" class="outline-3">
+<h3 id="org587ae34">普通股的投资规则<code>[3/3]</code></h3>
+<div class="outline-text-3" id="text-org587ae34">
+<ul class="org-ul">
+<li>适当但不需要过分分散化，持股数应该处于一个合理的区间</li>
+<li>你挑选的每一家公司在财务上应该是稳健的，本身应该是大型的知名的</li>
+<li>每一家公司具有长期连续支付股息的历史？(没理解)</li>
+<li>投资者应将其买入股票的价格限制在一定市盈率范围</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgea00d1b" class="outline-3">
+<h3 id="orgea00d1b">投资者的个人情况</h3>
+<div class="outline-text-3" id="text-orgea00d1b">
+<p>
+举例几个不同身份的人，
+</p>
+</div>
+</div>
+<div id="outline-container-orgad8b77f" class="outline-3">
+<h3 id="orgad8b77f">点评</h3>
+<div class="outline-text-3" id="text-orgad8b77f">
+<ul class="org-ul">
+<li>你应该有多大的防御性，这并不取决于你对风险的容忍程度，而是取决于你愿意</li>
+</ul>
+<p>
+在自己的投资组合上面花多少时间和精力。
+</p>
+<ul class="org-ul">
+<li>在对一家公司的财务报表进行研究，并对其商业价值进行估量之前，决不能购买</li>
+</ul>
+<p>
+股票，无论其产品看起来有多么棒(LESEE的教训)
+</p>
+<ul class="org-ul">
+<li>“本土偏见”一种痴迷于自己所熟悉事物的习惯，内部人掌握的往往是一堆假象而非</li>
+</ul>
+<p>
+真实情况。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org843530e" class="outline-2">
+<h2 id="org843530e">第八章 投资者与市场波动</h2>
+<div class="outline-text-2" id="text-org843530e">
+<ul class="org-ul">
+<li>如果投资者以预测为基础强调择时交易，那么他最终将成为一个投机者，并要面对投机所带来的财务结果</li>
+<li>所使用方法的广受欢迎之时，几乎也同时是这些方法作用丧失之刻</li>
+<li>股票的稳健投资不及仅在于购买价格接近有形资产，还必须要求合理的市盈率，足够强有力的财务地位，今后几年内利润至少不会下降</li>
+<li>公众对股票的估价会出现严重的失误，过度的悲观和过度的乐观</li>
+<li>股市经常会出现严重的错误，而且敏锐大胆的投资着有时可以利用其明显的错误</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgec4b54b" class="outline-2">
+<h2 id="orgec4b54b">第十四章 防御型投资者的股票选择</h2>
+<div class="outline-text-2" id="text-orgec4b54b">
+<ul class="org-ul">
+<li>适当的企业规模</li>
+<li>足够强劲的财务状况</li>
+<li>利润的稳定性</li>
+<li>股息记录</li>
+<li>利润增长</li>
+<li>适度的市盈率</li>
+<li>适度的股价资产比</li>
+</ul>
+</div>
+<div id="outline-container-org634b70f" class="outline-3">
+<h3 id="org634b70f">公用事业股的解决办法</h3>
+</div>
+<div id="outline-container-orgaf0a931" class="outline-3">
+<h3 id="orgaf0a931">金融企业股票的投资</h3>
+</div>
+<div id="outline-container-orgf6b6d14" class="outline-3">
+<h3 id="orgf6b6d14">铁路股</h3>
+</div>
+<div id="outline-container-org1befa74" class="outline-3">
+<h3 id="org1befa74">防御型投资者的选择</h3>
+<div class="outline-text-3" id="text-org1befa74">
+<ul class="org-ul">
+<li>任何分析师的观点都必定很大程度上源于其个人的偏好和预期</li>
+<li>有效市场假说(EMH)</li>
+<li>所有的投资者都要为一个残酷的矛盾而费神。</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge82e6af" class="outline-2">
+<h2 id="orge82e6af">第十五章 积极型投资者的股票选择</h2>
+<div class="outline-text-2" id="text-orge82e6af">
+<ul class="org-ul">
+<li>股票的当期价格的确包含了关于公司过去和当期业绩的所有重要事实，同时也包含了对公司未来所有合理预期。？</li>
+<li></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org13a7258" class="outline-2">
+<h2 id="org13a7258">第十六章 可转换证券及认股权证</h2>
+</div>
+<div id="outline-container-orgaec5587" class="outline-2">
+<h2 id="orgaec5587">永远不要把可转换债券进行转换</h2>
+</div>
+<div id="outline-container-org50dacab" class="outline-2">
+<h2 id="org50dacab">照我说的去做，不要模仿我的下行动</h2>
+</div>
+<div id="outline-container-org414aa18" class="outline-2">
+<h2 id="org414aa18">优先股和普通股的概念，可转换优先股，格雷厄姆先生对优先股的看法</h2>
+</div>
+</div>
+</body>
+</html>

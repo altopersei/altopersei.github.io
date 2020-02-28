@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title></title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="outline-container-orgb9d2e85" class="outline-2">
+<h2 id="orgb9d2e85"><span class="section-number-2">1</span> 以GroupCache为例学习分布式缓存</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgbab1ce6" class="outline-3">
+<h3 id="orgbab1ce6"><span class="section-number-3">1.1</span> 导言</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+GroupCache是一个由golang编写的分布式缓存库,同样是由Memcached的作者Brad Fitzpatrick实现,
+GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可扩展性强的数据结构，因此GroupCache
+代码是golang初学者非常好的学习材料.并且GroupCache在实际业务中也有着比较良好的表现,当然前提是
+对分布式系统和Groupcache代码有着比较详尽的理解,本文通过结合GroupCache代码的方式和实际业务
+踩过的坑来介绍学习分布式缓存过程中了解到的相关知识.
+</p>
+</div>
+</div>
+<div id="outline-container-org5bbf6af" class="outline-3">
+<h3 id="org5bbf6af"><span class="section-number-3">1.2</span> 分布式缓存的背景和概念</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+对于高请求量的线上服务,Cache是一种常见的优化手段,对于视频搜索这一领域来说尤其如此,用户在某些
+时间点搜索的query很大部分是相同,因此在引擎召回的时候我们在cache中缓存的回包结果能够覆盖大部分
+头部query,我们实际用GroupCache实现的cache在业务环境中cache命中率也达到了50%.因此Cache的存在不
+仅仅减轻了底层服务的压力,而且能够在底层服务抖动或者降级的时候保证上层服务的稳定性.
+同类型的缓存方案还有Redis和Memcached,对于可横向扩展的缓存方案基本毫无意外的都选择一致性Hash
+算法来实现缓存Key的分布式方案,GroupCache也是如此,而且相比前两者GroupCache作为一个可嵌入用户
+代码的库不需要额外部署其它服务.一致性hash是由MIT的David Karger提出的算法,GroupCache的作者也
+完全遵循了Karger的设计来实现.一致性hash其实是分布式哈希表(DHT)的一种.
+</p>
+</div>
+</div>
+<div id="outline-container-orgb867ecd" class="outline-3">
+<h3 id="orgb867ecd"><span class="section-number-3">1.3</span> 主要实现方式</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-org960a3f9" class="outline-4">
+<h4 id="org960a3f9"><span class="section-number-4">1.3.1</span> Key和节点的分布方式</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+对于一般的hash方式,以N个节点容器来举例,我们在划分hash的时候可以采用这样一种简单的方式：
+</p>
+\begin{align*}
+x=hash\ \mathrm{Mod}\  N
+\end{align*}
+<p>
+用key的hash值来对N取模,这样我们就能够绝对均匀的分布每个key到各个对应的节点,但是这样会在
+实际情况中产生一个问题,如果一个节点故障了那么其承担的所有key都将处于不可用状态,并且这样简单
+的设计是没有办法恢复的,更可怕的是,如果节点数量需要扩容的话,那么所有key的内容都会因为映射关系的
+改变而失效.而一致性hash解决了这个问题,一致性hash是将节点的表示hash成一个int值,
+这个 <b>节点的表示</b> 在groupcache里面是形如'http://127.0.0.1:8081'这种由协议和端口号组成的字符串.
+如果将一个int64变量所能容纳的所有值视为一个hash环上的一个点,那么我们只需要找到一个hash函数将
+字符串hash成一个int64的值,那么我们就完成了节点到环上某一个点的映射.一个自然地问题是节点映射
+到了环上那么key到节点又是怎么映射的?很明显,一致性hash之所有会将节点映射到一个环上这就是为我们
+最终的目的服务的,即合理划分key到每个节点能够使得节点的变更几乎不影响cache key的有效性.我们会同样
+使用一个hash函数将key值hash到一个int64值,这样每个key也会映射到环上的一个点,然后我们只需要按照顺时钟
+方向或者逆时针方向寻找key映射落点最近的一个节点,而我们寻找到的节点即为该key对应的节点.如果我们需要
+获取该key的cache到的value值,只需要请求这个节点就行了.如果这个节点故障了,一个必要的操作是你得告诉其他没
+有故障的节点该节点故障了,这就得借助一些中心化的节点发现服务比如zoomkeeper,etcd,consul等等.实际项目中
+开一个线程监听节点发现服务,如果节点发生变更那么意味着你就得调用GroupCache的Set Peer API,相当于更新一下
+路由表.
+</p>
+</div>
+</div>
+<div id="outline-container-orgf4f4b14" class="outline-4">
+<h4 id="orgf4f4b14"><span class="section-number-4">1.3.2</span> Cache的实现方式</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+在一个节点上cache其实是分了两层的,第一层是hotCache,第二层是mainCache,每次get操作先会lookup hotCache再
+lookup mainCache.而hotCache和mainCache底层实现是一模一样的,都依赖于源码中100多行的一个LRU的实现.之所以
+在每个节点层面将cache分为两层是为了解决分布式系统中hot spotting问题,即非常popular的cache key造成的单机
+节点负载问题.这意味着hotCache中缓存的是其它节点中非常popular的key,而不是自身节点规定属于它的key,而属于
+自身节点的key都会被缓存在maincache中.通过这样的设计,能够避免相当一部分的RPC调用,同时每个节点都能为特别
+popular的key提供服务,是一个兼顾多种优点的方案.
+</p>
+</div>
+</div>
+<div id="outline-container-orge99f49a" class="outline-4">
+<h4 id="orge99f49a"><span class="section-number-4">1.3.3</span> Cache的Get操作实现过程</h4>
+</div>
+</div>
+<div id="outline-container-orgae5299d" class="outline-3">
+<h3 id="orgae5299d"><span class="section-number-3">1.4</span> 需要注意的问题</h3>
+<div class="outline-text-3" id="text-1-4">
+</div><div id="outline-container-org49358c6" class="outline-4">
+<h4 id="org49358c6"><span class="section-number-4">1.4.1</span> 节点的负载均衡问题</h4>
+<div class="outline-text-4" id="text-1-4-1">
+<p>
+节点的负载均衡问题其实就是一致性Hash算法造成的key在节点中分散不均匀的问题,在理想情况下,我们在hash节点的
+表示的时候我们希望如果有N个节点,那么算出来的N个int64的值能够等份的切分0~2~2<sup>64这个值域区间,几何上比较直观的</sup>
+表示即为这N个点能够切割圆环成相等的圆弧,其实这是很难做到的对于一般的hash函数而言,因此改进版的一致性hash函数
+引入了虚拟节点的概念.如果存在N个真实的节点,我可构造出N*M个虚拟节点,这意味着一个真实节点对应M个replica,
+实际在hash节点的表示的时候我们只需要对真实节点的表示取M次偏移就行了,因为hash的key虽然只取了一个很小的偏移,
+但hash值却截然不同,因此一个真实节点会对应M个虚拟的散布,最后hash完了我们会得到N*M个虚拟节点,实际key去寻址节点的
+时候会增强了很大的随机性,因此节点的负载均衡问题会得到相当大的改善,代价是会牺牲内存空间,这些被牺牲的内存空间
+将会被用来存放虚拟节点的hash值.
+</p>
+
+<p>
+此外除了虚拟节点,还有一点就是hash函数的选择问题,通常面对不同类型的key,不同hash函数会有不一样的散布,因此在实际
+应用过程中也得注意GroupCache默认的IEEECheckSum函数的局限性,如果没有单项不可逆的要求,murmur3库是一个不错的选
+择.
+</p>
+</div>
+</div>
+<div id="outline-container-org404f407" class="outline-4">
+<h4 id="org404f407"><span class="section-number-4">1.4.2</span> cache get的超时问题</h4>
+<div class="outline-text-4" id="text-1-4-2">
+<p>
+cache get的超时问题是一个非常难调试的问题，如果你不在底层库做一些日志记录,仅凭借上层去监控你几乎很难得出确凿的
+结论，因此我的经验是不要害怕改动引发可用性的问题，大胆的在底层做一些printf的记录往往才能看到问题的溯源.GroupCache
+支持Peer间通信使用RPC调用,不够默认实现的HTTP POOL非常简陋,使用的一些默认设置是不太合理的,需要根据实际情况进行一些
+调整.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
