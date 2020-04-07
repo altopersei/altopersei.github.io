@@ -228,12 +228,12 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Weei's Blog</h1>
-<div id="outline-container-org2592df6" class="outline-2">
-<h2 id="org2592df6">Site Index</h2>
-<div class="outline-text-2" id="text-org2592df6">
-</div><div id="outline-container-orgdef48dd" class="outline-3">
-<h3 id="orgdef48dd">Article</h3>
-<div class="outline-text-3" id="text-orgdef48dd">
+<div id="outline-container-org1a39d45" class="outline-2">
+<h2 id="org1a39d45">Site Index</h2>
+<div class="outline-text-2" id="text-org1a39d45">
+</div><div id="outline-container-org5cffedf" class="outline-3">
+<h3 id="org5cffedf">Article</h3>
+<div class="outline-text-3" id="text-org5cffedf">
 <ul class="org-ul">
 <li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
 <li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
@@ -241,12 +241,15 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org274601e" class="outline-3">
-<h3 id="org274601e">Reading</h3>
-<div class="outline-text-3" id="text-org274601e">
+
+
+<div id="outline-container-orge74d9e4" class="outline-3">
+<h3 id="orge74d9e4">Reading</h3>
+<div class="outline-text-3" id="text-orge74d9e4">
 <ul class="org-ul">
 <li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
 <li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
+<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
 </ul>
 </div>
 </div>

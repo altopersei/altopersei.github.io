@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title></title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -177,7 +177,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -226,32 +226,85 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-org1a39d45" class="outline-2">
-<h2 id="org1a39d45">Site Index</h2>
-<div class="outline-text-2" id="text-org1a39d45">
-</div><div id="outline-container-org5cffedf" class="outline-3">
-<h3 id="org5cffedf">Article</h3>
-<div class="outline-text-3" id="text-org5cffedf">
-<ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
-</ul>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+</div><div id="content">
+
+<div id="outline-container-orgffd0c61" class="outline-2">
+<h2 id="orgffd0c61"><span class="section-number-2">1</span> 被讨厌的勇气</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-orgc4361e5" class="outline-3">
+<h3 id="orgc4361e5"><span class="section-number-3">1.1</span> 心理创伤并不存在</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+阿德勒心理学明确否定心理创伤.任何经历本身并不是成功或者失败的原因.
+我们并非因为自身经历中的刺激(所谓的心理创伤)而痛苦,事实上我们会从
+经历中发现符合自己目的的因素.决定我们自身的不是过去的经历,而是我们
+自己赋予经历的意义.
+</p>
 </div>
 </div>
 
-
-
-<div id="outline-container-orge74d9e4" class="outline-3">
-<h3 id="orge74d9e4">Reading</h3>
-<div class="outline-text-3" id="text-orge74d9e4">
+<div id="outline-container-orge2374fb" class="outline-3">
+<h3 id="orge2374fb"><span class="section-number-3">1.2</span> 我们的不幸是谁的错</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-org9409510" class="outline-4">
+<h4 id="org9409510"><span class="section-number-4">1.2.1</span> 愤怒都是捏造出来的</h4>
+</div>
+<div id="outline-container-orgb447d4b" class="outline-4">
+<h4 id="orgb447d4b"><span class="section-number-4">1.2.2</span> 你想变成“别人”吗</h4>
+</div>
+<div id="outline-container-org3c96566" class="outline-4">
+<h4 id="org3c96566"><span class="section-number-4">1.2.3</span> 你的不幸,皆是自己“选择”的</h4>
+<div class="outline-text-4" id="text-1-2-3">
 <ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
+<li>阿德勒心理学认为生活方式是自己选择的结果</li>
+<li>要想改变生活方式需要很大的勇气.面对变化产生的“不安”与不变带来的“不满”,你一定是选择了后者</li>
+<li>阿德勒心理学就是勇气心理学.你之所以不幸并不是因为过去或者环境,更不是因为能力不足,你只不过是缺乏“勇气”,可以说是缺乏“获得幸福的勇气”</li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org2b1a30d" class="outline-4">
+<h4 id="org2b1a30d"><span class="section-number-4">1.2.4</span> 你的人生取决于“当下”</h4>
+<div class="outline-text-4" id="text-1-2-4">
+<ul class="org-ul">
+<li>阿德勒的目的论是说:“无论之前的人生发生过什么,都对今后的人生如果度过没有影响.决定自己人生的是活在”此时此刻“的自己</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc7552fa" class="outline-3">
+<h3 id="orgc7552fa"><span class="section-number-3">1.3</span> 一切烦恼都来自人际关系</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-org17cafad" class="outline-4">
+<h4 id="org17cafad"><span class="section-number-4">1.3.1</span> 为什么讨厌自己?</h4>
+</div>
+<div id="outline-container-org015eaef" class="outline-4">
+<h4 id="org015eaef"><span class="section-number-4">1.3.2</span> 一切烦恼都是人际关系的烦恼</h4>
+</div>
+<div id="outline-container-org061a974" class="outline-4">
+<h4 id="org061a974"><span class="section-number-4">1.3.3</span> 自卑感来自主观的臆造</h4>
+<div class="outline-text-4" id="text-1-3-3">
+<ul class="org-ul">
+<li>苦扰我们自卑感的不是“客观性的事实”而是“主观性的解释”</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org6bbfed3" class="outline-4">
+<h4 id="org6bbfed3"><span class="section-number-4">1.3.4</span> 自卑情结只是一种借口</h4>
+<div class="outline-text-4" id="text-1-3-4">
+<ul class="org-ul">
+<li>自卑情结是指把自卑感当作某种借口使用的状态</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgc1535b7" class="outline-4">
+<h4 id="orgc1535b7"><span class="section-number-4">1.3.5</span> 越自负的人越自卑</h4>
+</div>
+<div id="outline-container-org250085e" class="outline-4">
+<h4 id="org250085e"><span class="section-number-4">1.3.6</span> 人生并不是与他人的比赛</h4>
 </div>
 </div>
 </div>
