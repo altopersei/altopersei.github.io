@@ -177,6 +177,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
@@ -251,7 +252,7 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content">
 <div id="outline-container-orgb9d2e85" class="outline-2">
 <h2 id="orgb9d2e85"><span class="section-number-2">1</span> 以GroupCache为例学习分布式缓存</h2>

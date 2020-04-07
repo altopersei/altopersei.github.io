@@ -177,6 +177,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
@@ -229,7 +230,7 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content">
 <div id="outline-container-orgaa9506e" class="outline-2">
 <h2 id="orgaa9506e"><span class="section-number-2">1</span> 开放社会及其敌人</h2>
@@ -246,7 +247,6 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-
 <div id="outline-container-org053a113" class="outline-3">
 <h3 id="org053a113"><span class="section-number-3">1.2</span> 引言</h3>
 <div class="outline-text-3" id="text-1-2">
@@ -257,7 +257,6 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-
 <div id="outline-container-orgb004c0e" class="outline-3">
 <h3 id="orgb004c0e"><span class="section-number-3">1.3</span> 第一章 历史主义和命运的神话</h3>
 <div class="outline-text-3" id="text-1-3">
@@ -266,7 +265,6 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-
 
 <div id="outline-container-org6541681" class="outline-3">
 <h3 id="org6541681"><span class="section-number-3">1.4</span> 第二章 赫拉克利特</h3>
