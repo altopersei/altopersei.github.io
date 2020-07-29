@@ -232,9 +232,9 @@ for the JavaScript code in this tag.
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content">
-<div id="outline-container-org64982eb" class="outline-2">
-<h2 id="org64982eb"><span class="section-number-2">1</span> 封面及序言</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-org5485e86" class="outline-2">
+<h2 id="org5485e86">封面及序言</h2>
+<div class="outline-text-2" id="text-org5485e86">
 <p>
 现在依然衰朽者,将来可能重放异彩.现在备受青睐者,将来却可能黯然失色
 </p>
@@ -257,12 +257,64 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgb5034bd" class="outline-2">
-<h2 id="orgb5034bd"><span class="section-number-2">2</span> 证券分析的范围与局限以及内在价值的概念</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org550f166" class="outline-2">
+<h2 id="org550f166">证券分析的范围与局限以及内在价值的概念</h2>
+<div class="outline-text-2" id="text-org550f166">
 <ol class="org-ol">
-<li>一般来说,内在价值是由资产、收益、股息等事实和可以确定的前景决定.</li>
+<li>一般来说,内在价值是由资产、收益、股息等事实和可以确定的前景决定.是“事实证明合理的价值”</li>
 <li>内在价值与“账面价值”基本一样,这种观点相当明确,但毫无实际价值,因为不论是平均收入还是平均市场价格,都不由账面价值决定.</li>
+<li>证券分析不是为了确定某只证券的内在价值,而是证明其是足够的.</li>
+<li>由分析带来的数学优势,在投资领域能够确保良好的效果,但在投机这种运气起压倒性作用的领域,则有可能证明是完全无效的</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org4e0df6d" class="outline-2">
+<h2 id="org4e0df6d">分析问题的基本要素以及定性定量因素</h2>
+<div class="outline-text-2" id="text-org4e0df6d">
+<ol class="org-ol">
+<li>四个基本要素: 证券、价格、时间、人</li>
+<li>适用于分析师的原则:几乎每一个证券都可能在某个价格水平上具备投资价值,而在另一价格水平上则不值得投资.</li>
+<li>定量因素即指公司的各类统计数据,定性因素:业务性质和未来前景</li>
+<li>定性因素难以合理准确的评价:</li>
+</ol>
+<p>
+股价经常过度涨跌的根本原因是:当价值主要由前景决定时,由此产生的判断就不受任何数学分析的控制,并且几乎不可避免的走向极端.分析应主要关注有事实支持的价值,而非那些建立在预期基础上的价值.(特斯拉的股票与有事实支持的价值)
+</p>
+
+<ol class="org-ol">
+<li>内在稳定性,一个主要的定性因素:稳定意味着能够抵御变化,它首先源自业务性质而非统计记录</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgf010295" class="outline-2">
+<h2 id="orgf010295">信息来源</h2>
+</div>
+<div id="outline-container-org773210c" class="outline-2">
+<h2 id="org773210c">区分投资与投机</h2>
+<div class="outline-text-2" id="text-org773210c">
+<ol class="org-ol">
+<li>投资运作是根据深入的分析,承诺本金安全以及回报率令人满意的操作.不符合这些条件就是投机.</li>
+<li>绝大部分实力雄厚公司的普通股,在大多数时间里都必须被看作投机买卖,因为他们的价格太高了.</li>
+<li>投资运作是可以在定性和定量两方面均被证明合理的操作</li>
+<li>在一般业务领域内,前景良好的企业都属于“理性投机”,且代表“商业投资”</li>
+<li>如果损失的风险非常小(这种情况极少发生),个别的商业投机有资格作为我们特指的分析师投资</li>
+<li>有时换个角度来看,将购买价格划分为投资部分和投机部分,可能也是有用的.</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgafc5d6c" class="outline-2">
+<h2 id="orgafc5d6c">证券的分类</h2>
+<div class="outline-text-2" id="text-orgafc5d6c">
+<ol class="org-ol">
+<li>分类的基础并不是证券的名称,而是特定条件和地位对持有者的意义</li>
+<li>分类
+<ul class="org-ul">
+<li>固定价值类证券</li>
+<li>变动价值类的优先证券</li>
+<li>普通股类</li>
+</ul></li>
 </ol>
 </div>
 </div>
