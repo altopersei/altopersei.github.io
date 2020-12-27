@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -66,6 +66,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -158,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,14 +191,13 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -230,15 +243,16 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
 </div><div id="content">
 
-<div id="outline-container-org99af053" class="outline-2">
-<h2 id="org99af053">被讨厌的勇气</h2>
-<div class="outline-text-2" id="text-org99af053">
-</div><div id="outline-container-org13feb59" class="outline-3">
-<h3 id="org13feb59">心理创伤并不存在</h3>
-<div class="outline-text-3" id="text-org13feb59">
+<div id="outline-container-org8456e9a" class="outline-2">
+<h2 id="org8456e9a">被讨厌的勇气</h2>
+<div class="outline-text-2" id="text-org8456e9a">
+</div>
+<div id="outline-container-org60fd239" class="outline-3">
+<h3 id="org60fd239">心理创伤并不存在</h3>
+<div class="outline-text-3" id="text-org60fd239">
 <p>
 阿德勒心理学明确否定心理创伤.任何经历本身并不是成功或者失败的原因.
 我们并非因为自身经历中的刺激(所谓的心理创伤)而痛苦,事实上我们会从
@@ -248,18 +262,19 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org29b2925" class="outline-3">
-<h3 id="org29b2925">我们的不幸是谁的错</h3>
-<div class="outline-text-3" id="text-org29b2925">
-</div><div id="outline-container-orgb94f4dc" class="outline-4">
-<h4 id="orgb94f4dc">愤怒都是捏造出来的</h4>
+<div id="outline-container-orgfd6bf39" class="outline-3">
+<h3 id="orgfd6bf39">我们的不幸是谁的错</h3>
+<div class="outline-text-3" id="text-orgfd6bf39">
 </div>
-<div id="outline-container-org958b8be" class="outline-4">
-<h4 id="org958b8be">你想变成“别人”吗</h4>
+<div id="outline-container-orgd7300d1" class="outline-4">
+<h4 id="orgd7300d1">愤怒都是捏造出来的</h4>
 </div>
-<div id="outline-container-org8754a9c" class="outline-4">
-<h4 id="org8754a9c">你的不幸,皆是自己“选择”的</h4>
-<div class="outline-text-4" id="text-org8754a9c">
+<div id="outline-container-org1fbe911" class="outline-4">
+<h4 id="org1fbe911">你想变成“别人”吗</h4>
+</div>
+<div id="outline-container-org67a4598" class="outline-4">
+<h4 id="org67a4598">你的不幸,皆是自己“选择”的</h4>
+<div class="outline-text-4" id="text-org67a4598">
 <ul class="org-ul">
 <li>阿德勒心理学认为生活方式是自己选择的结果</li>
 <li>要想改变生活方式需要很大的勇气.面对变化产生的“不安”与不变带来的“不满”,你一定是选择了后者</li>
@@ -267,45 +282,46 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org3b21583" class="outline-4">
-<h4 id="org3b21583">你的人生取决于“当下”</h4>
-<div class="outline-text-4" id="text-org3b21583">
+<div id="outline-container-org6b453e9" class="outline-4">
+<h4 id="org6b453e9">你的人生取决于“当下”</h4>
+<div class="outline-text-4" id="text-org6b453e9">
 <ul class="org-ul">
 <li>阿德勒的目的论是说:“无论之前的人生发生过什么,都对今后的人生如果度过没有影响.决定自己人生的是活在”此时此刻“的自己</li>
 </ul>
 </div>
 </div>
 </div>
-<div id="outline-container-org3628230" class="outline-3">
-<h3 id="org3628230">一切烦恼都来自人际关系</h3>
-<div class="outline-text-3" id="text-org3628230">
-</div><div id="outline-container-org337f613" class="outline-4">
-<h4 id="org337f613">为什么讨厌自己?</h4>
+<div id="outline-container-orgd4f36a8" class="outline-3">
+<h3 id="orgd4f36a8">一切烦恼都来自人际关系</h3>
+<div class="outline-text-3" id="text-orgd4f36a8">
 </div>
-<div id="outline-container-org416f58e" class="outline-4">
-<h4 id="org416f58e">一切烦恼都是人际关系的烦恼</h4>
+<div id="outline-container-orgd548a54" class="outline-4">
+<h4 id="orgd548a54">为什么讨厌自己?</h4>
 </div>
-<div id="outline-container-org098d396" class="outline-4">
-<h4 id="org098d396">自卑感来自主观的臆造</h4>
-<div class="outline-text-4" id="text-org098d396">
+<div id="outline-container-org40f26b2" class="outline-4">
+<h4 id="org40f26b2">一切烦恼都是人际关系的烦恼</h4>
+</div>
+<div id="outline-container-orgfe70842" class="outline-4">
+<h4 id="orgfe70842">自卑感来自主观的臆造</h4>
+<div class="outline-text-4" id="text-orgfe70842">
 <ul class="org-ul">
 <li>苦扰我们自卑感的不是“客观性的事实”而是“主观性的解释”</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbabe157" class="outline-4">
-<h4 id="orgbabe157">自卑情结只是一种借口</h4>
-<div class="outline-text-4" id="text-orgbabe157">
+<div id="outline-container-org73f1ce5" class="outline-4">
+<h4 id="org73f1ce5">自卑情结只是一种借口</h4>
+<div class="outline-text-4" id="text-org73f1ce5">
 <ul class="org-ul">
 <li>自卑情结是指把自卑感当作某种借口使用的状态</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb6f57af" class="outline-4">
-<h4 id="orgb6f57af">越自负的人越自卑</h4>
+<div id="outline-container-orgad07299" class="outline-4">
+<h4 id="orgad07299">越自负的人越自卑</h4>
 </div>
-<div id="outline-container-orgf27279f" class="outline-4">
-<h4 id="orgf27279f">人生并不是与他人的比赛</h4>
+<div id="outline-container-org6cecbb4" class="outline-4">
+<h4 id="org6cecbb4">人生并不是与他人的比赛</h4>
 </div>
 </div>
 </div>

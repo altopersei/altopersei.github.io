@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -66,6 +66,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -158,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,14 +191,13 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -230,13 +243,14 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
 </div><div id="content">
-<div id="outline-container-orgaa9506e" class="outline-2">
-<h2 id="orgaa9506e"><span class="section-number-2">1</span> 开放社会及其敌人</h2>
+<div id="outline-container-org9b44db3" class="outline-2">
+<h2 id="org9b44db3"><span class="section-number-2">1</span> 开放社会及其敌人</h2>
 <div class="outline-text-2" id="text-1">
-</div><div id="outline-container-orgd61cb10" class="outline-3">
-<h3 id="orgd61cb10"><span class="section-number-3">1.1</span> 导言:卡尔波普尔与开放社会</h3>
+</div>
+<div id="outline-container-orgf47278f" class="outline-3">
+<h3 id="orgf47278f"><span class="section-number-3">1.1</span> 导言:卡尔波普尔与开放社会</h3>
 <div class="outline-text-3" id="text-1-1">
 <ol class="org-ol">
 <li>他看见"阶级斗争"所表现的藐视人的一面后就抛弃它。</li>
@@ -247,8 +261,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org053a113" class="outline-3">
-<h3 id="org053a113"><span class="section-number-3">1.2</span> 引言</h3>
+<div id="outline-container-org89feb43" class="outline-3">
+<h3 id="org89feb43"><span class="section-number-3">1.2</span> 引言</h3>
 <div class="outline-text-3" id="text-1-2">
 <ol class="org-ol">
 <li>一旦我们不再像预言家那样装腔作势的话，我们就能够成为自己命运的创造者。</li>
@@ -257,8 +271,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgb004c0e" class="outline-3">
-<h3 id="orgb004c0e"><span class="section-number-3">1.3</span> 第一章 历史主义和命运的神话</h3>
+<div id="outline-container-org46b2aaf" class="outline-3">
+<h3 id="org46b2aaf"><span class="section-number-3">1.3</span> 第一章 历史主义和命运的神话</h3>
 <div class="outline-text-3" id="text-1-3">
 <ol class="org-ol">
 <li>历史主义对社会科学的态度导致了恶劣后果。</li>
@@ -266,8 +280,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org6541681" class="outline-3">
-<h3 id="org6541681"><span class="section-number-3">1.4</span> 第二章 赫拉克利特</h3>
+<div id="outline-container-orgb6fd005" class="outline-3">
+<h3 id="orgb6fd005"><span class="section-number-3">1.4</span> 第二章 赫拉克利特</h3>
 <div class="outline-text-3" id="text-1-4">
 <ol class="org-ol">
 <li>赫拉克利特是位发现了 <span class="underline">变化</span> 观念的哲学家。万物皆流，无物常驻是他的哲学座右铭。</li>
@@ -278,8 +292,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org4b80d04" class="outline-3">
-<h3 id="org4b80d04"><span class="section-number-3">1.5</span> 起源和命运的神话</h3>
+<div id="outline-container-org1cce54b" class="outline-3">
+<h3 id="org1cce54b"><span class="section-number-3">1.5</span> 起源和命运的神话</h3>
 <div class="outline-text-3" id="text-1-5">
 <ol class="org-ol">
 <li>柏拉图的青年时期历经政治动荡（雅典与斯巴达的伯罗奔尼撒战争，僭主制斗争）</li>
@@ -293,15 +307,15 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga1d0786" class="outline-3">
-<h3 id="orga1d0786"><span class="section-number-3">1.6</span> 变化和静止-柏拉图的描述社会学</h3>
+<div id="outline-container-org3271317" class="outline-3">
+<h3 id="org3271317"><span class="section-number-3">1.6</span> 变化和静止-柏拉图的描述社会学</h3>
 <div class="outline-text-3" id="text-1-6">
 <ol class="org-ol">
 <li>柏拉图作为社会学家的伟大之处并不在于他关于社会衰败规律的一般性的抽象思辨，确切而言，其伟大之处在于他的观察详尽丰富，并在与他的社会学洞察力令人吃惊的敏锐性。</li>
 </ol>
 </div>
-<div id="outline-container-orgcaa77c2" class="outline-4">
-<h4 id="orgcaa77c2"><span class="section-number-4">1.6.1</span> 例子<code>[3/3]</code>：</h4>
+<div id="outline-container-org574fa6d" class="outline-4">
+<h4 id="org574fa6d"><span class="section-number-4">1.6.1</span> 例子<code>[3/3]</code>：</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <ul class="org-ul">
 <li>社会原始阶段：关于部落的父权制社会的理论</li>
@@ -321,8 +335,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd9e1836" class="outline-3">
-<h3 id="orgd9e1836"><span class="section-number-3">1.7</span> 自然与约定</h3>
+<div id="outline-container-orgf590496" class="outline-3">
+<h3 id="orgf590496"><span class="section-number-3">1.7</span> 自然与约定</h3>
 <div class="outline-text-3" id="text-1-7">
 <ol class="org-ol">
 <li>普罗泰戈拉(人是万物的尺度)</li>
@@ -338,8 +352,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgab1bfc5" class="outline-3">
-<h3 id="orgab1bfc5"><span class="section-number-3">1.8</span> 柏拉图的政治纲领</h3>
+<div id="outline-container-org6e59cce" class="outline-3">
+<h3 id="org6e59cce"><span class="section-number-3">1.8</span> 柏拉图的政治纲领</h3>
 <div class="outline-text-3" id="text-1-8">
 <ol class="org-ol">
 <li>柏拉图认为城市建立在人类的本性，需要，以及局限性之上。</li>
@@ -358,8 +372,8 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org235c50d" class="outline-3">
-<h3 id="org235c50d"><span class="section-number-3">1.9</span> 领导的原则</h3>
+<div id="outline-container-org4c6ee98" class="outline-3">
+<h3 id="org4c6ee98"><span class="section-number-3">1.9</span> 领导的原则</h3>
 <div class="outline-text-3" id="text-1-9">
 <ol class="org-ol">
 <li>柏拉图:天生的统治者就该统治，天生的奴隶就该被奴役。</li>
@@ -372,19 +386,19 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgbf0aa8f" class="outline-3">
-<h3 id="orgbf0aa8f"><span class="section-number-3">1.10</span> 哲学王</h3>
+<div id="outline-container-org8d04e60" class="outline-3">
+<h3 id="org8d04e60"><span class="section-number-3">1.10</span> 哲学王</h3>
 <div class="outline-text-3" id="text-1-10">
 <ol class="org-ol">
 <li>柏拉图的哲学家并不是热心的真理的追求者，相反却是以真理的占有者自居。柏拉图所主张的就是学问的统治。</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org3e78eb8" class="outline-3">
-<h3 id="org3e78eb8"><span class="section-number-3">1.11</span> 唯美主义，乌托邦主义，完善主义</h3>
+<div id="outline-container-orgfcf13d7" class="outline-3">
+<h3 id="orgfcf13d7"><span class="section-number-3">1.11</span> 唯美主义，乌托邦主义，完善主义</h3>
 </div>
-<div id="outline-container-orga5316d1" class="outline-3">
-<h3 id="orga5316d1"><span class="section-number-3">1.12</span> 柏拉图攻击的背景</h3>
+<div id="outline-container-org04d4fc8" class="outline-3">
+<h3 id="org04d4fc8"><span class="section-number-3">1.12</span> 柏拉图攻击的背景</h3>
 <div class="outline-text-3" id="text-1-12">
 <ol class="org-ol">
 <li>神秘的或部落的或集体主义的社会也可以称为封闭社会，而每个人都面临个人决定的社会则称为开放社会。</li>

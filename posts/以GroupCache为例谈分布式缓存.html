@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -66,6 +66,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -158,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,14 +191,13 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -252,14 +265,15 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
 </div><div id="content">
-<div id="outline-container-orgc006214" class="outline-2">
-<h2 id="orgc006214">以GroupCache为例学习分布式缓存</h2>
-<div class="outline-text-2" id="text-orgc006214">
-</div><div id="outline-container-org7e912d4" class="outline-3">
-<h3 id="org7e912d4">导言</h3>
-<div class="outline-text-3" id="text-org7e912d4">
+<div id="outline-container-orgd2d7acc" class="outline-2">
+<h2 id="orgd2d7acc"><span class="section-number-2">1</span> 以GroupCache为例学习分布式缓存</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org8079d7a" class="outline-3">
+<h3 id="org8079d7a"><span class="section-number-3">1.1</span> 导言</h3>
+<div class="outline-text-3" id="text-1-1">
 <p>
 GroupCache是一个由golang编写的分布式缓存库,同样是由Memcached的作者Brad Fitzpatrick实现,
 GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可扩展性强的数据结构，因此GroupCache
@@ -269,9 +283,9 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org7b5b954" class="outline-3">
-<h3 id="org7b5b954">分布式缓存的背景和概念</h3>
-<div class="outline-text-3" id="text-org7b5b954">
+<div id="outline-container-org84eb61a" class="outline-3">
+<h3 id="org84eb61a"><span class="section-number-3">1.2</span> 分布式缓存的背景和概念</h3>
+<div class="outline-text-3" id="text-1-2">
 <p>
 对于高请求量的线上服务,Cache是一种常见的优化手段,对于视频搜索这一领域来说尤其如此,用户在某些
 时间点搜索的query很大部分是相同,因此在引擎召回的时候我们在cache中缓存的回包结果能够覆盖大部分
@@ -284,12 +298,13 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org4300b81" class="outline-3">
-<h3 id="org4300b81">主要实现方式</h3>
-<div class="outline-text-3" id="text-org4300b81">
-</div><div id="outline-container-org3320427" class="outline-4">
-<h4 id="org3320427">Key和节点的分布方式</h4>
-<div class="outline-text-4" id="text-org3320427">
+<div id="outline-container-org8f1a921" class="outline-3">
+<h3 id="org8f1a921"><span class="section-number-3">1.3</span> 主要实现方式</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org4643612" class="outline-4">
+<h4 id="org4643612"><span class="section-number-4">1.3.1</span> Key和节点的分布方式</h4>
+<div class="outline-text-4" id="text-1-3-1">
 <p>
 对于一般的hash方式,以N个节点容器来举例,我们在划分hash的时候可以采用这样一种简单的方式：
 </p>
@@ -315,9 +330,9 @@ x=hash\ \mathrm{Mod}\  N
 </p>
 </div>
 </div>
-<div id="outline-container-orgc43da17" class="outline-4">
-<h4 id="orgc43da17">Cache的实现方式</h4>
-<div class="outline-text-4" id="text-orgc43da17">
+<div id="outline-container-org764b44a" class="outline-4">
+<h4 id="org764b44a"><span class="section-number-4">1.3.2</span> Cache的实现方式</h4>
+<div class="outline-text-4" id="text-1-3-2">
 <p>
 在一个节点上cache其实是分了两层的,第一层是hotCache,第二层是mainCache,每次get操作先会lookup hotCache再
 lookup mainCache.而hotCache和mainCache底层实现是一模一样的,都依赖于源码中100多行的一个LRU的实现.之所以
@@ -328,16 +343,17 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org9d60ebf" class="outline-4">
-<h4 id="org9d60ebf">Cache的Get操作实现过程</h4>
+<div id="outline-container-org4e489b7" class="outline-4">
+<h4 id="org4e489b7"><span class="section-number-4">1.3.3</span> Cache的Get操作实现过程</h4>
 </div>
 </div>
-<div id="outline-container-org1780f17" class="outline-3">
-<h3 id="org1780f17">需要注意的问题</h3>
-<div class="outline-text-3" id="text-org1780f17">
-</div><div id="outline-container-org9cb2a28" class="outline-4">
-<h4 id="org9cb2a28">节点的负载均衡问题</h4>
-<div class="outline-text-4" id="text-org9cb2a28">
+<div id="outline-container-orgf5b2f19" class="outline-3">
+<h3 id="orgf5b2f19"><span class="section-number-3">1.4</span> 需要注意的问题</h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-orgc6532b3" class="outline-4">
+<h4 id="orgc6532b3"><span class="section-number-4">1.4.1</span> 节点的负载均衡问题</h4>
+<div class="outline-text-4" id="text-1-4-1">
 <p>
 节点的负载均衡问题其实就是一致性Hash算法造成的key在节点中分散不均匀的问题,在理想情况下,我们在hash节点的
 表示的时候我们希望如果有N个节点,那么算出来的N个int64的值能够等份的切分0~2~2<sup>64这个值域区间,几何上比较直观的</sup>
@@ -356,9 +372,9 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org57775af" class="outline-4">
-<h4 id="org57775af">cache get的超时问题</h4>
-<div class="outline-text-4" id="text-org57775af">
+<div id="outline-container-org318648b" class="outline-4">
+<h4 id="org318648b"><span class="section-number-4">1.4.2</span> cache get的超时问题</h4>
+<div class="outline-text-4" id="text-1-4-2">
 <p>
 cache get的超时问题是一个非常难调试的问题，如果你不在底层库做一些日志记录,仅凭借上层去监控你几乎很难得出确凿的
 结论，因此我的经验是不要害怕改动引发可用性的问题，大胆的在底层做一些printf的记录往往才能看到问题的溯源.GroupCache

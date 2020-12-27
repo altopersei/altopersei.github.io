@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title></title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -66,6 +66,7 @@
   pre.src-fortran:before { content: 'Fortran'; }
   pre.src-gnuplot:before { content: 'gnuplot'; }
   pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
   pre.src-java:before { content: 'Java'; }
   pre.src-js:before { content: 'Javascript'; }
   pre.src-latex:before { content: 'LaTeX'; }
@@ -158,6 +159,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -177,14 +191,13 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900" />
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -230,19 +243,74 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
 </div><div id="content">
-<div id="outline-container-org404edf4" class="outline-2">
-<h2 id="org404edf4">有限与无限的游戏</h2>
-<div class="outline-text-2" id="text-org404edf4">
-</div><div id="outline-container-org7bca06a" class="outline-3">
-<h3 id="org7bca06a">世上至少有两种游戏</h3>
-<div class="outline-text-3" id="text-org7bca06a">
+<div id="outline-container-org099d5b6" class="outline-2">
+<h2 id="org099d5b6">有限与无限的游戏</h2>
+<div class="outline-text-2" id="text-org099d5b6">
+</div>
+<div id="outline-container-org0ac5414" class="outline-3">
+<h3 id="org0ac5414">世上至少有两种游戏</h3>
+<div class="outline-text-3" id="text-org0ac5414">
+<ul class="org-ul">
+<li>有限游戏以取胜为目的,而无限游戏以延续游戏为目的.</li>
+<li>有限游戏参与者在界限内游戏,无限游戏参与者与界限游戏.</li>
+<li>有限游戏离不开自我遮蔽,旨在达成一个结果,并且是在为观众表演</li>
+<li>无限游戏中的惊奇,是未来对过去的胜利</li>
+<li>仁者如射，射者正己而后发。发而不中，不怨胜己者，反求诸己而已矣。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org494b483" class="outline-3">
+<h3 id="org494b483">没人能独自玩游戏</h3>
+<div class="outline-text-3" id="text-org494b483">
+<ul class="org-ul">
+<li>政治现实并不在我们人性最根本的流动性之前,而是这一流动性的跟随者</li>
+<li>无限游戏参与者是政治人,但并不选择特定政治,对他们而言,政治是一种舞台剧,他们在自己的政治活动中,严格区分社会与文化,他们将社会理解为收政治约束的关系总和,而文化则是在非方向性的选择下,人与人的相互作用</li>
+<li>如果财富和力量应被表演,那么巨大的财富和力量应被天才式的表演</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org72a5044" class="outline-3">
+<h3 id="org72a5044">我是自己的天才</h3>
+<div class="outline-text-3" id="text-org72a5044">
+<ul class="org-ul">
+<li>获胜者是当下的可见者,那么失败者便是过去的不可见者</li>
+<li>我们只有被遮蔽才能被推动,而穿过遮蔽物,我们得以被触动</li>
+<li>有限的性,是一种剧本形式,任何人之间的距离经常被缩减到几乎为零,但是双方都没有被触动到</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org04c18f0" class="outline-3">
+<h3 id="org04c18f0">发生在世界中的有限游戏</h3>
+<div class="outline-text-3" id="text-org04c18f0">
+<ul class="org-ul">
+<li>随着一年一年过去,每个决定是否在策略上正确的机会成本越来越高</li>
+<li>对无限游戏参与者来说,工作并不是抵达一个被期望的现在,然后攫取它以对抗一个不可预知的未来,</li>
+</ul>
 <p>
-有限游戏以取胜为目的,而无限游戏以延续游戏为目的.
-有限游戏参与者在界限内游戏,无限游戏参与者与界限游戏.
+而是走向一个本身具有未来的未来
 </p>
 </div>
+</div>
+
+<div id="outline-container-orgc1ca85a" class="outline-3">
+<h3 id="orgc1ca85a">自然是不能言说者的王国</h3>
+<div class="outline-text-3" id="text-orgc1ca85a">
+<ul class="org-ul">
+<li>如果说自然是不能言说者的王国,那么历史则是可以言说的王国</li>
+<li>历史是天才的传奇</li>
+<li>无限的言说者并没有“宏图大志”将整个世界都变为观众,而是通过与他人交谈,将自己呈现为观众的一员</li>
+<li>俄狄浦斯所看到的,并不是诸神对他做了什么,而是他自己做了些什么</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org0b6fb75" class="outline-3">
+<h3 id="org0b6fb75">我们出于社会原因而控制自然</h3>
 </div>
 </div>
 </div>

@@ -243,66 +243,29 @@ for the JavaScript code in this tag.
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content">
-<div id="outline-container-org63128c4" class="outline-2">
-<h2 id="org63128c4">穷查理宝典</h2>
-<div class="outline-text-2" id="text-org63128c4">
+
+<div id="outline-container-org49060f6" class="outline-2">
+<h2 id="org49060f6">方法论</h2>
+<div class="outline-text-2" id="text-org49060f6">
 </div>
-<div id="outline-container-orgbbc9a55" class="outline-3">
-<h3 id="orgbbc9a55">中文版序言</h3>
-<div class="outline-text-3" id="text-orgbbc9a55">
+<div id="outline-container-orgf311d64" class="outline-3">
+<h3 id="orgf311d64">第一部分</h3>
+<div class="outline-text-3" id="text-orgf311d64">
 <ol class="org-ol">
-<li>查理思考问题总是从逆向开始，如果明白人生如何得到幸福，查理首先是研究人生如何才能变得痛苦.</li>
+<li>行动十分缓慢的人只要始终循着正道前进，就可以比离开正道飞奔的人走在前面很多</li>
+<li>笛卡尔认为：普通人的推理所包含的真理要比读书人的推理所包含的多得多</li>
 </ol>
+
+
+
+<div class="org-src-container">
+<pre class="src src-c++"><span style="color: #4f97d7; font-weight: bold;">if</span> (a &gt; 10) {
+    b = 20;
+}
+</pre>
 </div>
-</div>
-<div id="outline-container-org6002264" class="outline-3">
-<h3 id="org6002264">芒格论晚年</h3>
-<div class="outline-text-3" id="text-org6002264">
-<ol class="org-ol">
-<li>西塞罗指出：试图解决基本问题的哲学研究是一种理想活动，适合所有年纪的人，哪怕是行将就木的</li>
-</ol>
-<p>
-年轻人。
-</p>
-<ol class="org-ol">
-<li>西塞罗认为：如果没有得到他的将军的命令，没有人应该放弃自己的岗位。（不应该提前退休）</li>
-<li>西塞罗看来：如果你的生活方式是正确的，那么你到了晚年只会比年轻时更加幸福。</li>
-<li>晚年最佳的保护铠甲是一段在它之前被悉心度过的生活，一段被用于追求有益的知识，光荣的功绩和</li>
-</ol>
-<p>
-高尚举止的生活。过着这种生活的年轻人从青年时代就致力于提升他自己，而且将会在晚年收获它们产生
-的最幸福的果实。
-</p>
-</div>
-</div>
-<div id="outline-container-org123abb8" class="outline-3">
-<h3 id="org123abb8">芒格的生活学习和决策方法</h3>
-<div class="outline-text-3" id="text-org123abb8">
-<p>
-1.芒格进行商业分析和评估的"多元思维模型"：你必须知道重要学科的所有理论，并经常使用它们，要全部
-用上而不是几种。
-2.芒格的投资评估过程：最重要的观念是把股票当作企业的所有权，并根据它的竞争优势来判断该企业的持
-有价值。
-3.“聪明的飞行员即使再才华过人，经验再丰富，也绝不会不使用检查清单。”
-</p>
-<ol class="org-ol">
-<li>芒格投资的检查清单：</li>
-<li>“理解复利的魔力和获取它的困难是理解许多事情的核心和灵魂”</li>
-<li>诚实是最好的策略。</li>
-</ol>
-</div>
-</div>
-<div id="outline-container-org18e2112" class="outline-3">
-<h3 id="org18e2112">查理的即席谈话</h3>
-<div class="outline-text-3" id="text-org18e2112">
-<p>
-1.“正直，幸福，善良的生活”
-</p>
-<ol class="org-ol">
-<li>投资建议：性格耐心和求知欲的重要性，我们投资的规矩是等待好球的出现。</li>
-</ol>
 </div>
 </div>
 </div>
