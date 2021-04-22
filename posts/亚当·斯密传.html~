@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -191,7 +191,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,33 +240,85 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-orgbd267c5" class="outline-2">
-<h2 id="orgbd267c5">Site Index</h2>
-<div class="outline-text-2" id="text-orgbd267c5">
-</div>
-<div id="outline-container-org178141c" class="outline-3">
-<h3 id="org178141c">Article</h3>
-<div class="outline-text-3" id="text-org178141c">
-<ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org12d5c57">亚当·斯密传</a>
+<ul>
+<li><a href="#org61d07cf">序言</a></li>
+<li><a href="#org9ba6e2c">引言</a></li>
+<li><a href="#orgf41b76e">生平</a>
+<ul>
+<li><a href="#org88f8f05">柯科迪男孩</a></li>
+<li><a href="#org92bf024">我生命中最有用、最快乐、最光荣的时光</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org386c8e9" class="outline-3">
-<h3 id="org386c8e9">Reading</h3>
-<div class="outline-text-3" id="text-org386c8e9">
+
+
+<div id="outline-container-org12d5c57" class="outline-2">
+<h2 id="org12d5c57">亚当·斯密传</h2>
+<div class="outline-text-2" id="text-org12d5c57">
+</div>
+<div id="outline-container-org61d07cf" class="outline-3">
+<h3 id="org61d07cf">序言</h3>
+<div class="outline-text-3" id="text-org61d07cf">
+<ol class="org-ol">
+<li>亚当·斯密是幸运的,他几乎认识那个时代所有具有影响力的思想家<br /></li>
+<li>与培根相比较,斯密继承了休谟的思想,他追寻休谟的因果论观点<br /></li>
+<li>斯密在表明鄙视奴隶制和奴隶贸易的态度同时,通过论证说明两者并非源自于自然自由,重商主义和垄断才是始作俑者<br /></li>
+<li>给予斯密的著作来看,我们没有理由认为他是一个自由市场主义者<br /></li>
+<li>斯密关注的问题是:我们如何生活在一个通过人与人之间的互动产生价值观的世界里.也就是说,我们作为“社会人”,如何面对和解决道德、政治和经济问题<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org9ba6e2c" class="outline-3">
+<h3 id="org9ba6e2c">引言</h3>
+</div>
+<div id="outline-container-orgf41b76e" class="outline-3">
+<h3 id="orgf41b76e">生平</h3>
+<div class="outline-text-3" id="text-orgf41b76e">
+</div>
+<div id="outline-container-org88f8f05" class="outline-4">
+<h4 id="org88f8f05">柯科迪男孩</h4>
+<div class="outline-text-4" id="text-org88f8f05">
+<ol class="org-ol">
+<li>斯密虽然缺少了父亲的陪伴,却是在一个多元而庞大的亲友网络中长大,她周围的长辈人脉丰富、乐于助人、有独立思考能力并且富有远见<br /></li>
+<li>他的早年生活是在苏格兰经济充满混乱和不确定的痛苦的调整期中度过的<br /></li>
+<li>苏格兰人在寻找新市场和融资方面非常聪明<br /></li>
+<li>哈奇森与休谟对斯密不同寻常的影响<br /></li>
+<li>伟大的英国哲学家托马斯·霍布斯认为,处于自然状态的人永远都在进行“所有人反对所有人的战争”,人生而“孤独、贫穷、污秽、野蛮而又短暂”,只有通过社会契约才能拯救这场战争中的人.但是哈奇森反对这种关于人性动机的悲观主义和狭隘观念,他认为人类的关键属性是社交性,这是人性内在的本质,尤其是在一个人们对商业社会的需求开始取代战争之必要性的时代<br /></li>
+<li>哈奇森这种自由主义的、温和的、而且在许多方面具有惊人的平等主义元素的理论视野对斯密产生了深远影响<br /></li>
+<li>休谟专项了一个非常不同的方向,他远离上帝,走向大自然.在《人性论》的导语中,他写道:“没有什么重要问题的决定不被包含在人的科学中”<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org92bf024" class="outline-4">
+<h4 id="org92bf024">我生命中最有用、最快乐、最光荣的时光</h4>
+<div class="outline-text-4" id="text-org92bf024">
+<ol class="org-ol">
+<li>亚当斯密的修辞学讲座(爱丁堡)<br /></li>
+<li>斯密认为语言不仅仅是人类的一种艺术或工具,也是人类自主性和自我创造能力的体现<br /></li>
+<li>《道德情操论》<br />
 <ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
-<li><a href="posts/有限与无限的游戏.html">有限与无限的游戏</a></li>
-<li><a href="posts/方法论.html">方法论</a></li>
-<li><a href="posts/高效能人士的七个习惯.html">高效能人士的七个习惯</a></li>
-</ul>
+<li>斯密反对正统的宗教观点,认为奢侈品消费在经济上是有益的而节俭是徒劳的<br /></li>
+<li>从曼德维尔悖论中，我们会看到斯密的看不见的手的原理的萌芽，也会看到休谟的那种人人追求自身经济利益的行为实际上是一种促进美德之力量的情感伦理学的影子<br /></li>
+<li>有时候斯密的言论和卢梭很像<br /></li>
+<li>"我们必须想象自己不是演员,而是自己性格和行为的观众”,他沿用了休谟的说法“公正的旁观者”,一个“冷静”和“无动于衷”的旁观者<br /></li>
+</ul></li>
+</ol>
+</div>
 </div>
 </div>
 </div>
