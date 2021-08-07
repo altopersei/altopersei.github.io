@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -191,7 +191,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,37 +240,70 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-orgbd267c5" class="outline-2">
-<h2 id="orgbd267c5">Site Index</h2>
-<div class="outline-text-2" id="text-orgbd267c5">
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+
+<div id="outline-container-org863bdaa" class="outline-2">
+<h2 id="org863bdaa">美国货币史</h2>
+<div class="outline-text-2" id="text-org863bdaa">
 </div>
-<div id="outline-container-org178141c" class="outline-3">
-<h3 id="org178141c">Article</h3>
-<div class="outline-text-3" id="text-org178141c">
+<div id="outline-container-org42e42e3" class="outline-3">
+<h3 id="org42e42e3">绪论</h3>
+<div class="outline-text-3" id="text-org42e42e3">
+<ol class="org-ol">
+<li>我们都在跟踪一条线索,那就是货币存量</li>
+<li>凯恩斯:“没有东西比在一个非理性的世界使用一个理性投资政策更具毁灭性”</li>
+<li>因为未能创造急需的信用和价格扩张的基础,许多研究政策的著名学者认为,联邦储备体系必须负直接责任</li>
+<li>本书定义的货币在这九十多年的时间里总计增长了157倍,年增长5.4%</li>
+<li>第一次世界大战前,美国毫无疑义的保持金本位的稳定地位,1914年,联邦储备体系开始运转</li>
+<li>关于大萧条:Fed没有及时行动来避免这场持续流动性危机</li>
+<li>大萧条促成了银行业体系和货币体系的重大改革:联邦存款保险制度、美元对黄金贬值、持有金块或金币不再合法</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org2cc403c" class="outline-3">
+<h3 id="org2cc403c">绿钞时期</h3>
+<div class="outline-text-3" id="text-org2cc403c">
+<ol class="org-ol">
+<li>通货和存款的区别及其比率</li>
+<li>基础(高能)货币的概念</li>
+<li>影响货币存量变化的因素
+<ol class="org-ol">
+<li>三个直接因素:
 <ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
-</ul>
+<li>高能货币总量</li>
+<li>存款-准备金比率</li>
+<li>存款-通货比率</li>
+</ul></li>
+</ol></li>
+</ol>
 </div>
 </div>
-<div id="outline-container-org386c8e9" class="outline-3">
-<h3 id="org386c8e9">Reading</h3>
-<div class="outline-text-3" id="text-org386c8e9">
-<ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
-<li><a href="posts/有限与无限的游戏.html">有限与无限的游戏</a></li>
-<li><a href="posts/方法论.html">方法论</a></li>
-<li><a href="posts/高效能人士的七个习惯.html">高效能人士的七个习惯</a></li>
-<li><a href="posts/亚当·斯密传.html">亚当·斯密传</a></li>
-<li><a href="posts/美国货币史.html">美国货币史</a></li>
-<li><a href="posts/领导梯队.html">领导梯队</a></li>
-<li><a href="posts/卓有成效的管理者.html">卓有成效的管理者</a></li>
-</ul>
+
+<div id="outline-container-org27e4fd3" class="outline-3">
+<h3 id="org27e4fd3">银元政治和价格长期下降(1879-1897)</h3>
+<div class="outline-text-3" id="text-org27e4fd3">
+<ol class="org-ol">
+<li>在金本位的固定汇率下,货币存量最终是由外部因素影响的内生变量</li>
+<li>从整体上来看,1879-1897年是商业银行体系迅速扩张的一段时期</li>
+<li>由于害怕白银会带来通货膨胀而使美国脱离金本位制,所以人们便采取了严重的紧缩政策以保持金本位制</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org1e11ee9" class="outline-3">
+<h3 id="org1e11ee9">黄金通胀和银行改革</h3>
+<div class="outline-text-3" id="text-org1e11ee9">
+<ol class="org-ol">
+<li>1897年以后,世界范围内的价格都出现了上涨,最直接的原因是黄金产量的大幅增长</li>
+<li>1890-1914年间,世界黄金以年均3.5%的速度增长了一倍多,之前的24年中,年均增速为1.5%</li>
+<li>1896-1902年,国民生产净值增长了45%,年增长速度超过6%,人均产出每年增长近4.5%,这是一个迅速扩张的时期</li>
+<li>费解的问题:1897-1906年,美国变成一个资本净输出国</li>
+</ol>
 </div>
 </div>
 </div>
