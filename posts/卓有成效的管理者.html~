@@ -249,44 +249,53 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org901baf7">卓有成效的管理者</a>
+<li><a href="#orgfb8ab5f">卓有成效的管理者</a>
 <ul>
-<li><a href="#org4aaa9b7">第一章 卓有成效是可以学会的</a>
+<li><a href="#orga1bfc70">第一章 卓有成效是可以学会的</a>
 <ul>
-<li><a href="#org5be07e6">为什么需要卓有成效的管理者</a></li>
-<li><a href="#org3699d56">谁是管理者</a></li>
-<li><a href="#org32066bb">管理者必须面对的现实</a></li>
+<li><a href="#org0168d52">为什么需要卓有成效的管理者</a></li>
+<li><a href="#org126191f">谁是管理者</a></li>
+<li><a href="#org6ec6c94">管理者必须面对的现实</a></li>
 </ul>
 </li>
+<li><a href="#org0acb594">掌握自己的时间</a>
+<ul>
+<li><a href="#orgb8f6628">时间对于管理者的压力</a></li>
+<li><a href="#org01a1642">如何诊断自己的时间</a></li>
+<li><a href="#org675e15d">消除浪费时间的活动</a></li>
+<li><a href="#org61fd292">统一安排自由可支配的时间</a></li>
+</ul>
+</li>
+<li><a href="#org763460e">我能贡献什么</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org901baf7" class="outline-2">
-<h2 id="org901baf7">卓有成效的管理者</h2>
-<div class="outline-text-2" id="text-org901baf7">
+<div id="outline-container-orgfb8ab5f" class="outline-2">
+<h2 id="orgfb8ab5f">卓有成效的管理者</h2>
+<div class="outline-text-2" id="text-orgfb8ab5f">
 </div>
-<div id="outline-container-org4aaa9b7" class="outline-3">
-<h3 id="org4aaa9b7">第一章 卓有成效是可以学会的</h3>
-<div class="outline-text-3" id="text-org4aaa9b7">
+<div id="outline-container-orga1bfc70" class="outline-3">
+<h3 id="orga1bfc70">第一章 卓有成效是可以学会的</h3>
+<div class="outline-text-3" id="text-orga1bfc70">
 <p>
 智力、想象力及知识,都是我们重要的资源. <b>但是资源本身仅是限制性因素</b> ,只有通过管理者卓有成效的工作,才能将这些资源转化为成果<br />
 </p>
 </div>
-<div id="outline-container-org5be07e6" class="outline-4">
-<h4 id="org5be07e6">为什么需要卓有成效的管理者</h4>
-<div class="outline-text-4" id="text-org5be07e6">
+<div id="outline-container-org0168d52" class="outline-4">
+<h4 id="org0168d52">为什么需要卓有成效的管理者</h4>
+<div class="outline-text-4" id="text-org0168d52">
 <ol class="org-ol">
 <li>体力工作者与知识工作者<br /></li>
 <li>所谓知识工作者的生产力就是“做好该做的事情”的能力,也就是有效性<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org3699d56" class="outline-4">
-<h4 id="org3699d56">谁是管理者</h4>
-<div class="outline-text-4" id="text-org3699d56">
+<div id="outline-container-org126191f" class="outline-4">
+<h4 id="org126191f">谁是管理者</h4>
+<div class="outline-text-4" id="text-org126191f">
 <ol class="org-ol">
 <li>一位知识工作者是不是一位管理者,我们不能以他有没有下属而定<br /></li>
 <li>衡量知识工作主要应看其结果<br /></li>
@@ -296,14 +305,15 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org32066bb" class="outline-4">
-<h4 id="org32066bb">管理者必须面对的现实</h4>
-<div class="outline-text-4" id="text-org32066bb">
+<div id="outline-container-org6ec6c94" class="outline-4">
+<h4 id="org6ec6c94">管理者必须面对的现实</h4>
+<div class="outline-text-4" id="text-org6ec6c94">
 <ol class="org-ol">
 <li>管理者的时间往往只属于别人,不属于自己<br /></li>
 <li>管理者往往被迫忙于“日常运作”,穷于应付<br /></li>
 <li>管理者本身处于“组织”之中,依赖于他人<br /></li>
-<li>管理者身处组织“内部”,受到组织的局限<br /></li>
+<li>管理者身处组织“内部”,受到组织的局限<br />
+<ul class="org-ul">
 <li>组织本身是一种抽象的存在<br /></li>
 <li>在组织的内部,根本不会有成果出现,一切成果都在组织之外<br /></li>
 <li>在组织内部发生的,只有人工和成本<br /></li>
@@ -312,11 +322,75 @@ for the JavaScript code in this tag.
 <li>较高等动物的大部分机体,都是为克服及抵消本身结构的复杂性以及与外界的隔离性而服务的<br /></li>
 <li>一个组织绝不能像生物一样,以自身的生存为目的,仅仅把能够延续后代视作成功<br /></li>
 <li>对于外部的情况,真正重要的不是趋势,而是 <span class="underline">趋势的转变</span> .趋势的转变才是决定一个机构及其努力的成败关键,对这种转变必须要有所察觉.<br /></li>
+</ul></li>
 </ol>
 <p>
 上面所说的4项现实问题,是管理者无法改变的,也是管理者之所以存在的必要条件<br />
 </p>
 </div>
+</div>
+</div>
+
+<div id="outline-container-org0acb594" class="outline-3">
+<h3 id="org0acb594">掌握自己的时间</h3>
+<div class="outline-text-3" id="text-org0acb594">
+<ul class="org-ul">
+<li>最稀有的资源,就是时间<br /></li>
+<li>如果要管理好自己的时间,首先应该了解自己的时间实际上是怎么耗用的<br /></li>
+</ul>
+</div>
+<div id="outline-container-orgb8f6628" class="outline-4">
+<h4 id="orgb8f6628">时间对于管理者的压力</h4>
+<div class="outline-text-4" id="text-orgb8f6628">
+<ol class="org-ol">
+<li>每一位管理者,想要有效就必须能将时间做整块的运用<br /></li>
+<li>知识工作者极为费时的工作:制定方向,了解期望,观察工作,信息与讨论,着眼与成果与组织<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org01a1642" class="outline-4">
+<h4 id="org01a1642">如何诊断自己的时间</h4>
+<div class="outline-text-4" id="text-org01a1642">
+<ol class="org-ol">
+<li>时间记录:必须在处理某一工作“当时”立即加以记录,而不能事后凭记忆补记<br /></li>
+<li>要提高管理者时间的有效性:第一步就是记录其时间耗用的实际情形<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org675e15d" class="outline-4">
+<h4 id="org675e15d">消除浪费时间的活动</h4>
+<div class="outline-text-4" id="text-org675e15d">
+<ol class="org-ol">
+<li>首先要做的是:找出由于缺乏制度或远见而产生时间浪费的因素<br />
+<ul class="org-ul">
+<li>同一个危机如果重复出现,往往是疏忽和懒散造成的<br /></li>
+</ul></li>
+<li>人员过多,也常造成时间的浪费<br /></li>
+<li>组织不健全:其表现就是会议太多<br /></li>
+<li>信息功能不健全,信息的表达方式不当<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org61fd292" class="outline-4">
+<h4 id="org61fd292">统一安排自由可支配的时间</h4>
+<div class="outline-text-4" id="text-org61fd292">
+<ol class="org-ol">
+<li>“认识你自己”这句充满智慧的哲言,对我们一般人来说,真实太难理解了,“认识你的时间”却是任何人只要肯做就能做到的<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org763460e" class="outline-3">
+<h3 id="org763460e">我能贡献什么</h3>
+<div class="outline-text-3" id="text-org763460e">
+<p>
+所谓的有效性表现在一下三个方面:<br />
+</p>
+<ol class="org-ol">
+<li>自己的工作,包括工作内容、工作水准、工作标准及其影响<br /></li>
+<li>自己与他人的关系:上司、同事、下属<br /></li>
+<li>各项管理手段的运用:例如会议与报告<br /></li>
+</ol>
 </div>
 </div>
 </div>
