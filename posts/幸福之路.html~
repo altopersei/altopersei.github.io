@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -191,7 +191,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,39 +240,56 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-orgbd267c5" class="outline-2">
-<h2 id="orgbd267c5">Site Index</h2>
-<div class="outline-text-2" id="text-orgbd267c5">
-</div>
-<div id="outline-container-org178141c" class="outline-3">
-<h3 id="org178141c">Article</h3>
-<div class="outline-text-3" id="text-org178141c">
-<ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org4cc3f96">幸福之路</a>
+<ul>
+<li><a href="#orge081a48">前言</a></li>
+<li><a href="#orgea94eec">第一部分 不幸福的原因</a>
+<ul>
+<li><a href="#org384508e">什么使人不幸福</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org386c8e9" class="outline-3">
-<h3 id="org386c8e9">Reading</h3>
-<div class="outline-text-3" id="text-org386c8e9">
-<ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
-<li><a href="posts/有限与无限的游戏.html">有限与无限的游戏</a></li>
-<li><a href="posts/方法论.html">方法论</a></li>
-<li><a href="posts/高效能人士的七个习惯.html">高效能人士的七个习惯</a></li>
-<li><a href="posts/亚当·斯密传.html">亚当·斯密传</a></li>
-<li><a href="posts/美国货币史.html">美国货币史</a></li>
-<li><a href="posts/领导梯队.html">领导梯队</a></li>
-<li><a href="posts/卓有成效的管理者.html">卓有成效的管理者</a></li>
-<li><a href="posts/聊天约会通论.html">聊天约会通论</a></li>
-<li><a href="posts/伦理学原理.html">伦理学原理</a></li>
-</ul>
+
+<div id="outline-container-org4cc3f96" class="outline-2">
+<h2 id="org4cc3f96">幸福之路</h2>
+<div class="outline-text-2" id="text-org4cc3f96">
+</div>
+<div id="outline-container-orge081a48" class="outline-3">
+<h3 id="orge081a48">前言</h3>
+<div class="outline-text-3" id="text-orge081a48">
+<p>
+书里没什么博大精深的哲学观点,仅仅汇集了一些我以为来自生活常识的观点<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgea94eec" class="outline-3">
+<h3 id="orgea94eec">第一部分 不幸福的原因</h3>
+<div class="outline-text-3" id="text-orgea94eec">
+</div>
+<div id="outline-container-org384508e" class="outline-4">
+<h4 id="org384508e">什么使人不幸福</h4>
+<div class="outline-text-4" id="text-org384508e">
+<ol class="org-ol">
+<li>这些不幸福很大程度上归咎于错误的世界观、错误的伦理观、错误的生活习惯，它们毁掉了人们原本可能有的天然的兴致和胃口，而一切幸福，无论人或动物，皆基于此。观念与习惯都是个人可以掌控之事，我想就它们提些改进建议，佐以寻常运气，幸福或便可得。<font color="red" size="2em" >评:「作者假定合适充足的外部文明环境来讨论个人幸福 因为如何创造好的文明在他之前的著作当中已经提及」</font><br /></li>
+<li>作者从分析自己:我不再过度专注于自我,对自己的兴趣不会带来任何进取行为<br /></li>
+<li>对于那些自我沉溺严重到无药可救的不幸之人，外部戒律是通往幸福的唯一道路。<br /></li>
+<li>对这些母性“德行”的牺牲者来说，走向幸福的第一步是从早年的信仰和情感中解放出来。<br /></li>
+<li>对客观事物产生兴趣而激发活动，并获得成功，如此才能培养出这种自尊。<br /></li>
+</ol>
+</div>
 </div>
 </div>
 </div>
