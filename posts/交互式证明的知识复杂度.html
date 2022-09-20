@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+
+<div id="outline-container-org846b34e" class="outline-2">
+<h2 id="org846b34e">The Knowledge Complexity of Interactive Proof System</h2>
+<div class="outline-text-2" id="text-org846b34e">
+</div>
+<div id="outline-container-orgeaffccc" class="outline-3">
+<h3 id="orgeaffccc">Abstract</h3>
+<div class="outline-text-3" id="text-orgeaffccc">
+<p>
+通常来说,一个证明会包含超过仅仅证明命题正确所需要的知识.比如,去证明一个图中包含哈密顿回路.然而,这个证明显然包含的知识要超过是/否这个1位的答案.<br />
+</p>
+
+<p>
+在这篇论文当中讨论发展了关于“知识”的计算复杂度理论.零知识证明被定义为除了命题正确性外不传递任何额外知识的证明.二次剩余(quadratic residuosity)和二次非剩余(quadratic nonresiduosity)问题是零知识证明系统的例子.他们是第一个零知识证明的例子但其形式语言还并未被充分认识<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgec65c92" class="outline-3">
+<h3 id="orgec65c92">Introduction</h3>
+<div class="outline-text-3" id="text-orgec65c92">
+<p>
+通常说一个语言L是NP的等价于对L存在一个多项式时间的“证明系统”,其给定一个输入x,一个证明者(prover)生成一个字符串&alpha;,验证者(verifier)利用x和 &alpha; 在多项式时间内计算给定的x的二进制表示属于L.问是否有更通用,(可能)更自然的多项式时间内的证明系统是很合理的,本文提出了一个这样的概念<br />
+</p>
+
+<p>
+我们仍然允许验证者只使用多项式时间，而证明者是任意的计算能力，但现在将允许双方翻转无偏见的硬币。结果是NP的概率版本，其中允许小概率的错误。然而，为了获得这个猜想的完全一般性，我们还必须允许证明者和验证者进行交互（即来回交谈）并保密他们的硬币抛掷。我们将这些证明系统称为“交互式证明系统”。 这个概念正式在第2节中定义，我们还定义了语言具有交互性证明系统的含义。<br />
+</p>
+
+<p>
+如何使用这种交互证明的力量还远不清楚。带有非确定性多项式时间算法或概率多项式时间算法的语言具有很少或没有交互的证明系统。因此，期望例子是没有非确定性也没有概率多项式时间算法的语言，但具有交互式证明系统。虽然我们这里没有提供任何这样的例子，现有文献中有例子。使用这篇轮文最初版本的想法 [GMR] Goldreich、Micali 和 Wigderson[GMW] 表明“非同构图” 语言具有交互式证明系统<br />
+&#x2026;<br />
+不管怎么样,已有工作表明:一个语言拥有交互式证明系统等价于其含有Arthur-Merlin证明系统<br />
+</p>
+
+<p>
+然而，我们的交互式证明系统的概念可以概括为解决新问题的正确方法。这篇论文的主要目的，在事实上，就是使用交互式证明系统来研究一个自然的问题；多少知识在L语言的交互式证明系统中传输给验证者？例如，考虑SAT问题，满足命题演算的句子的NPC语言。在明显的证明系统中，为了证明  \( \mathit{$F$}\subseteq\mathrm{SAT} \) , 证明者给出满足公式 \mathit{$F$}   的赋值，然后验证者可在多项式时间检查验证。这些赋值给了验证者更多的知识，而不仅仅是事实 \( \mathit{$F$} \subseteq \mathrm{SAT} \) ;它也给出了令人满意的赋值。在另一个极端，每一种语言可以在概率多项式时间内被接受的有一个证明系统，其中证明者什么都不做，因此不向验证者提供任何知识。<br />
+</p>
+
+<p>
+我们说 L 的交互式证明系统是零知识的，如果对于每个 \( x\subseteq L \)，证明者除了 \( x\subseteq L \) 之外，基本上什么都不告诉验证者； 即使验证者选择不遵循证明系统而是尝试（在多项式时间内）欺骗证明者揭示某些东西，情况也应该如此。 零知识的概念在第 3 节中正式定义。这个定义是本文的重要贡献。<br />
+</p>
+
+<p>
+自从这些结果首次出现以来，最重要的发展是 Goldreich、Micali 和 Wigderson [GMW] 的证明，即根据共同的复杂性理论假设，每个NP语言都有一个零知识交互式证明系统。 这些 NP 语言的证明系统似乎在几乎所有协议问题中都有应用。 几乎可以肯定，这些结果将在未来极大地简化分布式密码协议设计，正如 [GMW2] 的强大结果所证明的那样。<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9605074" class="outline-3">
+<h3 id="org9605074">Interactive proof system</h3>
+<div class="outline-text-3" id="text-org9605074">
+</div>
+<div id="outline-container-orgfa0edad" class="outline-4">
+<h4 id="orgfa0edad">交互式图灵机和协议</h4>
+</div>
+<div id="outline-container-org7dfe706" class="outline-4">
+<h4 id="org7dfe706">交互式证明 系统</h4>
+<div class="outline-text-4" id="text-org7dfe706">
+<p>
+<b>定义</b>: 让 L 成为 \( \left \{ {0,1} \right \}^{*}  \) 之上的语言。让 (A,B) 成为交互式协议。如果我们有以下条件，我们说 (A, B) 是 L 的交互式证明系统：<br />
+</p>
+
+<p>
+(1) 对于每个 k，对于作为 (A, B) 的输入且 L 中足够大的 x，B 以至少 \(1-|x|^{-k} \) 的概率停止并接受。 （这里的概率取自 A 和 B 的抛硬币。）<br />
+</p>
+
+<p>
+(2) 对于每个 k，对于不在 L 中的足够大的 x，对于任何 交互式图灵机 \( A^{'}  \)，在 (\( A^{'}  \), B) 的输入 x 上，B 以最多 \(|x|^{-k} \) 的概率接受。 （这里的概率来自于 \( A^{'}  \) 和 B 的抛硬币。）<br />
+</p>
+
+<p>
+备注 1. 通过多次重复协议并选择以多数票接受的标准技术，可以将上述错误概率降低到小于 \( 2^{-|x|} \)。<br />
+</p>
+
+<p>
+我们现在讨论，这个定义从一个有效的证明系统中捕获了我们直观地想要的东西。条件（1）本质上说，如果 \( x \subseteq \mathbf{L} \)，B 将以压倒性的概率接受。条件 (2) 表明，如果 x 不在 L 中，则不存在以不可忽略的概率成功说服 B 接受的策略。事实上，B 不需要信任（或知道它的程序）与之交互的机器。 B相信自己抛硬币的随机性就足够了。<br />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdac8aff" class="outline-3">
+<h3 id="orgdac8aff">zero-knowledge</h3>
+<div class="outline-text-3" id="text-orgdac8aff">
+<p>
+我们将给出一个更一般的定义，而不是只为交互式证明系统给出零知识的定义。 我们将定义任何交互式协议 (A, B) 对语言 L 的零知识的含义，无论 (A, B) 是否是 L 的证明系统。实际上这个定义根本不依赖于 B ; 正如我们将看到的，它表示对于每个多项式时间 \( B^{'}  \)，当与输入 \( x \subseteq \mathbf{L} \)交互时， \( B^{'}  \)“看到”的分布与可以在多项式时间内从 x 计算的分布“无法区分”。 因此，我们首先关注随机变量不可区分的概念。<br />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgae0a276" class="outline-3">
+<h3 id="orgae0a276">The quadratic residuosity problem</h3>
+<div class="outline-text-3" id="text-orgae0a276">
+<p>
+让 \( \mathbf{N} \) 表示正整数集合,\( x \subseteq \mathbf{N} \)  并且 \( \mathbf{Z_{x}^{*} } = \left \{ y \mid 1\le y< x, gcd(x,y)=1 \right \} \), 如果 \( \exists w \subseteq \mathbf{Z_{x}^{*} } \)使得 \[ \mathit{w^{2} } \equiv y  \bmod x  \] 我们称y在 \( \mathbf{Z_{x}^{*}} \)  中是x的二次剩余,不然,我们称y为x的二次非剩余<br />
+</p>
+\begin{theorem}
+	y是x的二次剩余等价于y是x所有素因子的二次剩余
+\end{theorem}
+<p>
+定义二次剩余的判别函数如下:<br />
+\[
+  Q_{x}(y)  =  \left\{
+\begin{array}{ll}
+0 & \text{如果y是x的二次剩余}\\
+1 & \text{反之} \\
+\end{array} \right.
+\]<br />
+因此有接下来的事实.<br />
+</p>
+\begin{theorem}
+	对于给定的y和x的素分解, \( Q_{x}(y) \) 能够在多项式时间 \( |x| \) 内被计算
+\end{theorem}
+<p>
+让 \( y\subseteq \mathbf{Z} _{x}^{*}  \) 和 x 的素分解为 \(  {\textstyle \prod_{i=1}^{k}} p_{i}^{\alpha _{i} }  \). 那么雅可比符号定义为<br />
+\[
+(y/x)= {\textstyle \prod_{i=1}^{k}} (y/p_{i})^{\alpha _{i} } 
+\]<br />
+当y是 \( p_{i} \)<br />
+ 的二次剩余,则有\((y/p_{i})=1 \),否则为-1<br />
+</p>
+\begin{theorem}
+对给定的 \( x \subseteq \mathbf{N} \) 和 \( y \subseteq \mathbf{Z} _{x}^{*} \), \( (y/x) \) 能够在多项式时间 \( |x| \) 内被计算
+\end{theorem}
+<p>
+\(y \bmod x \) 的 Jacobi 符号给出了一些关于y是否是x二次非剩余的信息。 如果 \( (y/x) = —1 \) ，则y是x的二次非剩余且 \(Q_{x}(y)=1 \)。 然而，当 \( (y/x) \) = 1 时，没有已知有效的（概率或确定性多项式时间）解决方案可正确计算 \( Q_{x}(y) \)，且概率明显高于 1/2. 这导致了二次剩余问题的公式化。<br />
+</p>
+
+
+
+<p>
+\begin{definition}<br />
+我们将二次剩余问题定义为在输入 x 和 y 上计算 Q<sub>x</sub>(y) 的问题，其中 y 在 \(  \mathbf{Z} _{x}^{*}\) 且  \( (y/x) = 1 \)<br />
+\end{defintion}<br />
+</p>
+
+<p>
+当前计算 \( Q_{x}(y) \) 的最佳算法是首先考虑x的分解和然后计算 \( Q_{x}(y) \) 。实际上，因式分解整数和计算 \( Q_{x} \) 已被推测为具有相同的时间复杂度\footnote{整数分解是复杂的的非多项式时间内可求解的问题,Prover的计算能力无法完成求解}。二次剩余问题的难度已被用作设计几种密码协议的基础 [GM]、[LMR]、[B1]。<br />
+</p>
+
+<p>
+定义如下两个语言<br />
+</p>
+\begin{align*}\label{2}
+  & \mathbf{QR} = \left \{  (x,y) | x\subseteq \mathbf{N}, y \subseteq \mathbf{Z} _{x}^{*} , 且  Q_{x}(y) = 0  \right \}  , \\
+  & \mathbf{QNR} =  \left \{  (x,y) | x\subseteq \mathbf{N}, y \subseteq \mathbf{Z} _{x}^{*}, (y/x) = 1 且  Q_{x}(y) = 1  \right \} 
+\end{align*}
+<p>
+x和y都用二进制表示<br />
+</p>
+
+<p>
+显然，根据事实 1 和 2，QR 和 QNR 都在 CO-NP 和 NP 问题的交集处。 然而，没有已知的概率多项式时间算法可以接受这些语言，因此它们不是平凡的零知识。 在第 5 节中，我们展示了 QR 的完美零知识证明系统，在第 6 节中，我们展示了 QNR 的统计零知识证明系统。 以下事实在第 5 节和第 6 节的零知识证明中很有用。<br />
+</p>
+\begin{theorem}
+设 \( x \subseteq \mathbf{N} \)。然后，对于任意y满足 \(Q_{x}(y) = 0 \) ，\( w \subseteq \mathbf{Z}_{x}^{*} \)。满足 \( \mathit{w^{2} } \equiv y  \bmod x \) 解的数量是相同的（与y无关.）。
+\end{theorem}
+
+\begin{theorem}
+设 \(x \subseteq \mathbf{N} \), \(  y,z \subseteq \mathbf{Z} _{x}^{*} \)。 那么我们有以下内容：\\
+  \quad \quad (a) & 如果 \(Q_{x}(y)=Q_{x}(z) = 0\)，则 Q_{x}(yz)=0。 \\
+  \quad \quad (b) & 如果 \(Q_{x}(y) \ne Q_{x}(z) \)，则 \(Q_{x}(yz) = 1\).
+\end{theorem}
+
+\begin{theorem}
+\quad 给定 x, y，欧几里得算法(求最大公约数)多项式时间内计算完成,无论 \(y \subseteq \mathbf{Z}_{x}^{*} \)
+\end{theorem}
+</div>
+</div>
+
+<div id="outline-container-orgef047cf" class="outline-3">
+<h3 id="orgef047cf">Zero-knowledge proofs of quadratic residuosity</h3>
+<div class="outline-text-3" id="text-orgef047cf">
+<p>
+我们将首先非正式地描述我们针对 QR 的零知识交互证明系统，然后更严格地描述它。 假定 A 和 B被给定(x,y),|x|=m,进入如下的操作m次:<br />
+</p>
+
+\begin{algorithm}
+\caption{交互式证明过程}\label{alg:cap}
+\STATE $i\gets m$ \;
+ \While{i != 0}{
+     A 向 B 发送一个随机x的二次剩余 u \;
+     B 向 A 发送一个随机位 bit。 \;
+     \eIf{bit = 0 }{
+• 则 A 向 B 随机发送方程 \( (w^2 \equiv {u \bmod x} ) \)的一个解 \(\mathit{w} \) ，如果bit = 1,     }{
+    A 向 B 随机发送方程\( (w^2 \equiv {uy \bmod x})  \)的一个解 \(\mathit{w}\)。 
+}
+  • B 检查[ bit = 0 且 \( w^2 \bmod x \equiv u \) ]\footnote{这里论文可能有笔误, \( w^2 \bmod x = u\)是奇怪的,应当是 w^2 \bmod x \equiv u} or  [bit = 1 且 \( w^2 \bmod x = (uy) \bmod x \)]  \;
+\(i-- \) \;
+
+}
+\end{algorithm}
+<p>
+证明解答: A向B证明 \(Q_{x}(y)= 0\),但要求保持零知识性,不管B采用什么策略，也无法从A这里得到“y 是模 x 的二次剩余”外的任何信息,如果A向B展示了x的素分解或任意随机解\( \mathrm{w} \),显然是不符合零知识的要求的,因为A的计算能力是arbitrary的,A可以随意获得一个随机的x的二次剩余u,并且A可以随时构造下面两个等式<br />
+</p>
+\begin{align*}\label{2}
+  & Q_{x}(u) = 0 \\
+  & Q_{x}(uy) = 0
+\end{align*}
+<p>
+考虑下面三个因素:<br />
+</p>
+<ul class="org-ul">
+<li><b>completeness</b> ： 只要正确皆可通过验证,如果 \(Q_{x}(y)= 0\) 成立,以A的计算能力,上述两个等式显然不管B如果构造随机bit,其都是成立的<br /></li>
+<li><b>soundness</b> ：只要错误皆无法通过验证,如果 \(Q_{x}(y) != 0\),由于A不知道随机bit,当B发送0,A可以蒙混过关,但B发送1,A此时无论如何也无法满足 \(Q_{x}(uy)=0 \)的,因为这违背了上述提到的事实5,但B可以在多项式时间内检查这个等式,即多次试验后,A被暴露的概率为\( 1-\frac{1}{2^{m} }  \)<br /></li>
+<li><b>zero knowledge</b> ： proof的信息不增加解密能力,这里需要用到关于模拟的数学语言的严格证明,原论文中含有该证明<br /></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
