@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -191,7 +191,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,43 +240,46 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-orgbd267c5" class="outline-2">
-<h2 id="orgbd267c5">Site Index</h2>
-<div class="outline-text-2" id="text-orgbd267c5">
-</div>
-<div id="outline-container-org178141c" class="outline-3">
-<h3 id="org178141c">Article</h3>
-<div class="outline-text-3" id="text-org178141c">
-<ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
-<li><a href="posts/交互式证明的知识复杂度.html">交互式证明的知识复杂度</a></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org945e575">ZK-SNARK Algorithm Analysis</a>
+<ul>
+<li><a href="#orgae9f513">zk-snark算法的核心步骤</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org386c8e9" class="outline-3">
-<h3 id="org386c8e9">Reading</h3>
-<div class="outline-text-3" id="text-org386c8e9">
-<ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
-<li><a href="posts/有限与无限的游戏.html">有限与无限的游戏</a></li>
-<li><a href="posts/方法论.html">方法论</a></li>
-<li><a href="posts/高效能人士的七个习惯.html">高效能人士的七个习惯</a></li>
-<li><a href="posts/亚当·斯密传.html">亚当·斯密传</a></li>
-<li><a href="posts/美国货币史.html">美国货币史</a></li>
-<li><a href="posts/领导梯队.html">领导梯队</a></li>
-<li><a href="posts/卓有成效的管理者.html">卓有成效的管理者</a></li>
-<li><a href="posts/聊天约会通论.html">聊天约会通论</a></li>
-<li><a href="posts/伦理学原理.html">伦理学原理</a></li>
-<li><a href="posts/幸福之路.html">幸福之路</a></li>
-<li><a href="posts/21世纪货币史.html">21世纪货币史</a></li>
-</ul>
+<div id="outline-container-org945e575" class="outline-2">
+<h2 id="org945e575">ZK-SNARK Algorithm Analysis</h2>
+<div class="outline-text-2" id="text-org945e575">
+</div>
+<div id="outline-container-orgae9f513" class="outline-3">
+<h3 id="orgae9f513">zk-snark算法的核心步骤</h3>
+<div class="outline-text-3" id="text-orgae9f513">
+<p>
+The main procedure for using the zk-SNARK algorithm typically consists of the following steps:<br />
+</p>
+
+<p>
+Setup: The prover and verifier agree on a set of public parameters and a common reference string, which will be used to define the underlying mathematical structures needed for the proof.<br />
+</p>
+
+<p>
+Proving: The prover generates a proof, which consists of a set of mathematical statements that demonstrate that they know the required information, without revealing any actual information about the information itself.<br />
+</p>
+
+<p>
+Verification: The verifier receives the proof and checks it against the common reference string and the public parameters to ensure that it is valid. If the proof is valid, the verifier can be confident that the prover knows the required information, without learning any information about the actual information itself.<br />
+</p>
 </div>
 </div>
 </div>

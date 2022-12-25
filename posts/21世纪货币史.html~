@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Weei's Blog</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -191,7 +191,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="assets/worg.css" />
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,43 +240,109 @@ for the JavaScript code in this tag.
 </script>
 </head>
 <body>
-<div id="content">
-<h1 class="title">Weei's Blog</h1>
-<div id="outline-container-orgbd267c5" class="outline-2">
-<h2 id="orgbd267c5">Site Index</h2>
-<div class="outline-text-2" id="text-orgbd267c5">
-</div>
-<div id="outline-container-org178141c" class="outline-3">
-<h3 id="org178141c">Article</h3>
-<div class="outline-text-3" id="text-org178141c">
-<ul class="org-ul">
-<li><a href="posts/rust学习笔记-所有权,引用和借用.html">rust核心概念:所有权,引用和借用</a></li>
-<li><a href="posts/以GroupCache为例谈分布式缓存.html">以GroupCache为例谈分布式缓存</a></li>
-<li><a href="posts/交互式证明的知识复杂度.html">交互式证明的知识复杂度</a></li>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content">
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfb482fa">21世纪货币史</a>
+<ul>
+<li><a href="#org18a3a29">前言</a></li>
+<li><a href="#orgb3b4dea">第一部分 通货膨胀的起落</a>
+<ul>
+<li><a href="#orga3afb91">大通胀</a></li>
+<li><a href="#org01d3353">格林斯潘和繁荣的20世纪90年代</a></li>
+</ul>
+</li>
+<li><a href="#org7daa6d5">第二部分 全球金融危机和大衰退</a>
+<ul>
+<li><a href="#org6866848">新世纪与新挑战</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org386c8e9" class="outline-3">
-<h3 id="org386c8e9">Reading</h3>
-<div class="outline-text-3" id="text-org386c8e9">
-<ul class="org-ul">
-<li><a href="posts/开放社会及其敌人.html">开放社会及其敌人</a></li>
-<li><a href="posts/聪明的投资者.html">聪明的投资者</a></li>
-<li><a href="posts/被讨厌的勇气.html">被讨厌的勇气</a></li>
-<li><a href="posts/证券分析.html">证券分析</a></li>
-<li><a href="posts/有限与无限的游戏.html">有限与无限的游戏</a></li>
-<li><a href="posts/方法论.html">方法论</a></li>
-<li><a href="posts/高效能人士的七个习惯.html">高效能人士的七个习惯</a></li>
-<li><a href="posts/亚当·斯密传.html">亚当·斯密传</a></li>
-<li><a href="posts/美国货币史.html">美国货币史</a></li>
-<li><a href="posts/领导梯队.html">领导梯队</a></li>
-<li><a href="posts/卓有成效的管理者.html">卓有成效的管理者</a></li>
-<li><a href="posts/聊天约会通论.html">聊天约会通论</a></li>
-<li><a href="posts/伦理学原理.html">伦理学原理</a></li>
-<li><a href="posts/幸福之路.html">幸福之路</a></li>
-<li><a href="posts/21世纪货币史.html">21世纪货币史</a></li>
-</ul>
+
+
+<div id="outline-container-orgfb482fa" class="outline-2">
+<h2 id="orgfb482fa">21世纪货币史</h2>
+<div class="outline-text-2" id="text-orgfb482fa">
+</div>
+<div id="outline-container-org18a3a29" class="outline-3">
+<h3 id="org18a3a29">前言</h3>
+<div class="outline-text-3" id="text-org18a3a29">
+<ol class="org-ol">
+<li>凯恩斯主义经济学，在现代化情境下，仍然是美联储和其他央行的中心范式。<br /></li>
+<li>早期美国有着浓厚的民粹主义传统，从安德鲁·杰克逊(Andrew Jackson)总统到21世纪“茶党运动”和“占领华尔街运动”的成员，民粹主义者一直对人们眼中的金融和政府权力集中抱有敌意。民粹主义的影响有助于解释为什么美国直到1913年美联储成立之前都没有一个成熟的央行，这比许多其他发达经济体都晚<br /></li>
+<li>货币政策、银行监管以及应对金融稳定所面临的威胁是对美联储主要职责的一个很好的描述。<br /></li>
+<li>大萧条的起源是复杂的，国际金本位制是其中一个主要原因<br /></li>
+<li>一个有缺陷的思想框架——在金本位制不可行的情况下依然坚持金本位制——是美联储和其他政策制定者未能避免大萧条的关键原因<br /></li>
+<li>货币政策是由一个更大的组织制定的，这个组织被称为联邦公开市场委员会<br /></li>
+<li>美联储的资产负债表通常会提供可观的收入。在资产端，美联储从其持有的证券中收取利息。在负债端，它支付的是银行准备金的利息，而不是货币现金的利息<br /></li>
+<li>美联储利用其资产负债表来执行货币政策决定.美联储通过改变两种可管理的利率来影响联邦基金利率，<br /></li>
+<li>当时和现在一样，定义充分就业更像是艺术，而非科学(肯尼迪、约翰逊时期)<br /></li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgb3b4dea" class="outline-3">
+<h3 id="orgb3b4dea">第一部分 通货膨胀的起落</h3>
+<div class="outline-text-3" id="text-orgb3b4dea">
+</div>
+<div id="outline-container-orga3afb91" class="outline-4">
+<h4 id="orga3afb91">大通胀</h4>
+<div class="outline-text-4" id="text-orga3afb91">
+<ol class="org-ol">
+<li>美联储确实在1973年开始了一系列加息举措，但当经济陷入衰退时，这些举措基本上被逆转了。这种“时断时续”的模式——在通胀飙升时收紧政策，但在失业率开始上升时又立即放松，结果被证明是无效的，并导致通胀和通胀预期逐步上升。<br /></li>
+<li>要取得成功，政策必须始终如一地以此为目标。出于对经济衰退或其他方面的担忧，犹豫不决和拖延将带来严重的风险。始终如一和坚持不懈成了沃尔克的标志。￼<br /></li>
+<li>在货币政策制定中，信誉是一项宝贵的资产，但它主要是通过行动和结果来建立的，而不仅仅是靠口头上的空话<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org01d3353" class="outline-4">
+<h4 id="org01d3353">格林斯潘和繁荣的20世纪90年代</h4>
+<div class="outline-text-4" id="text-org01d3353">
+<ol class="org-ol">
+<li>凭借对经济数据的了解，格林斯潘灵巧地运行着美联储，在他的前任们做不到的事情上取得了成功。他设计了一场难度很高的经济“软着陆”<br /></li>
+<li>如今看来，格林斯潘介入财政事务不仅像是政治上的越界，更像是一次错误的分析，因为最新的实践经验和学术研究表明，在美国这样的发达经济体中，存在适度政府赤字的经济风险很低。<br /></li>
+<li>货币政策对通胀的影响有着明显的滞后效应。激烈的政策立场可能在一年或更长时间内都不会在物价指数中显现出来。因此，如果美联储要等到实际通胀恶化后才采取对策，那就太久了。在这一点上，适度的纠正措施将不再足够……相反需要采取更严厉的措施<br /></li>
+<li>但多年来盛行的观点认为，保持神秘感（即央行官员知道的比他们透露的更多）对于政策灵活性和最大化央行声明对市场的影响力十分重要<br /></li>
+<li>通过影响市场对未来利率的预期，声明本身就是一种货币政策<br /></li>
+</ol>
+<p>
+<font color="red" size="2em" >评:「1996年联邦基金利率5.5%，经济强劲，但通胀并未走高，这是因为新经济对生产率的提高，并吸收了通胀，但这只是部分原因」</font><br />
+</p>
+<ol class="org-ol">
+<li>在回忆录中写道，美联储对亚洲和俄罗斯事态发展的反应“反映出美联储正在逐渐进化，并且背离了标准的政策制定的条条框框”。我们并没有把所有的精力和赌注都押在实现一个单一的最佳预测指标上，而是依据一系列可能的情境来制定我们的政策回应<font color="red" size="2em" >评:「实事求是，不拘一格」</font><br /></li>
+<li>事后看来，在格林斯潘当时演讲的时候，股价可能并没有被严重高估。一些传统的指标，比如股票风险溢价、股票和安全的政府债券之间的预期回报差，都在历史正常范围内。事实上，如果你在1996年底，即格林斯潘担忧“非理性繁荣”的时候购买了一篮子有代表性的股票，并于2002年底，即股票市场处于互联网泡沫破灭之后的谷底时卖出，你仍将获得高达32%的收益，包含股息再投资的名义收益。￼直到20世纪末，随着互联网繁荣的到来，泡沫的迹象才变得清晰和明显。￼<br /></li>
+<li>格林斯潘对股票估值是否合理有着强烈的负面看法。他通过加息和强烈呼吁等手段，多次努力减缓他认为不可持续的股市繁荣<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org7daa6d5" class="outline-3">
+<h3 id="org7daa6d5">第二部分 全球金融危机和大衰退</h3>
+<div class="outline-text-3" id="text-org7daa6d5">
+</div>
+<div id="outline-container-org6866848" class="outline-4">
+<h4 id="org6866848">新世纪与新挑战</h4>
+<div class="outline-text-4" id="text-org6866848">
+<ol class="org-ol">
+<li>2000年上半年采取了三次行动，将利率提高了一个百分点，达到6.5%，这是近10年来最高的联邦基金利率设定。<br /></li>
+<li>20世纪80年代初以来，尽管美联储已经经历了多次收紧和放松、提高和降低短期利率的过程，但无论是在美国还是在其他发达经济体，利率的总体趋势一直是下行的，明确地表明如今的中性利率比几十年前低得多<br /></li>
+<li>两种假说都认为，由于人口结构、经济和技术等各种原因，全球储蓄的供应日益超过对资金的需求。这种失衡一直在压低实际利率，即使在经济处于充分就业状态、货币政策没有扩张的情况下也是如此。<br /></li>
+<li>然而，当中性利率——即在充分就业时的利率——已经很低了，比如只有2%或3%，那么当经济衰退来袭时，货币政策制定者降息的空间就更小了，因此刺激增长的力量也会变弱<br /></li>
+<li>日本近几十年来的经历：在此期间，通胀和利率一直徘徊在零附近，而货币政策的效果十分有限。<br /></li>
+<li>从众心理支持了把买房当作投资的普遍且日益增长的乐观情绪。20世纪90年代末至21世纪初的房价快速上涨，尤其是在几个主要城市暴涨，这让许多人相信房价将不可避免地继续上涨。这种信念在社交媒体（我姐夫炒房发财了！）和传统媒体的宣传下得到了强化。罗伯特·席勒的流行叙事理论——即简单的故事构建人们对经济事件的认知，并在公众意识中“像病毒一样传播”——似乎就很适合这个时期发生的一切。￼席勒指出，美国的房价在1998年开始加速上涨，他将房地产市场的这种繁荣归于人们过度乐观的情绪，这与导致互联网科技泡沫的情绪如出一辙。<br /></li>
+</ol>
+</div>
 </div>
 </div>
 </div>
