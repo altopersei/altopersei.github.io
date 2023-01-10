@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,36 +218,36 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org2f8af4c">亚当·斯密传</a>
+<li><a href="#org6d9aa6a">亚当·斯密传</a>
 <ul>
-<li><a href="#org5a4edd1">序言</a></li>
-<li><a href="#orgdaa35ed">引言</a></li>
-<li><a href="#org1ce5668">生平</a>
+<li><a href="#org7ddd434">序言</a></li>
+<li><a href="#org91fae7e">引言</a></li>
+<li><a href="#org63b6b13">生平</a>
 <ul>
-<li><a href="#org513110d">柯科迪男孩</a></li>
-<li><a href="#org5378726">我生命中最有用、最快乐、最光荣的时光</a></li>
-<li><a href="#orge8d0a38">启蒙时代的插曲</a></li>
-<li><a href="#orgf4acc28">你将在这个领域独领风骚</a></li>
-<li><a href="#org561a08c">工作到最后</a></li>
+<li><a href="#orga82a4fc">柯科迪男孩</a></li>
+<li><a href="#org6db9991">我生命中最有用、最快乐、最光荣的时光</a></li>
+<li><a href="#org5539740">启蒙时代的插曲</a></li>
+<li><a href="#org889e2a1">你将在这个领域独领风骚</a></li>
+<li><a href="#org4e09e7a">工作到最后</a></li>
 </ul>
 </li>
-<li><a href="#org903d2f2">思想</a>
+<li><a href="#org57e962a">思想</a>
 <ul>
-<li><a href="#orga0b8ebf">荣誉、事实和迷思</a></li>
-<li><a href="#org93b4e4d">亚当斯密的经济学</a></li>
-<li><a href="#orgb0de284">亚当斯密与市场</a></li>
+<li><a href="#orgba46b7f">荣誉、事实和迷思</a></li>
+<li><a href="#org201237a">亚当斯密的经济学</a></li>
+<li><a href="#orgec893fb">亚当斯密与市场</a></li>
 </ul>
 </li>
-<li><a href="#org33a9f2a">影响</a>
+<li><a href="#org67e5f51">影响</a>
 <ul>
-<li><a href="#orgec93654">资本主义的不足</a></li>
-<li><a href="#orgf6e7f1a">商业社会的道德基础</a></li>
-<li><a href="#org0635814">亚当斯密的重要意义</a></li>
+<li><a href="#orga86353f">资本主义的不足</a></li>
+<li><a href="#orgbd9999c">商业社会的道德基础</a></li>
+<li><a href="#org95a9477">亚当斯密的重要意义</a></li>
 </ul>
 </li>
 </ul>
@@ -283,13 +257,13 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org2f8af4c" class="outline-2">
-<h2 id="org2f8af4c">亚当·斯密传</h2>
-<div class="outline-text-2" id="text-org2f8af4c">
+<div id="outline-container-org6d9aa6a" class="outline-2">
+<h2 id="org6d9aa6a">亚当·斯密传</h2>
+<div class="outline-text-2" id="text-org6d9aa6a">
 </div>
-<div id="outline-container-org5a4edd1" class="outline-3">
-<h3 id="org5a4edd1">序言</h3>
-<div class="outline-text-3" id="text-org5a4edd1">
+<div id="outline-container-org7ddd434" class="outline-3">
+<h3 id="org7ddd434">序言</h3>
+<div class="outline-text-3" id="text-org7ddd434">
 <ol class="org-ol">
 <li>亚当·斯密是幸运的,他几乎认识那个时代所有具有影响力的思想家<br /></li>
 <li>与培根相比较,斯密继承了休谟的思想,他追寻休谟的因果论观点<br /></li>
@@ -300,16 +274,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgdaa35ed" class="outline-3">
-<h3 id="orgdaa35ed">引言</h3>
+<div id="outline-container-org91fae7e" class="outline-3">
+<h3 id="org91fae7e">引言</h3>
 </div>
-<div id="outline-container-org1ce5668" class="outline-3">
-<h3 id="org1ce5668">生平</h3>
-<div class="outline-text-3" id="text-org1ce5668">
+<div id="outline-container-org63b6b13" class="outline-3">
+<h3 id="org63b6b13">生平</h3>
+<div class="outline-text-3" id="text-org63b6b13">
 </div>
-<div id="outline-container-org513110d" class="outline-4">
-<h4 id="org513110d">柯科迪男孩</h4>
-<div class="outline-text-4" id="text-org513110d">
+<div id="outline-container-orga82a4fc" class="outline-4">
+<h4 id="orga82a4fc">柯科迪男孩</h4>
+<div class="outline-text-4" id="text-orga82a4fc">
 <ol class="org-ol">
 <li>斯密虽然缺少了父亲的陪伴,却是在一个多元而庞大的亲友网络中长大,她周围的长辈人脉丰富、乐于助人、有独立思考能力并且富有远见<br /></li>
 <li>他的早年生活是在苏格兰经济充满混乱和不确定的痛苦的调整期中度过的<br /></li>
@@ -321,9 +295,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org5378726" class="outline-4">
-<h4 id="org5378726">我生命中最有用、最快乐、最光荣的时光</h4>
-<div class="outline-text-4" id="text-org5378726">
+<div id="outline-container-org6db9991" class="outline-4">
+<h4 id="org6db9991">我生命中最有用、最快乐、最光荣的时光</h4>
+<div class="outline-text-4" id="text-org6db9991">
 <ol class="org-ol">
 <li>亚当斯密的修辞学讲座(爱丁堡)<br /></li>
 <li>斯密认为语言不仅仅是人类的一种艺术或工具,也是人类自主性和自我创造能力的体现<br /></li>
@@ -340,9 +314,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge8d0a38" class="outline-4">
-<h4 id="orge8d0a38">启蒙时代的插曲</h4>
-<div class="outline-text-4" id="text-orge8d0a38">
+<div id="outline-container-org5539740" class="outline-4">
+<h4 id="org5539740">启蒙时代的插曲</h4>
+<div class="outline-text-4" id="text-org5539740">
 <ol class="org-ol">
 <li>斯密认为他在法理学方面的工作是一个更大项目的重要组成部分<br /></li>
 <li>斯密认为每种法律体系都应具备4个目标:其一,维护正义;其二,政府的有序管理;其三,提高公共收入;其四,管理国防武装.维护正义是最根本的<br /></li>
@@ -353,9 +327,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf4acc28" class="outline-4">
-<h4 id="orgf4acc28">你将在这个领域独领风骚</h4>
-<div class="outline-text-4" id="text-orgf4acc28">
+<div id="outline-container-org889e2a1" class="outline-4">
+<h4 id="org889e2a1">你将在这个领域独领风骚</h4>
+<div class="outline-text-4" id="text-org889e2a1">
 <ol class="org-ol">
 <li>国民财富的性质的原因的研究<br /></li>
 <li>财富并不等于货币或黄金的储量,也不等于任何东西的储量,而是“国家的所有土地和劳动力的年产量”<br /></li>
@@ -369,9 +343,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org561a08c" class="outline-4">
-<h4 id="org561a08c">工作到最后</h4>
-<div class="outline-text-4" id="text-org561a08c">
+<div id="outline-container-org4e09e7a" class="outline-4">
+<h4 id="org4e09e7a">工作到最后</h4>
+<div class="outline-text-4" id="text-org4e09e7a">
 <ol class="org-ol">
 <li>斯密对重商主义制度的最后一次也是最有力的攻击,他用法规作为证据证明了议会在多大程度上被商人的利益绑架<br /></li>
 <li>《国富论》和《道德情操论》不断的修改与再版,收集资料<br /></li>
@@ -379,13 +353,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org903d2f2" class="outline-3">
-<h3 id="org903d2f2">思想</h3>
-<div class="outline-text-3" id="text-org903d2f2">
+<div id="outline-container-org57e962a" class="outline-3">
+<h3 id="org57e962a">思想</h3>
+<div class="outline-text-3" id="text-org57e962a">
 </div>
-<div id="outline-container-orga0b8ebf" class="outline-4">
-<h4 id="orga0b8ebf">荣誉、事实和迷思</h4>
-<div class="outline-text-4" id="text-orga0b8ebf">
+<div id="outline-container-orgba46b7f" class="outline-4">
+<h4 id="orgba46b7f">荣誉、事实和迷思</h4>
+<div class="outline-text-4" id="text-orgba46b7f">
 <ol class="org-ol">
 <li>培根有句名言:“知识就是力量”,人应该理解控制自然,从而推动物质文明的进步.求知的理由不是因为学习的快乐、优雅性或内在价值,而是今天所说的技术效用,知识最终要转化为经济效用<br /></li>
 <li>培根的思想为工业革命奠定了基础<br /></li>
@@ -403,9 +377,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org93b4e4d" class="outline-4">
-<h4 id="org93b4e4d">亚当斯密的经济学</h4>
-<div class="outline-text-4" id="text-org93b4e4d">
+<div id="outline-container-org201237a" class="outline-4">
+<h4 id="org201237a">亚当斯密的经济学</h4>
+<div class="outline-text-4" id="text-org201237a">
 <ol class="org-ol">
 <li>《一般竞争分析》、一般均衡理论、福利经济学第一第二定律<br /></li>
 <li>主流经济学的六个分类:马克思主义、奥地利经济学、后凯恩斯主义、发展经济学、制度经济学<br /></li>
@@ -413,9 +387,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb0de284" class="outline-4">
-<h4 id="orgb0de284">亚当斯密与市场</h4>
-<div class="outline-text-4" id="text-orgb0de284">
+<div id="outline-container-orgec893fb" class="outline-4">
+<h4 id="orgec893fb">亚当斯密与市场</h4>
+<div class="outline-text-4" id="text-orgec893fb">
 <ol class="org-ol">
 <li>斯密是如何理解市场的?<br /></li>
 <li>亚当·斯密指出：“我相信，一切时代，一切国民的经验，都证明了一件事，即：奴隶劳动虽表面上看起来只需维持他们生活的费用，但彻底盘算起来，其代价是任何劳动中最高的。”在《国富论》中，他还写道：“从历代和各国的经验来看，我相信自由人的劳动比奴隶劳动来得便宜。”<br /></li>
@@ -428,13 +402,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org33a9f2a" class="outline-3">
-<h3 id="org33a9f2a">影响</h3>
-<div class="outline-text-3" id="text-org33a9f2a">
+<div id="outline-container-org67e5f51" class="outline-3">
+<h3 id="org67e5f51">影响</h3>
+<div class="outline-text-3" id="text-org67e5f51">
 </div>
-<div id="outline-container-orgec93654" class="outline-4">
-<h4 id="orgec93654">资本主义的不足</h4>
-<div class="outline-text-4" id="text-orgec93654">
+<div id="outline-container-orga86353f" class="outline-4">
+<h4 id="orga86353f">资本主义的不足</h4>
+<div class="outline-text-4" id="text-orga86353f">
 <ol class="org-ol">
 <li>一种新兴的全球价值体系,这种体系崇尚物质上的成功,鄙视民族文化、地方价值和制度<br /></li>
 <li>裙带资本主义的两个主要特征:商业活动与更广泛的公众利益失去了任何联系;商业利益与商业回报分离<br /></li>
@@ -445,9 +419,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf6e7f1a" class="outline-4">
-<h4 id="orgf6e7f1a">商业社会的道德基础</h4>
-<div class="outline-text-4" id="text-orgf6e7f1a">
+<div id="outline-container-orgbd9999c" class="outline-4">
+<h4 id="orgbd9999c">商业社会的道德基础</h4>
+<div class="outline-text-4" id="text-orgbd9999c">
 <ol class="org-ol">
 <li>法国法律制度与英格兰、苏格兰的司法体系之间的生动对比:英格兰与苏格兰的司法是讲究法律独立和正当程序的.<br /></li>
 <li>在所有道德情操的败坏这种,派系和狂热是迄今为止最大的败坏者<br /></li>
@@ -457,9 +431,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org0635814" class="outline-4">
-<h4 id="org0635814">亚当斯密的重要意义</h4>
-<div class="outline-text-4" id="text-org0635814">
+<div id="outline-container-org95a9477" class="outline-4">
+<h4 id="org95a9477">亚当斯密的重要意义</h4>
+<div class="outline-text-4" id="text-org95a9477">
 <ol class="org-ol">
 <li>朝鲜在经济原则上处于帕累托最优状态<br /></li>
 <li>对于斯密来说:“财产的状态必须随着政府的形式而变化”,因为财产和政府都依赖于基于社会共识的规范和模式,他们的发展都以人类的道德情感为基础.因此,政治和经济最终不可能相互分离,或者说任何一方都不可能与道德评价分离.不可能有无关价值的经济学,虽然我们可以分离出经济的、政治的、道德的不同角度来讨论人类行为,但这样做只是反映了我们对只是便利性的需要,而不是说他们在本质上是深度割裂的.<br /></li>

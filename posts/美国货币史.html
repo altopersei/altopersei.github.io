@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,15 +218,15 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
+</div><div id="content" class="content">
 
-<div id="outline-container-orgdecf808" class="outline-2">
-<h2 id="orgdecf808">美国货币史</h2>
-<div class="outline-text-2" id="text-orgdecf808">
+<div id="outline-container-orgf1cbb4f" class="outline-2">
+<h2 id="orgf1cbb4f">美国货币史</h2>
+<div class="outline-text-2" id="text-orgf1cbb4f">
 </div>
-<div id="outline-container-orga7f3317" class="outline-3">
-<h3 id="orga7f3317">绪论</h3>
-<div class="outline-text-3" id="text-orga7f3317">
+<div id="outline-container-org0da1681" class="outline-3">
+<h3 id="org0da1681">绪论</h3>
+<div class="outline-text-3" id="text-org0da1681">
 <ol class="org-ol">
 <li>我们都在跟踪一条线索,那就是货币存量</li>
 <li>凯恩斯:“没有东西比在一个非理性的世界使用一个理性投资政策更具毁灭性”</li>
@@ -265,9 +239,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org89ab3f0" class="outline-3">
-<h3 id="org89ab3f0">绿钞时期</h3>
-<div class="outline-text-3" id="text-org89ab3f0">
+<div id="outline-container-org18b4ea4" class="outline-3">
+<h3 id="org18b4ea4">绿钞时期</h3>
+<div class="outline-text-3" id="text-org18b4ea4">
 <ol class="org-ol">
 <li>通货和存款的区别及其比率</li>
 <li>基础(高能)货币的概念</li>
@@ -284,9 +258,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgfd15db6" class="outline-3">
-<h3 id="orgfd15db6">银元政治和价格长期下降(1879-1897)</h3>
-<div class="outline-text-3" id="text-orgfd15db6">
+<div id="outline-container-orgd0eb3af" class="outline-3">
+<h3 id="orgd0eb3af">银元政治和价格长期下降(1879-1897)</h3>
+<div class="outline-text-3" id="text-orgd0eb3af">
 <ol class="org-ol">
 <li>在金本位的固定汇率下,货币存量最终是由外部因素影响的内生变量</li>
 <li>从整体上来看,1879-1897年是商业银行体系迅速扩张的一段时期</li>
@@ -295,9 +269,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org8143e6b" class="outline-3">
-<h3 id="org8143e6b">黄金通胀和银行改革</h3>
-<div class="outline-text-3" id="text-org8143e6b">
+<div id="outline-container-org5149053" class="outline-3">
+<h3 id="org5149053">黄金通胀和银行改革</h3>
+<div class="outline-text-3" id="text-org5149053">
 <ol class="org-ol">
 <li>1897年以后,世界范围内的价格都出现了上涨,最直接的原因是黄金产量的大幅增长</li>
 <li>1890-1914年间,世界黄金以年均3.5%的速度增长了一倍多,之前的24年中,年均增速为1.5%</li>

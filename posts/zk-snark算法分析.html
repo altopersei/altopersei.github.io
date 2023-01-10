@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,41 +218,62 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org945e575">ZK-SNARK Algorithm Analysis</a>
-<ul>
-<li><a href="#orgae9f513">zk-snark算法的核心步骤</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+</div><div id="content" class="content">
 
-<div id="outline-container-org945e575" class="outline-2">
-<h2 id="org945e575">ZK-SNARK Algorithm Analysis</h2>
-<div class="outline-text-2" id="text-org945e575">
+
+<div id="outline-container-org0b9761e" class="outline-2">
+<h2 id="org0b9761e">ZK-SNARK Algorithm Analysis</h2>
+<div class="outline-text-2" id="text-org0b9761e">
 </div>
-<div id="outline-container-orgae9f513" class="outline-3">
-<h3 id="orgae9f513">zk-snark算法的核心步骤</h3>
-<div class="outline-text-3" id="text-orgae9f513">
+<div id="outline-container-org01f87e9" class="outline-3">
+<h3 id="org01f87e9">zk-snark算法的核心步骤</h3>
+<div class="outline-text-3" id="text-org01f87e9">
 <p>
 The main procedure for using the zk-SNARK algorithm typically consists of the following steps:<br />
+    <b>Setup</b> : The prover and verifier agree on a set of public parameters and a common reference string, which will be used to define the underlying mathematical structures needed for the proof.<br />
+    <b>Proving</b> : The prover generates a proof, which consists of a set of mathematical statements that demonstrate that they know the required information, without revealing any actual information about the information itself.<br />
+    <b>Verification</b> : The verifier receives the proof and checks it against the common reference string and the public parameters to ensure that it is valid. If the proof is valid, the verifier can be confident that the prover knows the required information, without learning any information about the actual information itself.<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org7a542d1" class="outline-3">
+<h3 id="org7a542d1">Public Setup</h3>
+<div class="outline-text-3" id="text-org7a542d1">
+<p>
+In the zk-SNARK algorithm, the setup phase is the first step in the process of creating a proof and involves agreeing on a set of public parameters and a common reference string, which will be used to define the underlying mathematical structures needed for the proof.<br />
 </p>
 
 <p>
-Setup: The prover and verifier agree on a set of public parameters and a common reference string, which will be used to define the underlying mathematical structures needed for the proof.<br />
+The public parameters are a set of values that are publicly known to both the prover and the verifier and are used to define the mathematical structure of the proof. They can include things like the prime order of the elliptic curve being used, the generator point of the elliptic curve, and other values that are needed to define the proof.<br />
 </p>
 
 <p>
-Proving: The prover generates a proof, which consists of a set of mathematical statements that demonstrate that they know the required information, without revealing any actual information about the information itself.<br />
+The common reference string is a value that is shared between the prover and the verifier and is used to define the specific structure of the proof. It can include things like the system parameters of the proof, the proving and verification keys, and other values that are needed to define the proof.<br />
 </p>
 
 <p>
-Verification: The verifier receives the proof and checks it against the common reference string and the public parameters to ensure that it is valid. If the proof is valid, the verifier can be confident that the prover knows the required information, without learning any information about the actual information itself.<br />
+During the setup phase, the prover and the verifier agree on the public parameters and the common reference string, which will be used to define the underlying mathematical structure of the proof. This is an important step in the zk-SNARK process, as it ensures that both parties are working with the same set of values and have a common understanding of the proof structure.<br />
+</p>
+
+<p>
+Once the setup phase is complete, the prover can then proceed to the proving phase, where they will generate the actual proof, and the verifier can proceed to the verification phase, where they will check the proof against the common reference string and the public parameters to ensure that it is valid.<br />
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd3bddf" class="outline-3">
+<h3 id="orgcd3bddf">zksnark算法当中多项式承诺是如何与weil pairing结合的？</h3>
+<div class="outline-text-3" id="text-orgcd3bddf">
+<p>
+在zkSNARK算法中，多项式承诺被用于隐藏信息，并允许证明者在不提供多项式的任何信息的情况下，向验证者证明其值在一个特定的域内。这样可以让证明者在证明他满足某些条件的同时，保护他的隐私。<br />
+</p>
+
+<p>
+Weil pairing 则被用来验证多项式承诺的有效性，以及证明者提供的证据是否正确。通过使用 Weil pairing 来验证证据的有效性，验证者可以确定多项式承诺的值是否真的在特定的域内。<br />
+</p>
+
+<p>
+总的来说，多项式承诺和 Weil pairing 在 zkSNARK 算法中是相互结合的，多项式承诺被用来隐藏信息，而 Weil pairing 则被用来验证多项式承诺的有效性以及证明者提供的证据的正确性。<br />
 </p>
 </div>
 </div>

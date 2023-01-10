@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,35 +218,35 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgd4e955d">高效能人士的七个习惯</a>
+<li><a href="#org8c4646e">高效能人士的七个习惯</a>
 <ul>
-<li><a href="#org60af3cd">序言</a></li>
-<li><a href="#org27dde7a">第一部分 思维方式与原则</a>
+<li><a href="#org47ad95a">序言</a></li>
+<li><a href="#org2a92759">第一部分 思维方式与原则</a>
 <ul>
-<li><a href="#org7b34099">由内而外全面造就自己</a>
+<li><a href="#orgc356b81">由内而外全面造就自己</a>
 <ul>
-<li><a href="#orgcdb5132">付诸行动</a></li>
+<li><a href="#orgedf9e04">付诸行动</a></li>
 </ul>
 </li>
-<li><a href="#orge0e6f7a">第二张 七个习惯概论</a></li>
+<li><a href="#orgcfba676">第二张 七个习惯概论</a></li>
 </ul>
 </li>
-<li><a href="#orgddc5ac8">第二部分 个人领域的成功：从依赖到独立</a>
+<li><a href="#org0ec2c9d">第二部分 个人领域的成功：从依赖到独立</a>
 <ul>
-<li><a href="#orga7fe8df">第三章 积极主动-个人愿景的原则</a></li>
-<li><a href="#orgbaac9fa">第四章 以终为始-自我领导的原则</a></li>
-<li><a href="#org39063a6">第五章 习惯三 要事第一——自我管理的原则</a></li>
+<li><a href="#org1acee78">第三章 积极主动-个人愿景的原则</a></li>
+<li><a href="#orge97b993">第四章 以终为始-自我领导的原则</a></li>
+<li><a href="#org9a41556">第五章 习惯三 要事第一——自我管理的原则</a></li>
 </ul>
 </li>
-<li><a href="#orgb7b3e04">第3部分 公众领域的成功：从独立到依赖</a>
+<li><a href="#orgda9e836">第3部分 公众领域的成功：从独立到依赖</a>
 <ul>
-<li><a href="#orge560776">第六章 人际关系的本质</a></li>
-<li><a href="#org9bbd799">第七章 习惯四 双赢思维</a></li>
+<li><a href="#org2854392">第六章 人际关系的本质</a></li>
+<li><a href="#org29d2f93">第七章 习惯四 双赢思维</a></li>
 </ul>
 </li>
 </ul>
@@ -281,13 +255,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd4e955d" class="outline-2">
-<h2 id="orgd4e955d">高效能人士的七个习惯</h2>
-<div class="outline-text-2" id="text-orgd4e955d">
+<div id="outline-container-org8c4646e" class="outline-2">
+<h2 id="org8c4646e">高效能人士的七个习惯</h2>
+<div class="outline-text-2" id="text-org8c4646e">
 </div>
-<div id="outline-container-org60af3cd" class="outline-3">
-<h3 id="org60af3cd">序言</h3>
-<div class="outline-text-3" id="text-org60af3cd">
+<div id="outline-container-org47ad95a" class="outline-3">
+<h3 id="org47ad95a">序言</h3>
+<div class="outline-text-3" id="text-org47ad95a">
 <ol class="org-ol">
 <li>柯维首先写的是“塑造性格”而不是“获得成功”<br /></li>
 <li>不随时间改变的原则一定存在,寻找的过程是一种智慧<br /></li>
@@ -297,13 +271,13 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org27dde7a" class="outline-3">
-<h3 id="org27dde7a">第一部分 思维方式与原则</h3>
-<div class="outline-text-3" id="text-org27dde7a">
+<div id="outline-container-org2a92759" class="outline-3">
+<h3 id="org2a92759">第一部分 思维方式与原则</h3>
+<div class="outline-text-3" id="text-org2a92759">
 </div>
-<div id="outline-container-org7b34099" class="outline-4">
-<h4 id="org7b34099">由内而外全面造就自己</h4>
-<div class="outline-text-4" id="text-org7b34099">
+<div id="outline-container-orgc356b81" class="outline-4">
+<h4 id="orgc356b81">由内而外全面造就自己</h4>
+<div class="outline-text-4" id="text-orgc356b81">
 <ol class="org-ol">
 <li>每个人的思维方式都是那么根深蒂固，仅仅研究世界是不够的，还要研究我们看世界时所戴的“透镜”，因为这透镜（即思维方式）往往左右着我们对世界的看法。<br /></li>
 <li>这里作者讨论了从美国成功学理论从“品德修养”转到“性格、行为、技巧”的转变,我可以折中理解为“修品德,塑性格”,而技巧是次要的<br /></li>
@@ -314,18 +288,18 @@ for the JavaScript code in this tag.
 <li>以原则为中心，以品德为基础，要求“由内而外”地实现个人效能和人际效能。<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgcdb5132" class="outline-5">
-<h5 id="orgcdb5132">付诸行动</h5>
-<div class="outline-text-5" id="text-orgcdb5132">
+<div id="outline-container-orgedf9e04" class="outline-5">
+<h5 id="orgedf9e04">付诸行动</h5>
+<div class="outline-text-5" id="text-orgedf9e04">
 <ol class="org-ol">
 <li>作者再次讨论了思维方式,我再次存疑,再次为能否清晰感知自己的思维方式而存疑(原文:我们越能意识到自己的思维方式或推测能力的局限，意识到我们在多大程度上受到自己过去经验的影响)<br /></li>
 </ol>
 </div>
 </div>
 </div>
-<div id="outline-container-orge0e6f7a" class="outline-4">
-<h4 id="orge0e6f7a">第二张 七个习惯概论</h4>
-<div class="outline-text-4" id="text-orge0e6f7a">
+<div id="outline-container-orgcfba676" class="outline-4">
+<h4 id="orgcfba676">第二张 七个习惯概论</h4>
+<div class="outline-text-4" id="text-orgcfba676">
 <ol class="org-ol">
 <li>人的行为总是一再重复。因此卓越不是一时的行为，而是习惯<br /></li>
 <li>本书将习惯定义为“知识”、“技巧”与“意愿”相互交织的结果。(知识是理论范畴，指点“做什么”及“为何做”；技巧告诉我们“如何做”；意愿促使“想要做”。要养成一种习惯，三者缺一不可)<br /></li>
@@ -337,13 +311,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgddc5ac8" class="outline-3">
-<h3 id="orgddc5ac8">第二部分 个人领域的成功：从依赖到独立</h3>
-<div class="outline-text-3" id="text-orgddc5ac8">
+<div id="outline-container-org0ec2c9d" class="outline-3">
+<h3 id="org0ec2c9d">第二部分 个人领域的成功：从依赖到独立</h3>
+<div class="outline-text-3" id="text-org0ec2c9d">
 </div>
-<div id="outline-container-orga7fe8df" class="outline-4">
-<h4 id="orga7fe8df">第三章 积极主动-个人愿景的原则</h4>
-<div class="outline-text-4" id="text-orga7fe8df">
+<div id="outline-container-org1acee78" class="outline-4">
+<h4 id="org1acee78">第三章 积极主动-个人愿景的原则</h4>
+<div class="outline-text-4" id="text-org1acee78">
 <ol class="org-ol">
 <li><p>
 刺激与回应之间选择的自由(巴普洛的狗则不行,思考人类心理学上的刺激)<br />
@@ -401,9 +375,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgbaac9fa" class="outline-4">
-<h4 id="orgbaac9fa">第四章 以终为始-自我领导的原则</h4>
-<div class="outline-text-4" id="text-orgbaac9fa">
+<div id="outline-container-orge97b993" class="outline-4">
+<h4 id="orge97b993">第四章 以终为始-自我领导的原则</h4>
+<div class="outline-text-4" id="text-orge97b993">
 <ol class="org-ol">
 <li>以终为始的定义<br />
 <ul class="org-ul">
@@ -435,9 +409,9 @@ Mental/First Creation -&gt; Physical/Second Creation<br />
 </div>
 </div>
 
-<div id="outline-container-org39063a6" class="outline-4">
-<h4 id="org39063a6">第五章 习惯三 要事第一——自我管理的原则</h4>
-<div class="outline-text-4" id="text-org39063a6">
+<div id="outline-container-org9a41556" class="outline-4">
+<h4 id="org9a41556">第五章 习惯三 要事第一——自我管理的原则</h4>
+<div class="outline-text-4" id="text-org9a41556">
 <p>
 有效管理是把我重点的管理，它把最重要的事情放在第一位。由领导决定什么是重点后，再靠自制力来掌握重点，时刻把它们放在第一位，以免被感觉、情绪或冲动所左右<br />
 </p>
@@ -479,13 +453,13 @@ Mental/First Creation -&gt; Physical/Second Creation<br />
 </div>
 </div>
 
-<div id="outline-container-orgb7b3e04" class="outline-3">
-<h3 id="orgb7b3e04">第3部分 公众领域的成功：从独立到依赖</h3>
-<div class="outline-text-3" id="text-orgb7b3e04">
+<div id="outline-container-orgda9e836" class="outline-3">
+<h3 id="orgda9e836">第3部分 公众领域的成功：从独立到依赖</h3>
+<div class="outline-text-3" id="text-orgda9e836">
 </div>
-<div id="outline-container-orge560776" class="outline-4">
-<h4 id="orge560776">第六章 人际关系的本质</h4>
-<div class="outline-text-4" id="text-orge560776">
+<div id="outline-container-org2854392" class="outline-4">
+<h4 id="org2854392">第六章 人际关系的本质</h4>
+<div class="outline-text-4" id="text-org2854392">
 <ol class="org-ol">
 <li>情感账户<br />
 <ul class="org-ul">
@@ -512,9 +486,9 @@ Mental/First Creation -&gt; Physical/Second Creation<br />
 </div>
 </div>
 
-<div id="outline-container-org9bbd799" class="outline-4">
-<h4 id="org9bbd799">第七章 习惯四 双赢思维</h4>
-<div class="outline-text-4" id="text-org9bbd799">
+<div id="outline-container-org29d2f93" class="outline-4">
+<h4 id="org29d2f93">第七章 习惯四 双赢思维</h4>
+<div class="outline-text-4" id="text-org29d2f93">
 <p>
 双赢者把生活看作一个合作的舞台，而不是一个角斗场<br />
 </p>

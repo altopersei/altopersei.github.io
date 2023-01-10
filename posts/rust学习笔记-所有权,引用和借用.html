@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,14 +218,14 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="outline-container-orgecc0c3e" class="outline-2">
-<h2 id="orgecc0c3e">Rust核心概念:所有权,引用和借用</h2>
-<div class="outline-text-2" id="text-orgecc0c3e">
+</div><div id="content" class="content">
+<div id="outline-container-org4fc5e8d" class="outline-2">
+<h2 id="org4fc5e8d">Rust核心概念:所有权,引用和借用</h2>
+<div class="outline-text-2" id="text-org4fc5e8d">
 </div>
-<div id="outline-container-org6b694ff" class="outline-3">
-<h3 id="org6b694ff">为什么需要所有权(Ownership)</h3>
-<div class="outline-text-3" id="text-org6b694ff">
+<div id="outline-container-org55e1291" class="outline-3">
+<h3 id="org55e1291">为什么需要所有权(Ownership)</h3>
+<div class="outline-text-3" id="text-org55e1291">
 <p>
 Rust的核心概念之一即为所有权的概念,所有权的概念帮助编译器
 在编译时(Compiler time)确立规则保证资源的管理，从而不会在
@@ -260,9 +234,9 @@ Rust的核心概念之一即为所有权的概念,所有权的概念帮助编译
 </div>
 </div>
 
-<div id="outline-container-org561f480" class="outline-3">
-<h3 id="org561f480">所有权规则(Ownership rule)</h3>
-<div class="outline-text-3" id="text-org561f480">
+<div id="outline-container-org8141283" class="outline-3">
+<h3 id="org8141283">所有权规则(Ownership rule)</h3>
+<div class="outline-text-3" id="text-org8141283">
 <ol class="org-ol">
 <li>在Rust中的每个值附属于一个'所有者'的变量</li>
 <li>任何时候每个值只能拥有一个'所有者'</li>
@@ -270,9 +244,9 @@ Rust的核心概念之一即为所有权的概念,所有权的概念帮助编译
 </ol>
 </div>
 </div>
-<div id="outline-container-orga8bf259" class="outline-3">
-<h3 id="orga8bf259">以String为例</h3>
-<div class="outline-text-3" id="text-orga8bf259">
+<div id="outline-container-org6232407" class="outline-3">
+<h3 id="org6232407">以String为例</h3>
+<div class="outline-text-3" id="text-org6232407">
 <div class="org-src-container">
 <pre class="src src-rust">{
     <span style="color: #4f97d7; font-weight: bold;">let</span> <span style="color: #7590db;">s</span> = <span style="color: #2d9574;">"Hello world"</span>;                <span style="color: #9f8766;">/// s refs to string literal(s -&gt; &amp;str), which was hard coded into binary by compiler</span>
@@ -282,15 +256,14 @@ Rust的核心概念之一即为所有权的概念,所有权的概念帮助编译
 </pre>
 </div>
 <p>
-一个<code class="src src-rust"><span style="color: #ce537a; font-weight: bold;">String</span></code>对象由3部分组成,从 <a href="#org08039fe">fig-1</a>可知,第一部分是一个指针，这个指针指向的堆内存保存着
+一个<code class="src src-rust"><span style="color: #ce537a; font-weight: bold;">String</span></code>对象由3部分组成,从 <a href="#orgd4b5e97">fig-1</a>可知,第一部分是一个指针，这个指针指向的堆内存保存着
 字符串的内容，另外两个部分是字符串的长度(length)和容量(capacity)。并且这三个部分都是组合存在于栈上的。
 </p>
 
 
 
-<div id="org08039fe" class="figure">
-<p><object type="image/svg+xml" data="http:doc.rust-lang.org/book/2018-edition/img/trpl04-01.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
+<div id="orgd4b5e97" class="figure">
+<p><img src="http:doc.rust-lang.org/book/2018-edition/img/trpl04-01.svg" alt="trpl04-01.svg" class="org-svg" />
 </p>
 <p><span class="figure-number">Figure 1: </span>s1的内存布局</p>
 </div>
@@ -323,9 +296,9 @@ Sorry, your browser does not support SVG.</object>
 </p>
 </div>
 </div>
-<div id="outline-container-org6fa3e96" class="outline-3">
-<h3 id="org6fa3e96">函数和所有权</h3>
-<div class="outline-text-3" id="text-org6fa3e96">
+<div id="outline-container-org8702364" class="outline-3">
+<h3 id="org8702364">函数和所有权</h3>
+<div class="outline-text-3" id="text-org8702364">
 <p>
 向函数传递参数类似于用值给变量赋值,同样会发生所有权的转移。反过来,函数的返回值同样也会发生所有权的转移。
 </p>
@@ -350,9 +323,9 @@ Sorry, your browser does not support SVG.</object>
 </div>
 </div>
 </div>
-<div id="outline-container-org764108b" class="outline-3">
-<h3 id="org764108b">什么是引用</h3>
-<div class="outline-text-3" id="text-org764108b">
+<div id="outline-container-org6b44ce9" class="outline-3">
+<h3 id="org6b44ce9">什么是引用</h3>
+<div class="outline-text-3" id="text-org6b44ce9">
 <p>
 rust官方文档中对引用没有严格的定义,其实可以理解为在变量或对象面前加上C语言的取地址符<code class="src src-rust">&amp;</code>,我们即可代表
 这是一个对原变量/对象的引用。引用允许你获取某些值但你对这些值并不持有所有权，因为引用不持有所有权，因此当引用离开作用域的时
@@ -374,18 +347,18 @@ rust官方文档中对引用没有严格的定义,其实可以理解为在变量
 </div>
 </div>
 </div>
-<div id="outline-container-orgd975cb4" class="outline-3">
-<h3 id="orgd975cb4">什么是借用</h3>
-<div class="outline-text-3" id="text-orgd975cb4">
+<div id="outline-container-org6a60328" class="outline-3">
+<h3 id="org6a60328">什么是借用</h3>
+<div class="outline-text-3" id="text-org6a60328">
 <p>
 有了引用概念的铺陈,借用的概念就更简单了。我们称将引用作为函数参数的行为叫做借用。通常情况下类似
 于现实生活中如果一个人拥有某样物品，你可以向他借用这件物品，当你使用完毕，你也必须返给拥有者。
 </p>
 </div>
 
-<div id="outline-container-org9d11706" class="outline-4">
-<h4 id="org9d11706">可变引用和可变借用</h4>
-<div class="outline-text-4" id="text-org9d11706">
+<div id="outline-container-orgc8c623c" class="outline-4">
+<h4 id="orgc8c623c">可变引用和可变借用</h4>
+<div class="outline-text-4" id="text-orgc8c623c">
 <div class="org-src-container">
 <pre class="src src-rust"><span style="color: #4f97d7; font-weight: bold;">struct</span> <span style="color: #ce537a; font-weight: bold;">Point</span> {<span style="color: #7590db;">x</span>: <span style="color: #ce537a; font-weight: bold;">i32</span>, <span style="color: #7590db;">y</span>: <span style="color: #ce537a; font-weight: bold;">i32</span>, <span style="color: #7590db;">z</span>: <span style="color: #ce537a; font-weight: bold;">i32</span>} 
 {

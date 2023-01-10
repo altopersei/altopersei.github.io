@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,10 +218,10 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="outline-container-orgc524a4e" class="outline-2">
-<h2 id="orgc524a4e"><span class="section-number-2">1</span> 封面及序言</h2>
-<div class="outline-text-2" id="text-1">
+</div><div id="content" class="content">
+<div id="outline-container-orga557e0d" class="outline-2">
+<h2 id="orga557e0d">封面及序言</h2>
+<div class="outline-text-2" id="text-orga557e0d">
 <p>
 现在依然衰朽者,将来可能重放异彩.现在备受青睐者,将来却可能黯然失色
 </p>
@@ -270,9 +244,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org719b409" class="outline-2">
-<h2 id="org719b409"><span class="section-number-2">2</span> 证券分析的范围与局限以及内在价值的概念</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org0077880" class="outline-2">
+<h2 id="org0077880">证券分析的范围与局限以及内在价值的概念</h2>
+<div class="outline-text-2" id="text-org0077880">
 <ol class="org-ol">
 <li>一般来说,内在价值是由资产、收益、股息等事实和可以确定的前景决定.是“事实证明合理的价值”</li>
 <li>内在价值与“账面价值”基本一样,这种观点相当明确,但毫无实际价值,因为不论是平均收入还是平均市场价格,都不由账面价值决定.</li>
@@ -282,9 +256,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgdb65fd3" class="outline-2">
-<h2 id="orgdb65fd3"><span class="section-number-2">3</span> 分析问题的基本要素以及定性定量因素</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-orga72e42c" class="outline-2">
+<h2 id="orga72e42c">分析问题的基本要素以及定性定量因素</h2>
+<div class="outline-text-2" id="text-orga72e42c">
 <ol class="org-ol">
 <li>四个基本要素: 证券、价格、时间、人</li>
 <li>适用于分析师的原则:几乎每一个证券都可能在某个价格水平上具备投资价值,而在另一价格水平上则不值得投资.</li>
@@ -301,12 +275,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgafb2a39" class="outline-2">
-<h2 id="orgafb2a39"><span class="section-number-2">4</span> 信息来源</h2>
+<div id="outline-container-org1ca32cd" class="outline-2">
+<h2 id="org1ca32cd">信息来源</h2>
 </div>
-<div id="outline-container-org1c348df" class="outline-2">
-<h2 id="org1c348df"><span class="section-number-2">5</span> 区分投资与投机</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org58baf1f" class="outline-2">
+<h2 id="org58baf1f">区分投资与投机</h2>
+<div class="outline-text-2" id="text-org58baf1f">
 <ol class="org-ol">
 <li>投资运作是根据深入的分析,承诺本金安全以及回报率令人满意的操作.不符合这些条件就是投机.</li>
 <li>绝大部分实力雄厚公司的普通股,在大多数时间里都必须被看作投机买卖,因为他们的价格太高了.</li>
@@ -317,9 +291,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb4b210a" class="outline-2">
-<h2 id="orgb4b210a"><span class="section-number-2">6</span> 证券的分类</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-org5b3d4b3" class="outline-2">
+<h2 id="org5b3d4b3">证券的分类</h2>
+<div class="outline-text-2" id="text-org5b3d4b3">
 <ol class="org-ol">
 <li>分类的基础并不是证券的名称,而是特定条件和地位对持有者的意义</li>
 <li>分类
@@ -331,9 +305,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org958e283" class="outline-2">
-<h2 id="org958e283"><span class="section-number-2">7</span> 固定价值投资</h2>
-<div class="outline-text-2" id="text-7">
+<div id="outline-container-orgaf7b52a" class="outline-2">
+<h2 id="orgaf7b52a">固定价值投资</h2>
+<div class="outline-text-2" id="text-orgaf7b52a">
 <ol class="org-ol">
 <li>僵化的、排他的以及非黑即白的对待投资适当性的态度,使得凯恩斯一针见血的指出:“投机者对他们的风险一清二楚,而投资者对其承担的风险却一无所知.”</li>
 <li>实际上、任何资产都可以成为好的投资的标,只要在购买时对其有全面的了解并且购买价格足够低;反之亦然,如果购买价格过高,再优质的资产都有可能是糟糕的投资.</li>

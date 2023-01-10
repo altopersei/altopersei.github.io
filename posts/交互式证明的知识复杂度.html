@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,93 +189,76 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
+</div><div id="content" class="content">
 
-<div id="outline-container-org846b34e" class="outline-2">
-<h2 id="org846b34e">The Knowledge Complexity of Interactive Proof System</h2>
-<div class="outline-text-2" id="text-org846b34e">
+<div id="outline-container-orgdf25913" class="outline-2">
+<h2 id="orgdf25913">The Knowledge Complexity of Interactive Proof System</h2>
+<div class="outline-text-2" id="text-orgdf25913">
 </div>
-<div id="outline-container-orgeaffccc" class="outline-3">
-<h3 id="orgeaffccc">Abstract</h3>
-<div class="outline-text-3" id="text-orgeaffccc">
+<div id="outline-container-orgd0422fb" class="outline-3">
+<h3 id="orgd0422fb">Abstract</h3>
+<div class="outline-text-3" id="text-orgd0422fb">
 <p>
 通常来说,一个证明会包含超过仅仅证明命题正确所需要的知识.比如,去证明一个图中包含哈密顿回路.然而,这个证明显然包含的知识要超过是/否这个1位的答案.<br />
 </p>
@@ -285,9 +269,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgec65c92" class="outline-3">
-<h3 id="orgec65c92">Introduction</h3>
-<div class="outline-text-3" id="text-orgec65c92">
+<div id="outline-container-org0552689" class="outline-3">
+<h3 id="org0552689">Introduction</h3>
+<div class="outline-text-3" id="text-org0552689">
 <p>
 通常说一个语言L是NP的等价于对L存在一个多项式时间的“证明系统”,其给定一个输入x,一个证明者(prover)生成一个字符串&alpha;,验证者(verifier)利用x和 &alpha; 在多项式时间内计算给定的x的二进制表示属于L.问是否有更通用,(可能)更自然的多项式时间内的证明系统是很合理的,本文提出了一个这样的概念<br />
 </p>
@@ -316,16 +300,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org9605074" class="outline-3">
-<h3 id="org9605074">Interactive proof system</h3>
-<div class="outline-text-3" id="text-org9605074">
+<div id="outline-container-orgbe93392" class="outline-3">
+<h3 id="orgbe93392">Interactive proof system</h3>
+<div class="outline-text-3" id="text-orgbe93392">
 </div>
-<div id="outline-container-orgfa0edad" class="outline-4">
-<h4 id="orgfa0edad">交互式图灵机和协议</h4>
+<div id="outline-container-org760ec6f" class="outline-4">
+<h4 id="org760ec6f">交互式图灵机和协议</h4>
 </div>
-<div id="outline-container-org7dfe706" class="outline-4">
-<h4 id="org7dfe706">交互式证明 系统</h4>
-<div class="outline-text-4" id="text-org7dfe706">
+<div id="outline-container-org93ec6b1" class="outline-4">
+<h4 id="org93ec6b1">交互式证明 系统</h4>
+<div class="outline-text-4" id="text-org93ec6b1">
 <p>
 <b>定义</b>: 让 L 成为 \( \left \{ {0,1} \right \}^{*}  \) 之上的语言。让 (A,B) 成为交互式协议。如果我们有以下条件，我们说 (A, B) 是 L 的交互式证明系统：<br />
 </p>
@@ -348,9 +332,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgdac8aff" class="outline-3">
-<h3 id="orgdac8aff">zero-knowledge</h3>
-<div class="outline-text-3" id="text-orgdac8aff">
+<div id="outline-container-orgf821078" class="outline-3">
+<h3 id="orgf821078">zero-knowledge</h3>
+<div class="outline-text-3" id="text-orgf821078">
 <p>
 我们将给出一个更一般的定义，而不是只为交互式证明系统给出零知识的定义。 我们将定义任何交互式协议 (A, B) 对语言 L 的零知识的含义，无论 (A, B) 是否是 L 的证明系统。实际上这个定义根本不依赖于 B ; 正如我们将看到的，它表示对于每个多项式时间 \( B^{'}  \)，当与输入 \( x \subseteq \mathbf{L} \)交互时， \( B^{'}  \)“看到”的分布与可以在多项式时间内从 x 计算的分布“无法区分”。 因此，我们首先关注随机变量不可区分的概念。<br />
 </p>
@@ -358,9 +342,9 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgae0a276" class="outline-3">
-<h3 id="orgae0a276">The quadratic residuosity problem</h3>
-<div class="outline-text-3" id="text-orgae0a276">
+<div id="outline-container-orgb51510a" class="outline-3">
+<h3 id="orgb51510a">The quadratic residuosity problem</h3>
+<div class="outline-text-3" id="text-orgb51510a">
 <p>
 让 \( \mathbf{N} \) 表示正整数集合,\( x \subseteq \mathbf{N} \)  并且 \( \mathbf{Z_{x}^{*} } = \left \{ y \mid 1\le y< x, gcd(x,y)=1 \right \} \), 如果 \( \exists w \subseteq \mathbf{Z_{x}^{*} } \)使得 \[ \mathit{w^{2} } \equiv y  \bmod x  \] 我们称y在 \( \mathbf{Z_{x}^{*}} \)  中是x的二次剩余,不然,我们称y为x的二次非剩余<br />
 </p>
@@ -438,9 +422,9 @@ x和y都用二进制表示<br />
 </div>
 </div>
 
-<div id="outline-container-orgef047cf" class="outline-3">
-<h3 id="orgef047cf">Zero-knowledge proofs of quadratic residuosity</h3>
-<div class="outline-text-3" id="text-orgef047cf">
+<div id="outline-container-orgf1dd63c" class="outline-3">
+<h3 id="orgf1dd63c">Zero-knowledge proofs of quadratic residuosity</h3>
+<div class="outline-text-3" id="text-orgf1dd63c">
 <p>
 我们将首先非正式地描述我们针对 QR 的零知识交互证明系统，然后更严格地描述它。 假定 A 和 B被给定(x,y),|x|=m,进入如下的操作m次:<br />
 </p>

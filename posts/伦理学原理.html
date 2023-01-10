@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,36 +218,36 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0f15877">伦理学原理</a>
+<li><a href="#orge12d7b0">伦理学原理</a>
 <ul>
-<li><a href="#org4eb4dec">序论</a></li>
-<li><a href="#orgf6263ba">第一章 善恶正鹄论与形式论之见解</a></li>
-<li><a href="#orgeb323bc">第二章 至善快乐论与势力论之见解</a></li>
-<li><a href="#orge443c89">第三章 厌世主义</a></li>
-<li><a href="#org81f112a">第四章 论先天直觉论道德哲学之谬误</a></li>
-<li><a href="#org58bcbc6">第五章 义务及良心</a></li>
-<li><a href="#org36699e0">第六章 利己主义与利他主义</a></li>
-<li><a href="#orgdcfe1dd">第七章 道德及幸福</a></li>
-<li><a href="#org3ec6fae">第八章 道德与宗教之关系</a></li>
-<li><a href="#org7b86dac">第九章 意志之自由</a></li>
+<li><a href="#org4ec20db">序论</a></li>
+<li><a href="#orgab842cb">第一章 善恶正鹄论与形式论之见解</a></li>
+<li><a href="#orgcce8e9e">第二章 至善快乐论与势力论之见解</a></li>
+<li><a href="#orgc65d5ad">第三章 厌世主义</a></li>
+<li><a href="#org5c5a539">第四章 论先天直觉论道德哲学之谬误</a></li>
+<li><a href="#org69a3515">第五章 义务及良心</a></li>
+<li><a href="#orgbe7cfbd">第六章 利己主义与利他主义</a></li>
+<li><a href="#org8df17d6">第七章 道德及幸福</a></li>
+<li><a href="#org6b9ddde">第八章 道德与宗教之关系</a></li>
+<li><a href="#org4ed44d7">第九章 意志之自由</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0f15877" class="outline-2">
-<h2 id="org0f15877">伦理学原理</h2>
-<div class="outline-text-2" id="text-org0f15877">
+<div id="outline-container-orge12d7b0" class="outline-2">
+<h2 id="orge12d7b0">伦理学原理</h2>
+<div class="outline-text-2" id="text-orge12d7b0">
 </div>
-<div id="outline-container-org4eb4dec" class="outline-3">
-<h3 id="org4eb4dec">序论</h3>
-<div class="outline-text-3" id="text-org4eb4dec">
+<div id="outline-container-org4ec20db" class="outline-3">
+<h3 id="org4ec20db">序论</h3>
+<div class="outline-text-3" id="text-org4ec20db">
 <ol class="org-ol">
 <li>创始伦理学亚里士多德<br /></li>
 <li>科学统系中伦理学之位置.科学有二别:一主理论者,二主实践者.前者谓之学,后者谓之术.伦理学之属于术,无疑矣<br /></li>
@@ -286,9 +260,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgf6263ba" class="outline-3">
-<h3 id="orgf6263ba">第一章 善恶正鹄论与形式论之见解</h3>
-<div class="outline-text-3" id="text-orgf6263ba">
+<div id="outline-container-orgab842cb" class="outline-3">
+<h3 id="orgab842cb">第一章 善恶正鹄论与形式论之见解</h3>
+<div class="outline-text-3" id="text-orgab842cb">
 <ol class="org-ol">
 <li>善恶之见解之别.伦理学之思想,何自生乎?曰:生于两问题.其一曰:道德价值之差别,其究竟之基本何在乎?其二曰,人生究竟之正鹄何谓乎?<br /></li>
 <li>真者,善也;伪者,恶也;实行利己主义者,念虽小犹真也;借利他之名而行利己之实者,则大伪也.由利己而放开之至于利人类之大己,利生类之大己,系由小真而大真,人类智力进步可得达到也.予思吾儒家之说,乃是以利己主义为基础<br /></li>
@@ -297,9 +271,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgeb323bc" class="outline-3">
-<h3 id="orgeb323bc">第二章 至善快乐论与势力论之见解</h3>
-<div class="outline-text-3" id="text-orgeb323bc">
+<div id="outline-container-orgcce8e9e" class="outline-3">
+<h3 id="orgcce8e9e">第二章 至善快乐论与势力论之见解</h3>
+<div class="outline-text-3" id="text-orgcce8e9e">
 <ol class="org-ol">
 <li>人不能达到根本之欲望,亦可谓之人不能达到根本之理想.人只能达到借以达于理想之事,及事达到,理想又高一层.故理想终不能达到,惟事能达到也<br /></li>
 <li>快感为渐达至善之征候,而持快乐论者,乃即以征候为正鹄<br /></li>
@@ -311,9 +285,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orge443c89" class="outline-3">
-<h3 id="orge443c89">第三章 厌世主义</h3>
-<div class="outline-text-3" id="text-orge443c89">
+<div id="outline-container-orgc65d5ad" class="outline-3">
+<h3 id="orgc65d5ad">第三章 厌世主义</h3>
+<div class="outline-text-3" id="text-orgc65d5ad">
 <ol class="org-ol">
 <li>世界一切之事业及文明,固无不起于抵抗决胜也.(熵减与质变)<br /></li>
 <li>盖人类之势力增加,外界之抵抗亦增加(发展与挑战时刻共存)<br /></li>
@@ -335,9 +309,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org81f112a" class="outline-3">
-<h3 id="org81f112a">第四章 论先天直觉论道德哲学之谬误</h3>
-<div class="outline-text-3" id="text-org81f112a">
+<div id="outline-container-org5c5a539" class="outline-3">
+<h3 id="org5c5a539">第四章 论先天直觉论道德哲学之谬误</h3>
+<div class="outline-text-3" id="text-org5c5a539">
 <ol class="org-ol">
 <li>言不必信、行不必果、惟义所在<br /></li>
 <li>道德者,非吾人能使之无定,而彼本无定,且亦无时而定者也.道德者,非可恃简单之机械作用,本于先天能力,如所谓实践之理性及所谓良心者一瞬而得之<br /></li>
@@ -346,12 +320,12 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org58bcbc6" class="outline-3">
-<h3 id="org58bcbc6">第五章 义务及良心</h3>
+<div id="outline-container-org69a3515" class="outline-3">
+<h3 id="org69a3515">第五章 义务及良心</h3>
 </div>
-<div id="outline-container-org36699e0" class="outline-3">
-<h3 id="org36699e0">第六章 利己主义与利他主义</h3>
-<div class="outline-text-3" id="text-org36699e0">
+<div id="outline-container-orgbe7cfbd" class="outline-3">
+<h3 id="orgbe7cfbd">第六章 利己主义与利他主义</h3>
+<div class="outline-text-3" id="text-orgbe7cfbd">
 <ol class="org-ol">
 <li>斯宾诺莎:人当以利己者利人是也<br /></li>
 <li>对人之义务与对己之义务,绝非截然分立者.一身之安宁,与家族社会国家,互相错综.<br /></li>
@@ -361,9 +335,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgdcfe1dd" class="outline-3">
-<h3 id="orgdcfe1dd">第七章 道德及幸福</h3>
-<div class="outline-text-3" id="text-orgdcfe1dd">
+<div id="outline-container-org8df17d6" class="outline-3">
+<h3 id="org8df17d6">第七章 道德及幸福</h3>
+<div class="outline-text-3" id="text-org8df17d6">
 <ol class="org-ol">
 <li>外界之幸福,终不可得,而内界之幸福,则固可操矣<br /></li>
 <li>斯宾诺莎:幸福者,非道德之报应,而即道德也<br /></li>
@@ -372,9 +346,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org3ec6fae" class="outline-3">
-<h3 id="org3ec6fae">第八章 道德与宗教之关系</h3>
-<div class="outline-text-3" id="text-org3ec6fae">
+<div id="outline-container-org6b9ddde" class="outline-3">
+<h3 id="org6b9ddde">第八章 道德与宗教之关系</h3>
+<div class="outline-text-3" id="text-org6b9ddde">
 <ol class="org-ol">
 <li>二者同出一源,即热望其意志之达于美满之域是也.惟在道德则要求之,而在宗教则实行之<br /></li>
 <li>道德律者,实生活即安宁所自出之自然律也,其所以不随人类之意见而变更者(呼应上文的道德律并非目的,而是自然的结果,但作者这里批判了唯物论和无神论者对道德律的漠视)<br /></li>
@@ -382,9 +356,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org7b86dac" class="outline-3">
-<h3 id="org7b86dac">第九章 意志之自由</h3>
-<div class="outline-text-3" id="text-org7b86dac">
+<div id="outline-container-org4ed44d7" class="outline-3">
+<h3 id="org4ed44d7">第九章 意志之自由</h3>
+<div class="outline-text-3" id="text-org4ed44d7">
 <ol class="org-ol">
 <li>本章讨论传统哲学问题:free will,讨论的相当浅<br /></li>
 <li>讨论人类与动物的区别(本质上,我认为人类不同与动物的地方在于发展出了“群智”,即群体中发展出了语言文字和工具,进而进化出智慧文明并且可以留存延续并发展)<br /></li>

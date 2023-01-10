@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,23 +218,24 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org389f600">21世纪货币史</a>
+<li><a href="#org096fbad">21世纪货币史</a>
 <ul>
-<li><a href="#org7c463f4">前言</a></li>
-<li><a href="#orgd559a5b">第一部分 通货膨胀的起落</a>
+<li><a href="#org97341d2">前言</a></li>
+<li><a href="#orgec06bae">第一部分 通货膨胀的起落</a>
 <ul>
-<li><a href="#orgb83665e">大通胀</a></li>
-<li><a href="#orgd2c864c">格林斯潘和繁荣的20世纪90年代</a></li>
+<li><a href="#org1c965dc">大通胀</a></li>
+<li><a href="#org5f06988">格林斯潘和繁荣的20世纪90年代</a></li>
 </ul>
 </li>
-<li><a href="#orge4ca843">第二部分 全球金融危机和大衰退</a>
+<li><a href="#orgb5ce78c">第二部分 全球金融危机和大衰退</a>
 <ul>
-<li><a href="#org0b61172">新世纪与新挑战</a></li>
+<li><a href="#org7743307">新世纪与新挑战</a></li>
+<li><a href="#org35835a1">全球金融危机</a></li>
 </ul>
 </li>
 </ul>
@@ -271,13 +246,13 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-org389f600" class="outline-2">
-<h2 id="org389f600">21世纪货币史</h2>
-<div class="outline-text-2" id="text-org389f600">
+<div id="outline-container-org096fbad" class="outline-2">
+<h2 id="org096fbad">21世纪货币史</h2>
+<div class="outline-text-2" id="text-org096fbad">
 </div>
-<div id="outline-container-org7c463f4" class="outline-3">
-<h3 id="org7c463f4">前言</h3>
-<div class="outline-text-3" id="text-org7c463f4">
+<div id="outline-container-org97341d2" class="outline-3">
+<h3 id="org97341d2">前言</h3>
+<div class="outline-text-3" id="text-org97341d2">
 <ol class="org-ol">
 <li>凯恩斯主义经济学，在现代化情境下，仍然是美联储和其他央行的中心范式。<br /></li>
 <li>早期美国有着浓厚的民粹主义传统，从安德鲁·杰克逊(Andrew Jackson)总统到21世纪“茶党运动”和“占领华尔街运动”的成员，民粹主义者一直对人们眼中的金融和政府权力集中抱有敌意。民粹主义的影响有助于解释为什么美国直到1913年美联储成立之前都没有一个成熟的央行，这比许多其他发达经济体都晚<br /></li>
@@ -292,13 +267,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgd559a5b" class="outline-3">
-<h3 id="orgd559a5b">第一部分 通货膨胀的起落</h3>
-<div class="outline-text-3" id="text-orgd559a5b">
+<div id="outline-container-orgec06bae" class="outline-3">
+<h3 id="orgec06bae">第一部分 通货膨胀的起落</h3>
+<div class="outline-text-3" id="text-orgec06bae">
 </div>
-<div id="outline-container-orgb83665e" class="outline-4">
-<h4 id="orgb83665e">大通胀</h4>
-<div class="outline-text-4" id="text-orgb83665e">
+<div id="outline-container-org1c965dc" class="outline-4">
+<h4 id="org1c965dc">大通胀</h4>
+<div class="outline-text-4" id="text-org1c965dc">
 <ol class="org-ol">
 <li>美联储确实在1973年开始了一系列加息举措，但当经济陷入衰退时，这些举措基本上被逆转了。这种“时断时续”的模式——在通胀飙升时收紧政策，但在失业率开始上升时又立即放松，结果被证明是无效的，并导致通胀和通胀预期逐步上升。<br /></li>
 <li>要取得成功，政策必须始终如一地以此为目标。出于对经济衰退或其他方面的担忧，犹豫不决和拖延将带来严重的风险。始终如一和坚持不懈成了沃尔克的标志。￼<br /></li>
@@ -306,9 +281,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd2c864c" class="outline-4">
-<h4 id="orgd2c864c">格林斯潘和繁荣的20世纪90年代</h4>
-<div class="outline-text-4" id="text-orgd2c864c">
+<div id="outline-container-org5f06988" class="outline-4">
+<h4 id="org5f06988">格林斯潘和繁荣的20世纪90年代</h4>
+<div class="outline-text-4" id="text-org5f06988">
 <ol class="org-ol">
 <li>凭借对经济数据的了解，格林斯潘灵巧地运行着美联储，在他的前任们做不到的事情上取得了成功。他设计了一场难度很高的经济“软着陆”<br /></li>
 <li>如今看来，格林斯潘介入财政事务不仅像是政治上的越界，更像是一次错误的分析，因为最新的实践经验和学术研究表明，在美国这样的发达经济体中，存在适度政府赤字的经济风险很低。<br /></li>
@@ -327,13 +302,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orge4ca843" class="outline-3">
-<h3 id="orge4ca843">第二部分 全球金融危机和大衰退</h3>
-<div class="outline-text-3" id="text-orge4ca843">
+<div id="outline-container-orgb5ce78c" class="outline-3">
+<h3 id="orgb5ce78c">第二部分 全球金融危机和大衰退</h3>
+<div class="outline-text-3" id="text-orgb5ce78c">
 </div>
-<div id="outline-container-org0b61172" class="outline-4">
-<h4 id="org0b61172">新世纪与新挑战</h4>
-<div class="outline-text-4" id="text-org0b61172">
+<div id="outline-container-org7743307" class="outline-4">
+<h4 id="org7743307">新世纪与新挑战</h4>
+<div class="outline-text-4" id="text-org7743307">
 <ol class="org-ol">
 <li>2000年上半年采取了三次行动，将利率提高了一个百分点，达到6.5%，这是近10年来最高的联邦基金利率设定。<br /></li>
 <li>20世纪80年代初以来，尽管美联储已经经历了多次收紧和放松、提高和降低短期利率的过程，但无论是在美国还是在其他发达经济体，利率的总体趋势一直是下行的，明确地表明如今的中性利率比几十年前低得多<br /></li>
@@ -341,6 +316,15 @@ for the JavaScript code in this tag.
 <li>然而，当中性利率——即在充分就业时的利率——已经很低了，比如只有2%或3%，那么当经济衰退来袭时，货币政策制定者降息的空间就更小了，因此刺激增长的力量也会变弱<br /></li>
 <li>日本近几十年来的经历：在此期间，通胀和利率一直徘徊在零附近，而货币政策的效果十分有限。<br /></li>
 <li>从众心理支持了把买房当作投资的普遍且日益增长的乐观情绪。20世纪90年代末至21世纪初的房价快速上涨，尤其是在几个主要城市暴涨，这让许多人相信房价将不可避免地继续上涨。这种信念在社交媒体（我姐夫炒房发财了！）和传统媒体的宣传下得到了强化。罗伯特·席勒的流行叙事理论——即简单的故事构建人们对经济事件的认知，并在公众意识中“像病毒一样传播”——似乎就很适合这个时期发生的一切。￼席勒指出，美国的房价在1998年开始加速上涨，他将房地产市场的这种繁荣归于人们过度乐观的情绪，这与导致互联网科技泡沫的情绪如出一辙。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org35835a1" class="outline-4">
+<h4 id="org35835a1">全球金融危机</h4>
+<div class="outline-text-4" id="text-org35835a1">
+<ol class="org-ol">
+<li>像谚语中所说的，观众在拥挤的剧院里大喊“着火了！”（不管是真还是假），尽管有序退出最有利于集体利益，但成为第一批离开的人符合每个人的利益。<br /></li>
+<li><b>在这段漫长的时间里，新的复杂的脆弱性正在形成</b> ，这将为一场史无前例的全球金融危机奠定基础。其中最重要的就是影子银行、批发融资和证券化的快速增长。<font color="red" size="2em" >评:「太阳底下的新鲜事，新的形式，旧的内核」</font><br /></li>
 </ol>
 </div>
 </div>

@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,78 +189,51 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="outline-container-org63128c4" class="outline-2">
-<h2 id="org63128c4">穷查理宝典</h2>
-<div class="outline-text-2" id="text-org63128c4">
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content" class="content">
+<div id="outline-container-org5b6ea3c" class="outline-2">
+<h2 id="org5b6ea3c">穷查理宝典</h2>
+<div class="outline-text-2" id="text-org5b6ea3c">
 </div>
-<div id="outline-container-orgbbc9a55" class="outline-3">
-<h3 id="orgbbc9a55">中文版序言</h3>
-<div class="outline-text-3" id="text-orgbbc9a55">
+<div id="outline-container-org7c23e92" class="outline-3">
+<h3 id="org7c23e92">中文版序言</h3>
+<div class="outline-text-3" id="text-org7c23e92">
 <ol class="org-ol">
 <li>查理思考问题总是从逆向开始，如果明白人生如何得到幸福，查理首先是研究人生如何才能变得痛苦.</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org6002264" class="outline-3">
-<h3 id="org6002264">芒格论晚年</h3>
-<div class="outline-text-3" id="text-org6002264">
+<div id="outline-container-org2c6fa03" class="outline-3">
+<h3 id="org2c6fa03">芒格论晚年</h3>
+<div class="outline-text-3" id="text-org2c6fa03">
 <ol class="org-ol">
 <li>西塞罗指出：试图解决基本问题的哲学研究是一种理想活动，适合所有年纪的人，哪怕是行将就木的</li>
 </ol>
@@ -277,9 +251,9 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-org123abb8" class="outline-3">
-<h3 id="org123abb8">芒格的生活学习和决策方法</h3>
-<div class="outline-text-3" id="text-org123abb8">
+<div id="outline-container-org140aaa5" class="outline-3">
+<h3 id="org140aaa5">芒格的生活学习和决策方法</h3>
+<div class="outline-text-3" id="text-org140aaa5">
 <p>
 1.芒格进行商业分析和评估的"多元思维模型"：你必须知道重要学科的所有理论，并经常使用它们，要全部
 用上而不是几种。
@@ -294,9 +268,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org18e2112" class="outline-3">
-<h3 id="org18e2112">查理的即席谈话</h3>
-<div class="outline-text-3" id="text-org18e2112">
+<div id="outline-container-org88af2fe" class="outline-3">
+<h3 id="org88af2fe">查理的即席谈话</h3>
+<div class="outline-text-3" id="text-org88af2fe">
 <p>
 1.“正直，幸福，善良的生活”
 </p>

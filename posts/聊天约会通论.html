@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,68 +218,68 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf30cf5a">聊天</a>
+<li><a href="#org3c85a91">聊天</a>
 <ul>
 <li>
 <ul>
-<li><a href="#orga4e8cec">1. 愉快聊天的结果: <b>亲密提升</b> 、 <b>情感依赖</b></a></li>
-<li><a href="#org5b20fdf">2. 男女差异:</a></li>
-<li><a href="#orgea907fc">3. 聊天是传达自己的 <b>工具</b></a></li>
+<li><a href="#orgaf3f45c">1. 愉快聊天的结果: <b>亲密提升</b> 、 <b>情感依赖</b></a></li>
+<li><a href="#org788f21f">2. 男女差异:</a></li>
+<li><a href="#org80d0fef">3. 聊天是传达自己的 <b>工具</b></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org137a967">聊天复盘</a></li>
-<li><a href="#org272ba99">高阶技巧</a></li>
-<li><a href="#org00414e9">但丁笔记</a>
+<li><a href="#orgc581b95">聊天复盘</a></li>
+<li><a href="#org3d3fbd7">高阶技巧</a></li>
+<li><a href="#orgb708f27">但丁笔记</a>
 <ul>
-<li><a href="#orgd1603fc">社交智慧课</a>
+<li><a href="#org133f614">社交智慧课</a>
 <ul>
-<li><a href="#orgd5e5337">第一章</a></li>
-<li><a href="#org41ad705">人们是如何欺骗自己的</a></li>
-<li><a href="#org5890f17">打破被“塑造”的你</a></li>
-<li><a href="#org0d0ea5f">社交行为的核心-我们被什么人吸引,对什么人排斥</a></li>
-<li><a href="#orgb5b0406">社交与约会中 你感受“自信”或”焦虑“的根源</a></li>
-<li><a href="#org8de2560">行为模式的核心区别</a></li>
-<li><a href="#org1881da8">开始拥有你的新身份</a>
+<li><a href="#org3720770">第一章</a></li>
+<li><a href="#org67c8601">人们是如何欺骗自己的</a></li>
+<li><a href="#orgbc74fa9">打破被“塑造”的你</a></li>
+<li><a href="#orgc150f54">社交行为的核心-我们被什么人吸引,对什么人排斥</a></li>
+<li><a href="#org966627a">社交与约会中 你感受“自信”或”焦虑“的根源</a></li>
+<li><a href="#org2d7d140">行为模式的核心区别</a></li>
+<li><a href="#orgb08608c">开始拥有你的新身份</a>
 <ul>
-<li><a href="#orgb316472">你是如何阻碍自己“成长的机会”的</a></li>
+<li><a href="#orgd0f3e15">你是如何阻碍自己“成长的机会”的</a></li>
 </ul>
 </li>
-<li><a href="#org454ad49">”脆弱“与”力量“</a></li>
-<li><a href="#orgca6fd9b">"情绪“-被忽视的吸引要素</a></li>
-<li><a href="#orgd868b36">“气场”</a></li>
-<li><a href="#orgc35351f">如何提升“自我控制力”</a></li>
-<li><a href="#org5004063">不仅做最“真实的自己”更要做“最好的自己”</a></li>
+<li><a href="#orgf4c0fad">”脆弱“与”力量“</a></li>
+<li><a href="#org9e81adb">"情绪“-被忽视的吸引要素</a></li>
+<li><a href="#orgfb69d08">“气场”</a></li>
+<li><a href="#org379a3eb">如何提升“自我控制力”</a></li>
+<li><a href="#orgfb644c5">不仅做最“真实的自己”更要做“最好的自己”</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgdec5b5b">摩卡聊天</a>
+<li><a href="#org90b2c18">摩卡聊天</a>
 <ul>
-<li><a href="#orgfbba482">第一课</a></li>
-<li><a href="#org6933091">第二课</a></li>
+<li><a href="#org8ed38c4">第一课</a></li>
+<li><a href="#org204b12c">第二课</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf30cf5a" class="outline-2">
-<h2 id="orgf30cf5a">聊天</h2>
-<div class="outline-text-2" id="text-orgf30cf5a">
+<div id="outline-container-org3c85a91" class="outline-2">
+<h2 id="org3c85a91">聊天</h2>
+<div class="outline-text-2" id="text-org3c85a91">
 </div>
-<div id="outline-container-orga4e8cec" class="outline-4">
-<h4 id="orga4e8cec">1. 愉快聊天的结果: <b>亲密提升</b> 、 <b>情感依赖</b></h4>
+<div id="outline-container-orgaf3f45c" class="outline-4">
+<h4 id="orgaf3f45c">1. 愉快聊天的结果: <b>亲密提升</b> 、 <b>情感依赖</b></h4>
 </div>
-<div id="outline-container-org5b20fdf" class="outline-4">
-<h4 id="org5b20fdf">2. 男女差异:</h4>
-<div class="outline-text-4" id="text-org5b20fdf">
+<div id="outline-container-org788f21f" class="outline-4">
+<h4 id="org788f21f">2. 男女差异:</h4>
+<div class="outline-text-4" id="text-org788f21f">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -339,9 +313,9 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-orgea907fc" class="outline-4">
-<h4 id="orgea907fc">3. 聊天是传达自己的 <b>工具</b></h4>
-<div class="outline-text-4" id="text-orgea907fc">
+<div id="outline-container-org80d0fef" class="outline-4">
+<h4 id="org80d0fef">3. 聊天是传达自己的 <b>工具</b></h4>
+<div class="outline-text-4" id="text-org80d0fef">
 <ol class="org-ol">
 <li>关于女人美貌的东西<br /></li>
 <li>聊天“军火库”<br /></li>
@@ -414,9 +388,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org137a967" class="outline-2">
-<h2 id="org137a967">聊天复盘</h2>
-<div class="outline-text-2" id="text-org137a967">
+<div id="outline-container-orgc581b95" class="outline-2">
+<h2 id="orgc581b95">聊天复盘</h2>
+<div class="outline-text-2" id="text-orgc581b95">
 <ol class="org-ol">
 <li>需要保持神秘,不能以过于坦诚的语气讲述女生不感兴趣的关于自己的部分或者真实情况<br /></li>
 <li>随意开玩笑,大忌<br /></li>
@@ -425,9 +399,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org272ba99" class="outline-2">
-<h2 id="org272ba99">高阶技巧</h2>
-<div class="outline-text-2" id="text-org272ba99">
+<div id="outline-container-org3d3fbd7" class="outline-2">
+<h2 id="org3d3fbd7">高阶技巧</h2>
+<div class="outline-text-2" id="text-org3d3fbd7">
 <ul class="org-ul">
 <li>潜沟通<br />
 眼神,语气语调,说话方式,行为制造高的社交定位点<br />
@@ -524,17 +498,17 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org00414e9" class="outline-2">
-<h2 id="org00414e9">但丁笔记</h2>
-<div class="outline-text-2" id="text-org00414e9">
+<div id="outline-container-orgb708f27" class="outline-2">
+<h2 id="orgb708f27">但丁笔记</h2>
+<div class="outline-text-2" id="text-orgb708f27">
 </div>
-<div id="outline-container-orgd1603fc" class="outline-3">
-<h3 id="orgd1603fc">社交智慧课</h3>
-<div class="outline-text-3" id="text-orgd1603fc">
+<div id="outline-container-org133f614" class="outline-3">
+<h3 id="org133f614">社交智慧课</h3>
+<div class="outline-text-3" id="text-org133f614">
 </div>
-<div id="outline-container-orgd5e5337" class="outline-4">
-<h4 id="orgd5e5337">第一章</h4>
-<div class="outline-text-4" id="text-orgd5e5337">
+<div id="outline-container-org3720770" class="outline-4">
+<h4 id="org3720770">第一章</h4>
+<div class="outline-text-4" id="text-org3720770">
 <ul class="org-ul">
 <li>不祈求获得,必须是你本性的一部分(“讨好”与“对别人好”)<br /></li>
 <li>克服内心的缺失,而不是外在的条件<br /></li>
@@ -543,9 +517,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org41ad705" class="outline-4">
-<h4 id="org41ad705">人们是如何欺骗自己的</h4>
-<div class="outline-text-4" id="text-org41ad705">
+<div id="outline-container-org67c8601" class="outline-4">
+<h4 id="org67c8601">人们是如何欺骗自己的</h4>
+<div class="outline-text-4" id="text-org67c8601">
 <ul class="org-ul">
 <li>你只相信你愿意相信的现实: 我们不根据现实得出结论,而是按照我们认为的现实得出结论.你只愿意相信有利于你的事实<br />
 <ol class="org-ol">
@@ -555,9 +529,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org5890f17" class="outline-4">
-<h4 id="org5890f17">打破被“塑造”的你</h4>
-<div class="outline-text-4" id="text-org5890f17">
+<div id="outline-container-orgbc74fa9" class="outline-4">
+<h4 id="orgbc74fa9">打破被“塑造”的你</h4>
+<div class="outline-text-4" id="text-orgbc74fa9">
 <ul class="org-ul">
 <li>身份视为一把双刃剑,它既能给你“力量”也会给你“限制”(企业家,梦想家,创造者)<br /></li>
 <li>异性吸引:内心对自己的确定感(哪个时期起作用?)<br /></li>
@@ -578,9 +552,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org0d0ea5f" class="outline-4">
-<h4 id="org0d0ea5f">社交行为的核心-我们被什么人吸引,对什么人排斥</h4>
-<div class="outline-text-4" id="text-org0d0ea5f">
+<div id="outline-container-orgc150f54" class="outline-4">
+<h4 id="orgc150f54">社交行为的核心-我们被什么人吸引,对什么人排斥</h4>
+<div class="outline-text-4" id="text-orgc150f54">
 <ul class="org-ul">
 <li>我们为我们的感性行为,虚构出种种逻辑上正当的理由,并为自己的“既定”行为辩护(“逆向合理化”)<br /></li>
 <li>好男人都在想要追求逻辑上的“答案“,坏男人都在于”成交“<br /></li>
@@ -596,18 +570,18 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb5b0406" class="outline-4">
-<h4 id="orgb5b0406">社交与约会中 你感受“自信”或”焦虑“的根源</h4>
-<div class="outline-text-4" id="text-orgb5b0406">
+<div id="outline-container-org966627a" class="outline-4">
+<h4 id="org966627a">社交与约会中 你感受“自信”或”焦虑“的根源</h4>
+<div class="outline-text-4" id="text-org966627a">
 <ul class="org-ul">
 <li>不要被虚伪的社会价值体系所欺骗<br /></li>
 <li>他们的生命活在不断审视自己之中<br /></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8de2560" class="outline-4">
-<h4 id="org8de2560">行为模式的核心区别</h4>
-<div class="outline-text-4" id="text-org8de2560">
+<div id="outline-container-org2d7d140" class="outline-4">
+<h4 id="org2d7d140">行为模式的核心区别</h4>
+<div class="outline-text-4" id="text-org2d7d140">
 <ul class="org-ul">
 <li>有吸引力的思维模式,决定了有吸引力的行为模式<br />
 <ol class="org-ol">
@@ -619,17 +593,17 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org1881da8" class="outline-4">
-<h4 id="org1881da8">开始拥有你的新身份</h4>
-<div class="outline-text-4" id="text-org1881da8">
+<div id="outline-container-orgb08608c" class="outline-4">
+<h4 id="orgb08608c">开始拥有你的新身份</h4>
+<div class="outline-text-4" id="text-orgb08608c">
 <ul class="org-ul">
 <li>"身份“、”社交压力“<br /></li>
 <li>想要改变,你就要欢迎不舒适感<br /></li>
 </ul>
 </div>
-<div id="outline-container-orgb316472" class="outline-5">
-<h5 id="orgb316472">你是如何阻碍自己“成长的机会”的</h5>
-<div class="outline-text-5" id="text-orgb316472">
+<div id="outline-container-orgd0f3e15" class="outline-5">
+<h5 id="orgd0f3e15">你是如何阻碍自己“成长的机会”的</h5>
+<div class="outline-text-5" id="text-orgd0f3e15">
 <ol class="org-ol">
 <li>如何变成了自己情绪的牺牲品?<br /></li>
 <li>核心自信<br /></li>
@@ -638,17 +612,17 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org454ad49" class="outline-4">
-<h4 id="org454ad49">”脆弱“与”力量“</h4>
-<div class="outline-text-4" id="text-org454ad49">
+<div id="outline-container-orgf4c0fad" class="outline-4">
+<h4 id="orgf4c0fad">”脆弱“与”力量“</h4>
+<div class="outline-text-4" id="text-orgf4c0fad">
 <ol class="org-ol">
 <li>爱是否客观存在的问题(如果不存在,即人为的自我编织,不停的逆向合理化)<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgca6fd9b" class="outline-4">
-<h4 id="orgca6fd9b">"情绪“-被忽视的吸引要素</h4>
-<div class="outline-text-4" id="text-orgca6fd9b">
+<div id="outline-container-org9e81adb" class="outline-4">
+<h4 id="org9e81adb">"情绪“-被忽视的吸引要素</h4>
+<div class="outline-text-4" id="text-org9e81adb">
 <ol class="org-ol">
 <li>你不“笑”,她不会“笑”<br /></li>
 <li>消极的情绪也会上瘾<br /></li>
@@ -656,9 +630,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd868b36" class="outline-4">
-<h4 id="orgd868b36">“气场”</h4>
-<div class="outline-text-4" id="text-orgd868b36">
+<div id="outline-container-orgfb69d08" class="outline-4">
+<h4 id="orgfb69d08">“气场”</h4>
+<div class="outline-text-4" id="text-orgfb69d08">
 <ol class="org-ol">
 <li>快速的控制住自己的需求感,克制住对目的的渴求<br /></li>
 <li>对抗性的互动总是失败的,而真正让人着迷的气场可以用这样几个字来形容:坚定而温暖<br /></li>
@@ -667,9 +641,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgc35351f" class="outline-4">
-<h4 id="orgc35351f">如何提升“自我控制力”</h4>
-<div class="outline-text-4" id="text-orgc35351f">
+<div id="outline-container-org379a3eb" class="outline-4">
+<h4 id="org379a3eb">如何提升“自我控制力”</h4>
+<div class="outline-text-4" id="text-org379a3eb">
 <ol class="org-ol">
 <li>更强大坚定的那个人,总是会吸引不是那么坚定的<br /></li>
 <li>要想带领别人,首先控制住你自己<br /></li>
@@ -678,9 +652,9 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org5004063" class="outline-4">
-<h4 id="org5004063">不仅做最“真实的自己”更要做“最好的自己”</h4>
-<div class="outline-text-4" id="text-org5004063">
+<div id="outline-container-orgfb644c5" class="outline-4">
+<h4 id="orgfb644c5">不仅做最“真实的自己”更要做“最好的自己”</h4>
+<div class="outline-text-4" id="text-orgfb644c5">
 <ol class="org-ol">
 <li>“做自己”更像是一个目标: 我们不能完全掌握真理,而是在一个不断探索、走向真理的过程之中<br /></li>
 <li>做最好的自己:相比别人的认可,你更关注自己真正的认可自己<br /></li>
@@ -695,13 +669,13 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgdec5b5b" class="outline-2">
-<h2 id="orgdec5b5b">摩卡聊天</h2>
-<div class="outline-text-2" id="text-orgdec5b5b">
+<div id="outline-container-org90b2c18" class="outline-2">
+<h2 id="org90b2c18">摩卡聊天</h2>
+<div class="outline-text-2" id="text-org90b2c18">
 </div>
-<div id="outline-container-orgfbba482" class="outline-3">
-<h3 id="orgfbba482">第一课</h3>
-<div class="outline-text-3" id="text-orgfbba482">
+<div id="outline-container-org8ed38c4" class="outline-3">
+<h3 id="org8ed38c4">第一课</h3>
+<div class="outline-text-3" id="text-org8ed38c4">
 <ul class="org-ul">
 <li>窗口识别、能量对等<br /></li>
 <li>邀约就是一个心理博弈的过程<br /></li>
@@ -709,9 +683,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org6933091" class="outline-3">
-<h3 id="org6933091">第二课</h3>
-<div class="outline-text-3" id="text-org6933091">
+<div id="outline-container-org204b12c" class="outline-3">
+<h3 id="org204b12c">第二课</h3>
+<div class="outline-text-3" id="text-org204b12c">
 <ul class="org-ul">
 <li>聊天要在状态,要有信心<br /></li>
 </ul>

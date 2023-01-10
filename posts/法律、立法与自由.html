@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,55 +189,28 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
@@ -244,35 +218,35 @@ for the JavaScript code in this tag.
  <a accesskey="h" href=""> UP </a>
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="table-of-contents">
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org08934ad">法律、立法与自由</a>
+<li><a href="#org51c9f44">法律、立法与自由</a>
 <ul>
-<li><a href="#org482dd6e">研究哈耶克法律理论的一个前提性批注</a></li>
-<li><a href="#org84efe5c">序言和导论</a></li>
-<li><a href="#org96ceefa">理性与进化</a>
+<li><a href="#orgcf70cca">研究哈耶克法律理论的一个前提性批注</a></li>
+<li><a href="#org19e03a5">序言和导论</a></li>
+<li><a href="#orgd85cabe">理性与进化</a>
 <ul>
-<li><a href="#orgf2d5f48">建构与进化</a></li>
-<li><a href="#org9566784">笛卡尔唯理主义的信条</a></li>
-<li><a href="#org51746d7">我们事实性知识的永恒性局限</a></li>
-<li><a href="#orgff2678d">事实性知识与科学</a></li>
-<li><a href="#org587b7e8">"自然的"与"人为的"二分法谬误</a></li>
-<li><a href="#orgdf2c64c">进化论认识进路的兴起</a></li>
-<li><a href="#org783d6fc">理性与抽象</a></li>
+<li><a href="#org29e7811">建构与进化</a></li>
+<li><a href="#org9705375">笛卡尔唯理主义的信条</a></li>
+<li><a href="#org72936d7">我们事实性知识的永恒性局限</a></li>
+<li><a href="#org261dc0c">事实性知识与科学</a></li>
+<li><a href="#org2abcd7d">"自然的"与"人为的"二分法谬误</a></li>
+<li><a href="#orgab92c05">进化论认识进路的兴起</a></li>
+<li><a href="#orgdf09f1c">理性与抽象</a></li>
 </ul>
 </li>
-<li><a href="#org301c8cb">内部秩序与外部秩序</a>
+<li><a href="#org347a77a">内部秩序与外部秩序</a>
 <ul>
-<li><a href="#orgbb430ef">秩序之概念</a></li>
-<li><a href="#orgb655c91">内部秩序与外部秩序</a></li>
+<li><a href="#orgebd1345">秩序之概念</a></li>
+<li><a href="#org07c53a4">内部秩序与外部秩序</a></li>
 </ul>
 </li>
-<li><a href="#org5bca8af">原则与权益</a>
+<li><a href="#orge5d6c00">原则与权益</a>
 <ul>
-<li><a href="#org2a62700">法律先于立法</a></li>
+<li><a href="#org84f3726">法律先于立法</a></li>
 </ul>
 </li>
 </ul>
@@ -282,13 +256,13 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org08934ad" class="outline-2">
-<h2 id="org08934ad">法律、立法与自由</h2>
-<div class="outline-text-2" id="text-org08934ad">
+<div id="outline-container-org51c9f44" class="outline-2">
+<h2 id="org51c9f44">法律、立法与自由</h2>
+<div class="outline-text-2" id="text-org51c9f44">
 </div>
-<div id="outline-container-org482dd6e" class="outline-3">
-<h3 id="org482dd6e">研究哈耶克法律理论的一个前提性批注</h3>
-<div class="outline-text-3" id="text-org482dd6e">
+<div id="outline-container-orgcf70cca" class="outline-3">
+<h3 id="orgcf70cca">研究哈耶克法律理论的一个前提性批注</h3>
+<div class="outline-text-3" id="text-orgcf70cca">
 <ol class="org-ol">
 <li><b>自生自发社会秩序</b> 的可欲性(desirable)<br /></li>
 <li>个人自由也是以一般性法律为基础的<br /></li>
@@ -298,28 +272,28 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-org84efe5c" class="outline-3">
-<h3 id="org84efe5c">序言和导论</h3>
-<div class="outline-text-3" id="text-org84efe5c">
+<div id="outline-container-org19e03a5" class="outline-3">
+<h3 id="org19e03a5">序言和导论</h3>
+<div class="outline-text-3" id="text-org19e03a5">
 <ol class="org-ol">
 <li>作者提到了三个洞察,最后一个最为微妙:自由社会的自生自发秩序会将代议制逐渐转变成服务于有组织的利益集团联盟的全权性体制<br /></li>
 <li>作者在试图研究回答:什么样的宪法安排,才可能对维护个人自由有最大的助益<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org96ceefa" class="outline-3">
-<h3 id="org96ceefa">理性与进化</h3>
-<div class="outline-text-3" id="text-org96ceefa">
+<div id="outline-container-orgd85cabe" class="outline-3">
+<h3 id="orgd85cabe">理性与进化</h3>
+<div class="outline-text-3" id="text-orgd85cabe">
 </div>
-<div id="outline-container-orgf2d5f48" class="outline-4">
-<h4 id="orgf2d5f48">建构与进化</h4>
+<div id="outline-container-org29e7811" class="outline-4">
+<h4 id="org29e7811">建构与进化</h4>
 </div>
-<div id="outline-container-org9566784" class="outline-4">
-<h4 id="org9566784">笛卡尔唯理主义的信条</h4>
+<div id="outline-container-org9705375" class="outline-4">
+<h4 id="org9705375">笛卡尔唯理主义的信条</h4>
 </div>
-<div id="outline-container-org51746d7" class="outline-4">
-<h4 id="org51746d7">我们事实性知识的永恒性局限</h4>
-<div class="outline-text-4" id="text-org51746d7">
+<div id="outline-container-org72936d7" class="outline-4">
+<h4 id="org72936d7">我们事实性知识的永恒性局限</h4>
+<div class="outline-text-4" id="text-org72936d7">
 <p>
 笛卡尔意义上的那种完全的行动理性,要求行动者对所有相关的事实拥有完全的事实<br />
 哈耶克认为,在社会中行动的成功取决于远比任何人所能够知道的多得多的特定事实<br />
@@ -327,9 +301,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgff2678d" class="outline-4">
-<h4 id="orgff2678d">事实性知识与科学</h4>
-<div class="outline-text-4" id="text-orgff2678d">
+<div id="outline-container-org261dc0c" class="outline-4">
+<h4 id="org261dc0c">事实性知识与科学</h4>
+<div class="outline-text-4" id="text-org261dc0c">
 <p>
 我们的文明乃是以我们从我们并不拥有的知识中受益这个事实为基础的<br />
 作者:科学并不具有探明它欲完成此一使命所必须掌握的所有特定事实的手段<br />
@@ -337,15 +311,15 @@ for the JavaScript code in this tag.
 </p>
 </div>
 </div>
-<div id="outline-container-org587b7e8" class="outline-4">
-<h4 id="org587b7e8">"自然的"与"人为的"二分法谬误</h4>
+<div id="outline-container-org2abcd7d" class="outline-4">
+<h4 id="org2abcd7d">"自然的"与"人为的"二分法谬误</h4>
 </div>
-<div id="outline-container-orgdf2c64c" class="outline-4">
-<h4 id="orgdf2c64c">进化论认识进路的兴起</h4>
+<div id="outline-container-orgab92c05" class="outline-4">
+<h4 id="orgab92c05">进化论认识进路的兴起</h4>
 </div>
-<div id="outline-container-org783d6fc" class="outline-4">
-<h4 id="org783d6fc">理性与抽象</h4>
-<div class="outline-text-4" id="text-org783d6fc">
+<div id="outline-container-orgdf09f1c" class="outline-4">
+<h4 id="orgdf09f1c">理性与抽象</h4>
+<div class="outline-text-4" id="text-orgdf09f1c">
 <p>
 理性的使命之一,就是要确定理性控制的范围或限度,或者是要确定理性应当在多大程度上依赖于它所不能完全控制的其他力量<font color="red" size="2em" >评:「理性的使命之一就是有限」</font><br />
 </p>
@@ -353,13 +327,13 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org301c8cb" class="outline-3">
-<h3 id="org301c8cb">内部秩序与外部秩序</h3>
-<div class="outline-text-3" id="text-org301c8cb">
+<div id="outline-container-org347a77a" class="outline-3">
+<h3 id="org347a77a">内部秩序与外部秩序</h3>
+<div class="outline-text-3" id="text-org347a77a">
 </div>
-<div id="outline-container-orgbb430ef" class="outline-4">
-<h4 id="orgbb430ef">秩序之概念</h4>
-<div class="outline-text-4" id="text-orgbb430ef">
+<div id="outline-container-orgebd1345" class="outline-4">
+<h4 id="orgebd1345">秩序之概念</h4>
+<div class="outline-text-4" id="text-orgebd1345">
 <ol class="org-ol">
 <li>作者看来,秩序是描述复杂系统最为妥适的术语<br /></li>
 <li>优位者的意志,最终为成为某个最高权力机构的意志<br /></li>
@@ -368,13 +342,13 @@ for the JavaScript code in this tag.
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb655c91" class="outline-4">
-<h4 id="orgb655c91">内部秩序与外部秩序</h4>
+<div id="outline-container-org07c53a4" class="outline-4">
+<h4 id="org07c53a4">内部秩序与外部秩序</h4>
 </div>
 </div>
-<div id="outline-container-org5bca8af" class="outline-3">
-<h3 id="org5bca8af">原则与权益</h3>
-<div class="outline-text-3" id="text-org5bca8af">
+<div id="outline-container-orge5d6c00" class="outline-3">
+<h3 id="orge5d6c00">原则与权益</h3>
+<div class="outline-text-3" id="text-orge5d6c00">
 <ol class="org-ol">
 <li>自由的价值在于它为不曾预见和不可预测的行动提供了机会<br /></li>
 <li>每一情势中仅根据可预见的特定后果进行决策,就必定会一步一步摧毁自由<br /></li>
@@ -387,9 +361,9 @@ for the JavaScript code in this tag.
 是完全不负责任的,个人的自由领域不能对他人的自由领域造成影响)}}}<br />
 </p>
 </div>
-<div id="outline-container-org2a62700" class="outline-4">
-<h4 id="org2a62700">法律先于立法</h4>
-<div class="outline-text-4" id="text-org2a62700">
+<div id="outline-container-org84f3726" class="outline-4">
+<h4 id="org84f3726">法律先于立法</h4>
+<div class="outline-text-4" id="text-org84f3726">
 <ol class="org-ol">
 <li>认为所有法律都是立法者意志产物的整个法律实证主义观点,就是建构论所特有的那种意向论谬误<br /></li>
 <li><font color="red" size="2em" >评:「论述了法律在欧洲是否为统治者意志」</font><br /></li>

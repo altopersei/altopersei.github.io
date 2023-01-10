@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,92 +189,75 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
 </script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="outline-container-orgd2d7acc" class="outline-2">
-<h2 id="orgd2d7acc"><span class="section-number-2">1</span> 以GroupCache为例学习分布式缓存</h2>
-<div class="outline-text-2" id="text-1">
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content" class="content">
+<div id="outline-container-orgbeaad96" class="outline-2">
+<h2 id="orgbeaad96">以GroupCache为例学习分布式缓存</h2>
+<div class="outline-text-2" id="text-orgbeaad96">
 </div>
-<div id="outline-container-org8079d7a" class="outline-3">
-<h3 id="org8079d7a"><span class="section-number-3">1.1</span> 导言</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org3577b2a" class="outline-3">
+<h3 id="org3577b2a">导言</h3>
+<div class="outline-text-3" id="text-org3577b2a">
 <p>
 GroupCache是一个由golang编写的分布式缓存库,同样是由Memcached的作者Brad Fitzpatrick实现,
 GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可扩展性强的数据结构，因此GroupCache
@@ -283,9 +267,9 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org84eb61a" class="outline-3">
-<h3 id="org84eb61a"><span class="section-number-3">1.2</span> 分布式缓存的背景和概念</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org764d7a9" class="outline-3">
+<h3 id="org764d7a9">分布式缓存的背景和概念</h3>
+<div class="outline-text-3" id="text-org764d7a9">
 <p>
 对于高请求量的线上服务,Cache是一种常见的优化手段,对于视频搜索这一领域来说尤其如此,用户在某些
 时间点搜索的query很大部分是相同,因此在引擎召回的时候我们在cache中缓存的回包结果能够覆盖大部分
@@ -298,13 +282,13 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org8f1a921" class="outline-3">
-<h3 id="org8f1a921"><span class="section-number-3">1.3</span> 主要实现方式</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-org1de31af" class="outline-3">
+<h3 id="org1de31af">主要实现方式</h3>
+<div class="outline-text-3" id="text-org1de31af">
 </div>
-<div id="outline-container-org4643612" class="outline-4">
-<h4 id="org4643612"><span class="section-number-4">1.3.1</span> Key和节点的分布方式</h4>
-<div class="outline-text-4" id="text-1-3-1">
+<div id="outline-container-org0f13a29" class="outline-4">
+<h4 id="org0f13a29">Key和节点的分布方式</h4>
+<div class="outline-text-4" id="text-org0f13a29">
 <p>
 对于一般的hash方式,以N个节点容器来举例,我们在划分hash的时候可以采用这样一种简单的方式：
 </p>
@@ -330,9 +314,9 @@ x=hash\ \mathrm{Mod}\  N
 </p>
 </div>
 </div>
-<div id="outline-container-org764b44a" class="outline-4">
-<h4 id="org764b44a"><span class="section-number-4">1.3.2</span> Cache的实现方式</h4>
-<div class="outline-text-4" id="text-1-3-2">
+<div id="outline-container-orgfc3213e" class="outline-4">
+<h4 id="orgfc3213e">Cache的实现方式</h4>
+<div class="outline-text-4" id="text-orgfc3213e">
 <p>
 在一个节点上cache其实是分了两层的,第一层是hotCache,第二层是mainCache,每次get操作先会lookup hotCache再
 lookup mainCache.而hotCache和mainCache底层实现是一模一样的,都依赖于源码中100多行的一个LRU的实现.之所以
@@ -343,17 +327,17 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org4e489b7" class="outline-4">
-<h4 id="org4e489b7"><span class="section-number-4">1.3.3</span> Cache的Get操作实现过程</h4>
+<div id="outline-container-org2d9e0b0" class="outline-4">
+<h4 id="org2d9e0b0">Cache的Get操作实现过程</h4>
 </div>
 </div>
-<div id="outline-container-orgf5b2f19" class="outline-3">
-<h3 id="orgf5b2f19"><span class="section-number-3">1.4</span> 需要注意的问题</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-org29e60d6" class="outline-3">
+<h3 id="org29e60d6">需要注意的问题</h3>
+<div class="outline-text-3" id="text-org29e60d6">
 </div>
-<div id="outline-container-orgc6532b3" class="outline-4">
-<h4 id="orgc6532b3"><span class="section-number-4">1.4.1</span> 节点的负载均衡问题</h4>
-<div class="outline-text-4" id="text-1-4-1">
+<div id="outline-container-org26b9541" class="outline-4">
+<h4 id="org26b9541">节点的负载均衡问题</h4>
+<div class="outline-text-4" id="text-org26b9541">
 <p>
 节点的负载均衡问题其实就是一致性Hash算法造成的key在节点中分散不均匀的问题,在理想情况下,我们在hash节点的
 表示的时候我们希望如果有N个节点,那么算出来的N个int64的值能够等份的切分0~2~2<sup>64这个值域区间,几何上比较直观的</sup>
@@ -372,9 +356,9 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org318648b" class="outline-4">
-<h4 id="org318648b"><span class="section-number-4">1.4.2</span> cache get的超时问题</h4>
-<div class="outline-text-4" id="text-1-4-2">
+<div id="outline-container-org883dfab" class="outline-4">
+<h4 id="org883dfab">cache get的超时问题</h4>
+<div class="outline-text-4" id="text-org883dfab">
 <p>
 cache get的超时问题是一个非常难调试的问题，如果你不在底层库做一些日志记录,仅凭借上层去监控你几乎很难得出确凿的
 结论，因此我的经验是不要害怕改动引发可用性的问题，大胆的在底层做一些printf的记录往往才能看到问题的溯源.GroupCache

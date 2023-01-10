@@ -6,9 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
-<meta name="generator" content="Org mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +29,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +39,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -188,84 +189,57 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" type="text/css" href="../assets/posts.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
 </script>
 </head>
 <body>
 <div id="org-div-home-and-up">
  <a accesskey="h" href=""> UP </a>
  |
- <a accesskey="H" href="http://chennyweei.bitbucket.io/index.html"> HOME </a>
-</div><div id="content">
-<div id="outline-container-org3e5322a" class="outline-2">
-<h2 id="org3e5322a">导言</h2>
-<div class="outline-text-2" id="text-org3e5322a">
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content" class="content">
+<div id="outline-container-org41eeab3" class="outline-2">
+<h2 id="org41eeab3">导言</h2>
+<div class="outline-text-2" id="text-org41eeab3">
 </div>
-<div id="outline-container-orgd48c195" class="outline-3">
-<h3 id="orgd48c195">本书的目的在于指导读者避免陷入严重的错误，并建立一套令其感到安全放心的投资策略</h3>
+<div id="outline-container-org1b99bf9" class="outline-3">
+<h3 id="org1b99bf9">本书的目的在于指导读者避免陷入严重的错误，并建立一套令其感到安全放心的投资策略</h3>
 </div>
-<div id="outline-container-org9ae203f" class="outline-3">
-<h3 id="org9ae203f">投资者最大的问题甚至是最可怕的敌人很可能就是他们自己</h3>
+<div id="outline-container-orgb3f4403" class="outline-3">
+<h3 id="orgb3f4403">投资者最大的问题甚至是最可怕的敌人很可能就是他们自己</h3>
 </div>
-<div id="outline-container-orgc24be51" class="outline-3">
-<h3 id="orgc24be51">只买那些价格不高于其 <span class="underline">有形资产</span> 太多的股票</h3>
+<div id="outline-container-org16e5064" class="outline-3">
+<h3 id="org16e5064">只买那些价格不高于其 <span class="underline">有形资产</span> 太多的股票</h3>
 </div>
-<div id="outline-container-orge2888b0" class="outline-3">
-<h3 id="orge2888b0">深思熟虑的投资方法是稳固建立在安全边际原则基础之上的</h3>
+<div id="outline-container-orgc404cb4" class="outline-3">
+<h3 id="orgc404cb4">深思熟虑的投资方法是稳固建立在安全边际原则基础之上的</h3>
 </div>
 </div>
 
-<div id="outline-container-org99ced72" class="outline-2">
-<h2 id="org99ced72">第一章： 投资与投机</h2>
-<div class="outline-text-2" id="text-org99ced72">
+<div id="outline-container-orgeb90a13" class="outline-2">
+<h2 id="orgeb90a13">第一章： 投资与投机</h2>
+<div class="outline-text-2" id="text-orgeb90a13">
 <ul class="org-ul">
 <li>投资操作是以深入分析为基础，确保本金安全，并获得适当的回报；不满足这些要求的操作就是投机</li>
 <li>不要把投机操作和投资操作放在一个账户中进行，也不能在思想上将二者混为一谈</li>
@@ -273,9 +247,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org34f618e" class="outline-2">
-<h2 id="org34f618e">第二章 投资者与通货膨胀</h2>
-<div class="outline-text-2" id="text-org34f618e">
+<div id="outline-container-org35d6ba3" class="outline-2">
+<h2 id="org35d6ba3">第二章 投资者与通货膨胀</h2>
+<div class="outline-text-2" id="text-org35d6ba3">
 <ul class="org-ul">
 <li>阐述通货膨胀与股票市盈率公司利润之间的关系(没有绝对的关系）</li>
 <li>理性购买适当比例的股票在某种程度上能够抵消通货膨胀的影响</li>
@@ -286,9 +260,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1b486a7" class="outline-2">
-<h2 id="org1b486a7">第三章 点评</h2>
-<div class="outline-text-2" id="text-org1b486a7">
+<div id="outline-container-org979c80a" class="outline-2">
+<h2 id="org979c80a">第三章 点评</h2>
+<div class="outline-text-2" id="text-org979c80a">
 <ul class="org-ul">
 <li>股票的走势主要考虑三个要素</li>
 <li>对于未来股票回报的预测来说：唯一确定之事，就是你可能会得出错误的结论</li>
@@ -296,20 +270,20 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgdd77ea4" class="outline-2">
-<h2 id="orgdd77ea4">第四章</h2>
+<div id="outline-container-orge3e8ca5" class="outline-2">
+<h2 id="orge3e8ca5">第四章</h2>
 </div>
 
-<div id="outline-container-orgc98e508" class="outline-2">
-<h2 id="orgc98e508">第五章 防御型投资者和普通股</h2>
-<div class="outline-text-2" id="text-orgc98e508">
+<div id="outline-container-org98230ac" class="outline-2">
+<h2 id="org98230ac">第五章 防御型投资者和普通股</h2>
+<div class="outline-text-2" id="text-org98230ac">
 </div>
-<div id="outline-container-org43a9f92" class="outline-3">
-<h3 id="org43a9f92">探讨股息这个概念</h3>
+<div id="outline-container-orgabcbd10" class="outline-3">
+<h3 id="orgabcbd10">探讨股息这个概念</h3>
 </div>
-<div id="outline-container-org22838d3" class="outline-3">
-<h3 id="org22838d3">普通股的投资规则<code>[3/3]</code></h3>
-<div class="outline-text-3" id="text-org22838d3">
+<div id="outline-container-org3c1da0f" class="outline-3">
+<h3 id="org3c1da0f">普通股的投资规则<code>[3/3]</code></h3>
+<div class="outline-text-3" id="text-org3c1da0f">
 <ul class="org-ul">
 <li>适当但不需要过分分散化，持股数应该处于一个合理的区间</li>
 <li>你挑选的每一家公司在财务上应该是稳健的，本身应该是大型的知名的</li>
@@ -318,17 +292,17 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org618d736" class="outline-3">
-<h3 id="org618d736">投资者的个人情况</h3>
-<div class="outline-text-3" id="text-org618d736">
+<div id="outline-container-org99df89c" class="outline-3">
+<h3 id="org99df89c">投资者的个人情况</h3>
+<div class="outline-text-3" id="text-org99df89c">
 <p>
 举例几个不同身份的人，
 </p>
 </div>
 </div>
-<div id="outline-container-orgd536886" class="outline-3">
-<h3 id="orgd536886">点评</h3>
-<div class="outline-text-3" id="text-orgd536886">
+<div id="outline-container-org80a0204" class="outline-3">
+<h3 id="org80a0204">点评</h3>
+<div class="outline-text-3" id="text-org80a0204">
 <ul class="org-ul">
 <li>你应该有多大的防御性，这并不取决于你对风险的容忍程度，而是取决于你愿意</li>
 </ul>
@@ -351,9 +325,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org1426433" class="outline-2">
-<h2 id="org1426433">第八章 投资者与市场波动</h2>
-<div class="outline-text-2" id="text-org1426433">
+<div id="outline-container-org0e9208c" class="outline-2">
+<h2 id="org0e9208c">第八章 投资者与市场波动</h2>
+<div class="outline-text-2" id="text-org0e9208c">
 <ul class="org-ul">
 <li>如果投资者以预测为基础强调择时交易，那么他最终将成为一个投机者，并要面对投机所带来的财务结果</li>
 <li>所使用方法的广受欢迎之时，几乎也同时是这些方法作用丧失之刻</li>
@@ -364,9 +338,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orga3a8a38" class="outline-2">
-<h2 id="orga3a8a38">第十四章 防御型投资者的股票选择</h2>
-<div class="outline-text-2" id="text-orga3a8a38">
+<div id="outline-container-org6597cfc" class="outline-2">
+<h2 id="org6597cfc">第十四章 防御型投资者的股票选择</h2>
+<div class="outline-text-2" id="text-org6597cfc">
 <ul class="org-ul">
 <li>适当的企业规模</li>
 <li>足够强劲的财务状况</li>
@@ -377,18 +351,18 @@ for the JavaScript code in this tag.
 <li>适度的股价资产比</li>
 </ul>
 </div>
-<div id="outline-container-org01d7532" class="outline-3">
-<h3 id="org01d7532">公用事业股的解决办法</h3>
+<div id="outline-container-org03c4e72" class="outline-3">
+<h3 id="org03c4e72">公用事业股的解决办法</h3>
 </div>
-<div id="outline-container-orgd36216d" class="outline-3">
-<h3 id="orgd36216d">金融企业股票的投资</h3>
+<div id="outline-container-orgf270070" class="outline-3">
+<h3 id="orgf270070">金融企业股票的投资</h3>
 </div>
-<div id="outline-container-orga5019e7" class="outline-3">
-<h3 id="orga5019e7">铁路股</h3>
+<div id="outline-container-org0aa30d6" class="outline-3">
+<h3 id="org0aa30d6">铁路股</h3>
 </div>
-<div id="outline-container-orgb87b556" class="outline-3">
-<h3 id="orgb87b556">防御型投资者的选择</h3>
-<div class="outline-text-3" id="text-orgb87b556">
+<div id="outline-container-orgdbab997" class="outline-3">
+<h3 id="orgdbab997">防御型投资者的选择</h3>
+<div class="outline-text-3" id="text-orgdbab997">
 <ul class="org-ul">
 <li>任何分析师的观点都必定很大程度上源于其个人的偏好和预期</li>
 <li>有效市场假说(EMH)</li>
@@ -398,9 +372,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org532275e" class="outline-2">
-<h2 id="org532275e">第十五章 积极型投资者的股票选择</h2>
-<div class="outline-text-2" id="text-org532275e">
+<div id="outline-container-org9422902" class="outline-2">
+<h2 id="org9422902">第十五章 积极型投资者的股票选择</h2>
+<div class="outline-text-2" id="text-org9422902">
 <ul class="org-ul">
 <li>股票的当期价格的确包含了关于公司过去和当期业绩的所有重要事实，同时也包含了对公司未来所有合理预期。？</li>
 <li></li>
@@ -408,17 +382,17 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orge93ac3b" class="outline-2">
-<h2 id="orge93ac3b">第十六章 可转换证券及认股权证</h2>
+<div id="outline-container-orgc0265ca" class="outline-2">
+<h2 id="orgc0265ca">第十六章 可转换证券及认股权证</h2>
 </div>
-<div id="outline-container-orgd9d0a39" class="outline-2">
-<h2 id="orgd9d0a39">永远不要把可转换债券进行转换</h2>
+<div id="outline-container-org2ddc9a7" class="outline-2">
+<h2 id="org2ddc9a7">永远不要把可转换债券进行转换</h2>
 </div>
-<div id="outline-container-org7d4167d" class="outline-2">
-<h2 id="org7d4167d">照我说的去做，不要模仿我的下行动</h2>
+<div id="outline-container-org4c9520e" class="outline-2">
+<h2 id="org4c9520e">照我说的去做，不要模仿我的下行动</h2>
 </div>
-<div id="outline-container-orge32474e" class="outline-2">
-<h2 id="orge32474e">优先股和普通股的概念，可转换优先股，格雷厄姆先生对优先股的看法</h2>
+<div id="outline-container-orgb8c1e8f" class="outline-2">
+<h2 id="orgb8c1e8f">优先股和普通股的概念，可转换优先股，格雷厄姆先生对优先股的看法</h2>
 </div>
 </div>
 </body>
