@@ -251,13 +251,13 @@
  |
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content" class="content">
-<div id="outline-container-orgbeaad96" class="outline-2">
-<h2 id="orgbeaad96">以GroupCache为例学习分布式缓存</h2>
-<div class="outline-text-2" id="text-orgbeaad96">
+<div id="outline-container-org63521a8" class="outline-2">
+<h2 id="org63521a8">以GroupCache为例学习分布式缓存</h2>
+<div class="outline-text-2" id="text-org63521a8">
 </div>
-<div id="outline-container-org3577b2a" class="outline-3">
-<h3 id="org3577b2a">导言</h3>
-<div class="outline-text-3" id="text-org3577b2a">
+<div id="outline-container-org11e2d1b" class="outline-3">
+<h3 id="org11e2d1b">导言</h3>
+<div class="outline-text-3" id="text-org11e2d1b">
 <p>
 GroupCache是一个由golang编写的分布式缓存库,同样是由Memcached的作者Brad Fitzpatrick实现,
 GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可扩展性强的数据结构，因此GroupCache
@@ -267,9 +267,9 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org764d7a9" class="outline-3">
-<h3 id="org764d7a9">分布式缓存的背景和概念</h3>
-<div class="outline-text-3" id="text-org764d7a9">
+<div id="outline-container-org5212c34" class="outline-3">
+<h3 id="org5212c34">分布式缓存的背景和概念</h3>
+<div class="outline-text-3" id="text-org5212c34">
 <p>
 对于高请求量的线上服务,Cache是一种常见的优化手段,对于视频搜索这一领域来说尤其如此,用户在某些
 时间点搜索的query很大部分是相同,因此在引擎召回的时候我们在cache中缓存的回包结果能够覆盖大部分
@@ -282,13 +282,13 @@ GroupCache以非常精炼的代码实现了一致性哈希,LRU cache等高效可
 </p>
 </div>
 </div>
-<div id="outline-container-org1de31af" class="outline-3">
-<h3 id="org1de31af">主要实现方式</h3>
-<div class="outline-text-3" id="text-org1de31af">
+<div id="outline-container-org2858749" class="outline-3">
+<h3 id="org2858749">主要实现方式</h3>
+<div class="outline-text-3" id="text-org2858749">
 </div>
-<div id="outline-container-org0f13a29" class="outline-4">
-<h4 id="org0f13a29">Key和节点的分布方式</h4>
-<div class="outline-text-4" id="text-org0f13a29">
+<div id="outline-container-org414c560" class="outline-4">
+<h4 id="org414c560">Key和节点的分布方式</h4>
+<div class="outline-text-4" id="text-org414c560">
 <p>
 对于一般的hash方式,以N个节点容器来举例,我们在划分hash的时候可以采用这样一种简单的方式：
 </p>
@@ -314,9 +314,9 @@ x=hash\ \mathrm{Mod}\  N
 </p>
 </div>
 </div>
-<div id="outline-container-orgfc3213e" class="outline-4">
-<h4 id="orgfc3213e">Cache的实现方式</h4>
-<div class="outline-text-4" id="text-orgfc3213e">
+<div id="outline-container-orgdc513c0" class="outline-4">
+<h4 id="orgdc513c0">Cache的实现方式</h4>
+<div class="outline-text-4" id="text-orgdc513c0">
 <p>
 在一个节点上cache其实是分了两层的,第一层是hotCache,第二层是mainCache,每次get操作先会lookup hotCache再
 lookup mainCache.而hotCache和mainCache底层实现是一模一样的,都依赖于源码中100多行的一个LRU的实现.之所以
@@ -327,17 +327,17 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org2d9e0b0" class="outline-4">
-<h4 id="org2d9e0b0">Cache的Get操作实现过程</h4>
+<div id="outline-container-org32e6fff" class="outline-4">
+<h4 id="org32e6fff">Cache的Get操作实现过程</h4>
 </div>
 </div>
-<div id="outline-container-org29e60d6" class="outline-3">
-<h3 id="org29e60d6">需要注意的问题</h3>
-<div class="outline-text-3" id="text-org29e60d6">
+<div id="outline-container-orgb9871f3" class="outline-3">
+<h3 id="orgb9871f3">需要注意的问题</h3>
+<div class="outline-text-3" id="text-orgb9871f3">
 </div>
-<div id="outline-container-org26b9541" class="outline-4">
-<h4 id="org26b9541">节点的负载均衡问题</h4>
-<div class="outline-text-4" id="text-org26b9541">
+<div id="outline-container-org39c5a38" class="outline-4">
+<h4 id="org39c5a38">节点的负载均衡问题</h4>
+<div class="outline-text-4" id="text-org39c5a38">
 <p>
 节点的负载均衡问题其实就是一致性Hash算法造成的key在节点中分散不均匀的问题,在理想情况下,我们在hash节点的
 表示的时候我们希望如果有N个节点,那么算出来的N个int64的值能够等份的切分0~2~2<sup>64这个值域区间,几何上比较直观的</sup>
@@ -356,9 +356,9 @@ popular的key提供服务,是一个兼顾多种优点的方案.
 </p>
 </div>
 </div>
-<div id="outline-container-org883dfab" class="outline-4">
-<h4 id="org883dfab">cache get的超时问题</h4>
-<div class="outline-text-4" id="text-org883dfab">
+<div id="outline-container-orga4ed2e7" class="outline-4">
+<h4 id="orga4ed2e7">cache get的超时问题</h4>
+<div class="outline-text-4" id="text-orga4ed2e7">
 <p>
 cache get的超时问题是一个非常难调试的问题，如果你不在底层库做一些日志记录,仅凭借上层去监控你几乎很难得出确凿的
 结论，因此我的经验是不要害怕改动引发可用性的问题，大胆的在底层做一些printf的记录往往才能看到问题的溯源.GroupCache

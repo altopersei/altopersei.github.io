@@ -252,13 +252,13 @@
  <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
 </div><div id="content" class="content">
 
-<div id="outline-container-orgdf25913" class="outline-2">
-<h2 id="orgdf25913">The Knowledge Complexity of Interactive Proof System</h2>
-<div class="outline-text-2" id="text-orgdf25913">
+<div id="outline-container-org3dc2f48" class="outline-2">
+<h2 id="org3dc2f48">The Knowledge Complexity of Interactive Proof System</h2>
+<div class="outline-text-2" id="text-org3dc2f48">
 </div>
-<div id="outline-container-orgd0422fb" class="outline-3">
-<h3 id="orgd0422fb">Abstract</h3>
-<div class="outline-text-3" id="text-orgd0422fb">
+<div id="outline-container-org22e5ad6" class="outline-3">
+<h3 id="org22e5ad6">Abstract</h3>
+<div class="outline-text-3" id="text-org22e5ad6">
 <p>
 通常来说,一个证明会包含超过仅仅证明命题正确所需要的知识.比如,去证明一个图中包含哈密顿回路.然而,这个证明显然包含的知识要超过是/否这个1位的答案.<br />
 </p>
@@ -269,9 +269,9 @@
 </div>
 </div>
 
-<div id="outline-container-org0552689" class="outline-3">
-<h3 id="org0552689">Introduction</h3>
-<div class="outline-text-3" id="text-org0552689">
+<div id="outline-container-orgb6bc104" class="outline-3">
+<h3 id="orgb6bc104">Introduction</h3>
+<div class="outline-text-3" id="text-orgb6bc104">
 <p>
 通常说一个语言L是NP的等价于对L存在一个多项式时间的“证明系统”,其给定一个输入x,一个证明者(prover)生成一个字符串&alpha;,验证者(verifier)利用x和 &alpha; 在多项式时间内计算给定的x的二进制表示属于L.问是否有更通用,(可能)更自然的多项式时间内的证明系统是很合理的,本文提出了一个这样的概念<br />
 </p>
@@ -300,16 +300,16 @@
 </div>
 </div>
 
-<div id="outline-container-orgbe93392" class="outline-3">
-<h3 id="orgbe93392">Interactive proof system</h3>
-<div class="outline-text-3" id="text-orgbe93392">
+<div id="outline-container-org5087f71" class="outline-3">
+<h3 id="org5087f71">Interactive proof system</h3>
+<div class="outline-text-3" id="text-org5087f71">
 </div>
-<div id="outline-container-org760ec6f" class="outline-4">
-<h4 id="org760ec6f">交互式图灵机和协议</h4>
+<div id="outline-container-orgaab7166" class="outline-4">
+<h4 id="orgaab7166">交互式图灵机和协议</h4>
 </div>
-<div id="outline-container-org93ec6b1" class="outline-4">
-<h4 id="org93ec6b1">交互式证明 系统</h4>
-<div class="outline-text-4" id="text-org93ec6b1">
+<div id="outline-container-org6dd8bc9" class="outline-4">
+<h4 id="org6dd8bc9">交互式证明 系统</h4>
+<div class="outline-text-4" id="text-org6dd8bc9">
 <p>
 <b>定义</b>: 让 L 成为 \( \left \{ {0,1} \right \}^{*}  \) 之上的语言。让 (A,B) 成为交互式协议。如果我们有以下条件，我们说 (A, B) 是 L 的交互式证明系统：<br />
 </p>
@@ -332,9 +332,9 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgf821078" class="outline-3">
-<h3 id="orgf821078">zero-knowledge</h3>
-<div class="outline-text-3" id="text-orgf821078">
+<div id="outline-container-org8102df6" class="outline-3">
+<h3 id="org8102df6">zero-knowledge</h3>
+<div class="outline-text-3" id="text-org8102df6">
 <p>
 我们将给出一个更一般的定义，而不是只为交互式证明系统给出零知识的定义。 我们将定义任何交互式协议 (A, B) 对语言 L 的零知识的含义，无论 (A, B) 是否是 L 的证明系统。实际上这个定义根本不依赖于 B ; 正如我们将看到的，它表示对于每个多项式时间 \( B^{'}  \)，当与输入 \( x \subseteq \mathbf{L} \)交互时， \( B^{'}  \)“看到”的分布与可以在多项式时间内从 x 计算的分布“无法区分”。 因此，我们首先关注随机变量不可区分的概念。<br />
 </p>
@@ -342,9 +342,9 @@
 </div>
 
 
-<div id="outline-container-orgb51510a" class="outline-3">
-<h3 id="orgb51510a">The quadratic residuosity problem</h3>
-<div class="outline-text-3" id="text-orgb51510a">
+<div id="outline-container-org76975af" class="outline-3">
+<h3 id="org76975af">The quadratic residuosity problem</h3>
+<div class="outline-text-3" id="text-org76975af">
 <p>
 让 \( \mathbf{N} \) 表示正整数集合,\( x \subseteq \mathbf{N} \)  并且 \( \mathbf{Z_{x}^{*} } = \left \{ y \mid 1\le y< x, gcd(x,y)=1 \right \} \), 如果 \( \exists w \subseteq \mathbf{Z_{x}^{*} } \)使得 \[ \mathit{w^{2} } \equiv y  \bmod x  \] 我们称y在 \( \mathbf{Z_{x}^{*}} \)  中是x的二次剩余,不然,我们称y为x的二次非剩余<br />
 </p>
@@ -422,9 +422,9 @@ x和y都用二进制表示<br />
 </div>
 </div>
 
-<div id="outline-container-orgf1dd63c" class="outline-3">
-<h3 id="orgf1dd63c">Zero-knowledge proofs of quadratic residuosity</h3>
-<div class="outline-text-3" id="text-orgf1dd63c">
+<div id="outline-container-org958b80a" class="outline-3">
+<h3 id="org958b80a">Zero-knowledge proofs of quadratic residuosity</h3>
+<div class="outline-text-3" id="text-org958b80a">
 <p>
 我们将首先非正式地描述我们针对 QR 的零知识交互证明系统，然后更严格地描述它。 假定 A 和 B被给定(x,y),|x|=m,进入如下的操作m次:<br />
 </p>
