@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>&lrm;</title>
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/posts.css" />
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="org-div-home-and-up">
+ <a accesskey="h" href=""> UP </a>
+ |
+ <a accesskey="H" href="http://altopersei.github.io/index.html"> HOME </a>
+</div><div id="content" class="content">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgb8358e6">重新理解创业</a>
+<ul>
+<li><a href="#orgc83c17f">序(雷军)</a></li>
+<li><a href="#orge2a0233">前沿</a></li>
+<li><a href="#org19efd62">重新理解战略</a>
+<ul>
+<li><a href="#org6dc0b68">概念先行还是问题驱动</a></li>
+<li><a href="#org5a69cc2">完美的宏大和简陋的快捷</a></li>
+<li><a href="#orgc04f837">战略的维度</a></li>
+</ul>
+</li>
+<li><a href="#orgf12fb17">重新理解竞争</a>
+<ul>
+<li><a href="#org79b01ed">先行者姿态</a></li>
+<li><a href="#org75f13e2">成功带来认知局限</a></li>
+<li><a href="#orgee54252">竞争是生死问题</a></li>
+<li><a href="#org263df1d">真正的竞争来自另一个维度</a></li>
+<li><a href="#orgc51a8ff">竞争是全方位的战争</a></li>
+</ul>
+</li>
+<li><a href="#org926ce40">重新理解品牌</a>
+<ul>
+<li><a href="#org0426533">口碑是最好的传播</a></li>
+</ul>
+</li>
+<li><a href="#orgc33ef1b">重新理解流量</a>
+<ul>
+<li><a href="#orgb970ef9">产品特征决定了流量的价值</a></li>
+<li><a href="#orgf31c04c">产品需求的强弱决定了购买流量的成本</a></li>
+<li><a href="#org5723054">产品核心功能决定了流量的二次分发</a></li>
+</ul>
+</li>
+<li><a href="#orgc9403b1">如何搭建团队</a>
+<ul>
+<li><a href="#orgd5c8c4a">长心、长骨架、长肉</a></li>
+</ul>
+</li>
+<li><a href="#org34530c2">重新理解企业成长</a>
+<ul>
+<li><a href="#org0c64a3c">最小化启动</a></li>
+</ul>
+</li>
+<li><a href="#org5ee1d89">如何应对低谷</a></li>
+<li><a href="#orgd18aa36">突破瓶颈</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgb8358e6" class="outline-2">
+<h2 id="orgb8358e6">重新理解创业</h2>
+<div class="outline-text-2" id="text-orgb8358e6">
+</div>
+<div id="outline-container-orgc83c17f" class="outline-3">
+<h3 id="orgc83c17f">序(雷军)</h3>
+<div class="outline-text-3" id="text-orgc83c17f">
+<ol class="org-ol">
+<li>认知和思考最好的体现是面向未来的行动<br /></li>
+<li>那段时间的思考几乎像是用手术刀解剖自己，虽然残酷，但非常真实。我先是总结了五点体会：<br />
+1.人欲即天理，是更现实的人生观；<br />
+2.顺势而为，不要做逆天的事情；<br />
+3.颠覆创新，用真正的互联网精神重新思考；<br />
+4.广结善缘，中国是人情社会；<br />
+5.专注，少就是多。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orge2a0233" class="outline-3">
+<h3 id="orge2a0233">前沿</h3>
+<div class="outline-text-3" id="text-orge2a0233">
+<p>
+我们战胜的，都是渺小的，<br />
+结果本身也使我们渺小。<br />
+永恒与非凡之物<br />
+不欲被我们弯曲。<br />
+……<br />
+胜利不会对他发出邀请。<br />
+他的成长乃是：成为卑微的战败者，<br />
+败于越来越大之物。<br />
+——里尔克《观看的男人》<br />
+</p>
+</div>
+</div>
+<div id="outline-container-org19efd62" class="outline-3">
+<h3 id="org19efd62">重新理解战略</h3>
+<div class="outline-text-3" id="text-org19efd62">
+</div>
+<div id="outline-container-org6dc0b68" class="outline-4">
+<h4 id="org6dc0b68">概念先行还是问题驱动</h4>
+<div class="outline-text-4" id="text-org6dc0b68">
+<ol class="org-ol">
+<li>我认为很多新概念可能本身只是一种设想、一个愿望，远远不是一个确定的趋势。如果自己接受了表面的新概念而放弃了真正的深度思考，很容易忽悠了自己<br /></li>
+<li>从解决问题的角度出发解决真实存在的需求，这样的出发点可以帮助创业者明确创业中的关键问题<br /></li>
+<li>差异化的产品、独特的体验<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5a69cc2" class="outline-4">
+<h4 id="org5a69cc2">完美的宏大和简陋的快捷</h4>
+<div class="outline-text-4" id="text-org5a69cc2">
+<ol class="org-ol">
+<li>很多人都有一种不自觉的完美主义倾向<br /></li>
+<li>真正的战略是跑出来的，只有先跑起来才可能知道你的战略是什么，然后不断迭代<br /></li>
+<li>一个好战略， <b>一定是好理解且容易执行的战略</b> 。这是区别好战略和坏战略的一个分水岭。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc04f837" class="outline-4">
+<h4 id="orgc04f837">战略的维度</h4>
+<div class="outline-text-4" id="text-orgc04f837">
+<p>
+到底要如何找到一个好战略，我觉得可以从以下几个维度入手。<br />
+</p>
+<ol class="org-ol">
+<li>忽略小数点以后的努力<br />
+一个新点子冒出来的时候，我们先要甄别一下，这是个什么级别的思考。如果只是把事情从9分变成了9.5分，这就是花很大力气去做小数点以后的事，没什么太大用处。可我看到的现象是，绝大多数公司都在努力做小数点以后的事。<br /></li>
+<li>学会做减法<br />
+<ul class="org-ul">
+<li>一个时期只能有一项关键任务，同时做10件任务，资源一定不到位，思考也一定不够深，执行必然会大打折扣<br /></li>
+<li>真正的战略思考是极难的，千万不要用行动上的勤奋来掩盖战略上的懒惰<br /></li>
+</ul></li>
+<li>警惕平面拼图型战略<br />
+<ul class="org-ul">
+<li>很多成功的公司，在战略上都很克制，没有做各种眼花缭乱的事情。<br /></li>
+<li>在战略上的克制，说明它在战略上是极其清晰的<br /></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf12fb17" class="outline-3">
+<h3 id="orgf12fb17">重新理解竞争</h3>
+<div class="outline-text-3" id="text-orgf12fb17">
+</div>
+<div id="outline-container-org79b01ed" class="outline-4">
+<h4 id="org79b01ed">先行者姿态</h4>
+<div class="outline-text-4" id="text-org79b01ed">
+<ol class="org-ol">
+<li><font color="red" size="2em" >评:「作者把自己摆在先行者的位置上，忽视了很多问题。」</font><br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org75f13e2" class="outline-4">
+<h4 id="org75f13e2">成功带来认知局限</h4>
+</div>
+<div id="outline-container-orgee54252" class="outline-4">
+<h4 id="orgee54252">竞争是生死问题</h4>
+<div class="outline-text-4" id="text-orgee54252">
+<ol class="org-ol">
+<li>竞争问题是生死问题，利润多少只是得失问题。所以，在竞争面前不要算小账，要算大账。在生死问题面前，一时的得与失又算得了什么？<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org263df1d" class="outline-4">
+<h4 id="org263df1d">真正的竞争来自另一个维度</h4>
+<div class="outline-text-4" id="text-org263df1d">
+<ol class="org-ol">
+<li>竞争的外部性<br /></li>
+<li>一个小的创新，在一个更大的创新面前就会窒息掉，因为两者的成长速度完全不一样。(创新窒息)<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgc51a8ff" class="outline-4">
+<h4 id="orgc51a8ff">竞争是全方位的战争</h4>
+<div class="outline-text-4" id="text-orgc51a8ff">
+<ol class="org-ol">
+<li>投资的过程中看别人，再反观当时的自己，确实很感慨。<br /></li>
+</ol>
+<p>
+竞争不只存在于业务本身，竞争其实是全方位的，包括资源竞争、人才竞争等。如果在竞争中用回避的心态去面对，只会让你越来越被动，因为资本、资源都是向头部聚拢<br />
+</p>
+<ol class="org-ol">
+<li>因为势能的积累不够，获取资源就会特别费劲儿<br /></li>
+<li>如果不能成为一个行业的第一，你创造的价值一定是锐减的，这个锐减的幅度，可能会超乎你的想象。所以，怎么重视竞争都不为过，要想生存，就必须学会直面竞争。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org926ce40" class="outline-3">
+<h3 id="org926ce40">重新理解品牌</h3>
+<div class="outline-text-3" id="text-org926ce40">
+<p>
+作者提出两个主张<br />
+</p>
+<ol class="org-ol">
+<li>愿景不是广告中的slogan（标语）。用户真的关心你的愿景吗？用户可能不会花时间理解它，因为他们最关心的是从中能得到什么。<br /></li>
+<li>不说大话,我们作为创业者更应该始终坚持挖掘品牌为用户创造的当下价值。<br /></li>
+</ol>
+</div>
+<div id="outline-container-org0426533" class="outline-4">
+<h4 id="org0426533">口碑是最好的传播</h4>
+<div class="outline-text-4" id="text-org0426533">
+<ol class="org-ol">
+<li>要把每一次的客户投诉当作一次跟客户深层次接触的机会<br /></li>
+<li>如果服务本身不能百分之百得到保证，也许品牌不应该把这个信息告诉用户<br /></li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc33ef1b" class="outline-3">
+<h3 id="orgc33ef1b">重新理解流量</h3>
+<div class="outline-text-3" id="text-orgc33ef1b">
+<ol class="org-ol">
+<li>在任何一个新出现的领域，如果需要购买流量，即便当下很贵，也一定要先买，付出的成本肯定会比后来者低，因为流量只会越来越贵。<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgb970ef9" class="outline-4">
+<h4 id="orgb970ef9">产品特征决定了流量的价值</h4>
+<div class="outline-text-4" id="text-orgb970ef9">
+<ol class="org-ol">
+<li>判断一个产品的流量是否有价值，我们先看以下几个要素：一是用户数，即DAU；二是时长，看用户黏性；三是交易属性。后来我自己有一个用来判断的公式：<br /></li>
+</ol>
+<p>
+流量价值=DAU×时长×交易系数<br />
+</p>
+</div>
+</div>
+<div id="outline-container-orgf31c04c" class="outline-4">
+<h4 id="orgf31c04c">产品需求的强弱决定了购买流量的成本</h4>
+<div class="outline-text-4" id="text-orgf31c04c">
+<ol class="org-ol">
+<li>真正决定流量成本高低的不是购买价格，而是转化率，它决定了获客成本<br /></li>
+<li>建议是你可以从产品形态出发，开发一些大众、高频、低价的产品，以此拉动流量。<br /></li>
+<li>通过高频、低价的商品拉来流量，也为其他方面带来了利润，很多聪明的商家都会采用这个策略。<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org5723054" class="outline-4">
+<h4 id="org5723054">产品核心功能决定了流量的二次分发</h4>
+<div class="outline-text-4" id="text-org5723054">
+<ol class="org-ol">
+<li>对流量分发的节制很有必要<br /></li>
+<li>对流量的二次分发一定要有这样一种判断，看它是否会影响到用户体验和平台的核心功能<br /></li>
+<li></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-orgc9403b1" class="outline-3">
+<h3 id="orgc9403b1">如何搭建团队</h3>
+<div class="outline-text-3" id="text-orgc9403b1">
+</div>
+<div id="outline-container-orgd5c8c4a" class="outline-4">
+<h4 id="orgd5c8c4a">长心、长骨架、长肉</h4>
+<div class="outline-text-4" id="text-orgd5c8c4a">
+<ol class="org-ol">
+<li>绝大多数的创业公司，其实并不具备短时间消化太多外来同级别高管的能力<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org34530c2" class="outline-3">
+<h3 id="org34530c2">重新理解企业成长</h3>
+<div class="outline-text-3" id="text-org34530c2">
+</div>
+<div id="outline-container-org0c64a3c" class="outline-4">
+<h4 id="org0c64a3c">最小化启动</h4>
+<div class="outline-text-4" id="text-org0c64a3c">
+<ol class="org-ol">
+<li>但这个做小和做少，并不是说先赚点钱让自己活下来，保证盈亏平衡就好了。真正让你活下来的，是你能够创造出足够清晰的用户价值。只要能做到这一点，就有机会活下来。<br /></li>
+<li>使命要大、战略要小<br /></li>
+<li>在这个阶段，只有用户价值和成长速度才是创业者最应该关心的事情。<br /></li>
+</ol>
+</div>
+</div>
+</div>
+<div id="outline-container-org5ee1d89" class="outline-3">
+<h3 id="org5ee1d89">如何应对低谷</h3>
+<div class="outline-text-3" id="text-org5ee1d89">
+<ol class="org-ol">
+<li>我们可以为用户创造新的、差异化的价值，但最好不要筛选掉差异化的用户群。也就是说，互联网商业的战略定位应该是全网用户。(产品定位可以是差异化也是必须的,某种程度上是矛盾的)<br /></li>
+<li>低谷时期,要下苦工,把资源更多的用在打造公司的核心业务上,真正打造为用户价值服务的核心能力<br /></li>
+<li>多融钱少花钱。融资的时候，趁着别人支持你，要玩命融。融了之后要谨慎地花，模式没踩实之前一定不要花大钱<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgd18aa36" class="outline-3">
+<h3 id="orgd18aa36">突破瓶颈</h3>
+<div class="outline-text-3" id="text-orgd18aa36">
+<ol class="org-ol">
+<li>在这种基础环境下，我们最应该做的不是解决支付问题，而是让用户先享受这个服务，直接线下支付。至于这个服务是不是通过我们完成闭环，没那么重要。(实事求是,做事情有重点,抓住价值创造的关键核心环节)<br /></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
